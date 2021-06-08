@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">module_appbarlayout</string>
+    <string name="textContent">My Application My Application My Application My Application My
+    Ap上面提到的"某个可滚动View", 可以理解为某个ScrollView.
+    就是说，当某个ScrollView发生滚动时，你可以定制你的“顶部栏”应该执行哪些动作（如跟着一起滚动、保持不动等等）。
+
+    这里某个ScrollView就是NestedScrollView或者实现了NestedScrollView机制的其它控件, 如RecyclerView.
+    它有一个布局行为Layout_Behavior:
+
+    作者：朋朋彭哥
+    链接：https://www.jianshu.com/p/bbc703a0015e
+    来源：简书
+    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。plication My Application My Application
+</string>
+
+<string name="textContent2">1234567890qwertyuiopasdfghjklzxcvbnm,</string>
+
+    </resources>
