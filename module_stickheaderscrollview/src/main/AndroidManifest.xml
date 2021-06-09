@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.module_stickheaderscrollview">
+
+    <application>
+        <activity android:name=".StickHeadScrollViewActivity">
+        </activity>
+        <activity android:name=".ui.AndroidWidgetActivity"/>
+    </application>
+
+</manifest>

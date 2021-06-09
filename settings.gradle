@@ -2,3 +2,4 @@ rootProject.name = "My Application"
 include ':app'
 include ':module_sticklistview'
 include ':module_appbarlayout'
+include ':module_stickheaderscrollview'

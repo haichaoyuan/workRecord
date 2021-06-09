@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.module_a.ModuleAMainActivity
 import com.example.module_a.StickHeaderListViewActivity
 import com.example.module_appbarlayout.MainAppBarLayoutActivity
+import com.example.module_stickheaderscrollview.StickHeadScrollViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         }
         btn_sticklistview.setOnClickListener {
             startActivity(Intent(this@MainActivity, StickHeaderListViewActivity::class.java))
+        }
+        btn_stickheaderscrollview.setOnClickListener {
+            startActivity(Intent(this@MainActivity, StickHeadScrollViewActivity::class.java))
         }
     }
 }

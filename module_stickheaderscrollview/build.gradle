@@ -1,20 +1,16 @@
 if (isModule.toBoolean()) {
-    apply plugin: 'com.android.library'
-} else {
     apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
 }
+
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 30
 
     defaultConfig {
-        if (!isModule.toBoolean()) {
-            applicationId "com.example.myapplication"
-        }
-
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -22,7 +18,19 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    sourceSets {
+        main {
+            if (isModule.toBoolean()) {
+                manifest.srcFile 'src/main/module/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                //集成开发模式下排除debug文件夹中的所有Java文件
+                java {
+                    exclude 'debug/**'
+                }
+            }
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -36,10 +44,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
-    lintOptions {
-        abortOnError false
-    }
 }
 
 dependencies {
@@ -52,10 +56,4 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
-    if (!isModule.toBoolean()) {
-        implementation project(':module_sticklistview')
-        implementation project(':module_appbarlayout')
-        implementation project(':module_stickheaderscrollview')
-    }
 }
