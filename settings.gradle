@@ -1,4 +1,4 @@
 rootProject.name = "My Application"
 include ':app'
-include ':module_a'
+include ':module_sticklistview'
 include ':module_appbarlayout'

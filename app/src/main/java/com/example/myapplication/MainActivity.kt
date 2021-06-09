@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.module_a.ModuleAMainActivity
+import com.example.module_a.StickHeaderListViewActivity
 import com.example.module_appbarlayout.MainAppBarLayoutActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -12,11 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button.setOnClickListener {
-            startActivity(Intent(this@MainActivity, ModuleAMainActivity::class.java))
-        }
-        button_appbar.setOnClickListener {
+        btn_appbarlayout.setOnClickListener {
             startActivity(Intent(this@MainActivity, MainAppBarLayoutActivity::class.java))
+        }
+        btn_sticklistview.setOnClickListener {
+            startActivity(Intent(this@MainActivity, StickHeaderListViewActivity::class.java))
         }
     }
 }

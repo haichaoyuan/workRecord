@@ -1,8 +1,9 @@
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
+if (isModule.toBoolean()) {
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
 }
-
+apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
@@ -10,7 +11,10 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.example.myapplication"
+        if (!isModule.toBoolean()) {
+            applicationId "com.example.myapplication"
+        }
+
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -50,7 +54,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     if (!isModule.toBoolean()) {
-        implementation project(':module_a')
+        implementation project(':module_sticklistview')
         implementation project(':module_appbarlayout')
     }
 }
