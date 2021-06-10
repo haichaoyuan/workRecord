@@ -6,7 +6,9 @@ import android.os.Bundle
 import com.example.module_a.ModuleAMainActivity
 import com.example.module_a.StickHeaderListViewActivity
 import com.example.module_appbarlayout.MainAppBarLayoutActivity
+import com.example.module_autotextview.AutoTextViewActivity
 import com.example.module_stickheaderscrollview.StickHeadScrollViewActivity
+import com.example.module_videorecord.VideoRecordEnterActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +24,12 @@ class MainActivity : AppCompatActivity() {
         }
         btn_stickheaderscrollview.setOnClickListener {
             startActivity(Intent(this@MainActivity, StickHeadScrollViewActivity::class.java))
+        }
+        btn_video_record.setOnClickListener {
+            startActivity(Intent(this@MainActivity, VideoRecordEnterActivity::class.java))
+        }
+        btn_auto_textview.setOnClickListener {
+            startActivity(Intent(this@MainActivity, AutoTextViewActivity::class.java))
         }
     }
 }

@@ -37,5 +37,18 @@
             android:layout_margin="10dp"
             android:text="仿饿了么列表" />
 
+        <Button
+            android:id="@+id/btn_video_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="视频录制" />
+        <Button
+            android:id="@+id/btn_auto_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="自适应文本" />
+
     </LinearLayout>
 </ScrollView>
