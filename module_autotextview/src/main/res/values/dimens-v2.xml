@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_h1">45dp</dimen>
+    <dimen name="text_size_h2">23dp</dimen>
+    <dimen name="text_size_h3">17dp</dimen>
+    <dimen name="text_size_h4">16dp</dimen>
+    <dimen name="text_size_h5">15dp</dimen>
+    <dimen name="text_size_h6">14dp</dimen>
+    <dimen name="text_size_h7">13dp</dimen>
+    <dimen name="text_size_h8">12dp</dimen>
+    <dimen name="text_size_h9">11dp</dimen>
+    <dimen name="text_size_h10">10dp</dimen>
+    <dimen name="text_size_h11">35dp</dimen>
+    <!-- ratio_float 为纵横比，官方建议设为 2.1 或更大，因为目前市场上出现的Android全面屏手机屏幕纵横比最大的为三星的 18.5:9=2.0556，但是如果以后要是出现纵横比更大的手机，设置值就要更大 -->
+    <item name="screen_ratio_float" format="float" type="dimen">2.1</item>
+</resources>
