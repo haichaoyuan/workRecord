@@ -1,11 +1,10 @@
 package com.example.myapplication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.module_a.ModuleAMainActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.example.module_a.StickHeaderListViewActivity
-import com.example.module_appbarlayout.MainAppBarLayoutActivity
+import com.example.module_appbarlayout.AppbarLayoutEnterActivity
 import com.example.module_autotextview.AutoTextViewActivity
 import com.example.module_stickheaderscrollview.StickHeadScrollViewActivity
 import com.example.module_videorecord.VideoRecordEnterActivity
@@ -17,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_appbarlayout.setOnClickListener {
-            startActivity(Intent(this@MainActivity, MainAppBarLayoutActivity::class.java))
+            startActivity(Intent(this@MainActivity, AppbarLayoutEnterActivity::class.java))
         }
         btn_sticklistview.setOnClickListener {
             startActivity(Intent(this@MainActivity, StickHeaderListViewActivity::class.java))

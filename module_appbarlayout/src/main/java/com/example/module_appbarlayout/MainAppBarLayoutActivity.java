@@ -12,8 +12,8 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSmoothScroller;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.example.module_appbarlayout.adapter.ContentAdapter;
 import com.example.module_appbarlayout.adapter.MyRecyclerAdapter;
 import com.example.module_appbarlayout.item.Item;
 import com.google.android.material.appbar.AppBarLayout;
@@ -21,7 +21,7 @@ import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 
-public class MainAppBarLayoutActivity extends AppCompatActivity {
+public class MainAppBarLayoutActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener{
     RecyclerView mHeadRecy;
     RecyclerView mContent;
 
@@ -38,6 +38,7 @@ public class MainAppBarLayoutActivity extends AppCompatActivity {
     private TabLayout mTabLayout;
     private AppBarLayout mAppBar;
     private RecyclerView mRecyclerView;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     private LinearLayoutManager mLinearLayoutManager;
 
@@ -60,6 +61,7 @@ public class MainAppBarLayoutActivity extends AppCompatActivity {
         mTabLayout = findViewById(R.id.tab_layout);
         mRecyclerView = findViewById(R.id.recycler_view);
         mAppBar = findViewById(R.id.appbar);
+        swipeRefreshLayout = findViewById(R.id.swipe_layout);
         ((CoordinatorLayout.LayoutParams) mAppBar.getLayoutParams()).setBehavior(new FixAppBarLayoutBehavior());
         initRecyclerView();
         initTabLayout();
@@ -104,6 +106,18 @@ public class MainAppBarLayoutActivity extends AppCompatActivity {
                 if (tabAt != null && !tabAt.isSelected()) {
                     tabAt.select();
                 }
+
+                // -1 是顶部, 1是底部
+                // 可以继续往上滑动(未滑动到顶部)
+//                boolean isNotBottom = recyclerView.canScrollVertically(1);
+//                boolean isNotTop = recyclerView.canScrollVertically(-1);
+//                if (!isNotTop){
+//                    swipeRefreshLayout.setEnabled(true);
+//                } else {
+//                    swipeRefreshLayout.setEnabled(false);
+//                }
+
+
             }
         });
     }
@@ -190,14 +204,26 @@ public class MainAppBarLayoutActivity extends AppCompatActivity {
 
     }
     
-    private void init3(){
-        mHeadRecy = findViewById(R.id.recy_head);
-        mContent = findViewById(R.id.recy_content);
-        mHeadRecy.setLayoutManager(new LinearLayoutManager(this));
-        mContent.setLayoutManager(new LinearLayoutManager(this));
-        mHeadRecy.setAdapter(new ContentAdapter(this, 2));
-        mContent.setAdapter(new ContentAdapter(this, 30));
+
+// =========================================================================================
+// =================================== appbarlayout
+// =========================================================================================
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mAppBar.addOnOffsetChangedListener(this);
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mAppBar.removeOnOffsetChangedListener(this);
+    }
 
+    @Override
+    public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+        swipeRefreshLayout.setEnabled(verticalOffset == 0);
+    }
 }

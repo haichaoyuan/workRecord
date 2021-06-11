@@ -9,12 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name="MainAppBarLayoutActivity">
+        <activity android:name="com.example.module_appbarlayout.AppbarLayoutEnterActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.MyApplication"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.module_appbarlayout.MainAppBarLayoutActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.MyApplication"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.example.module_appbarlayout.AppbarLayoutSimpleActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.MyApplication"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.example.module_appbarlayout.HomePage2Activity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.MyApplication"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
