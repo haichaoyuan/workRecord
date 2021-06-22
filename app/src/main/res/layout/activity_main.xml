@@ -50,5 +50,19 @@
             android:layout_margin="10dp"
             android:text="自适应文本" />
 
+        <Button
+            android:id="@+id/btn_test_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="调起微信" />
+
+        <Button
+            android:id="@+id/btn_test_weixin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="调起微信2" />
+
     </LinearLayout>
 </ScrollView>

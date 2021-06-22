@@ -4,17 +4,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.example.module_appbarlayout.R
 
 
-class MyFragment(val index:Int): Fragment() {
+class MyFragment(val index: Int) : Fragment() {
     var recyclerView: RecyclerView? = null
     var data: MutableList<String> = ArrayList()
+    var root:NestedScrollView? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -22,7 +22,8 @@ class MyFragment(val index:Int): Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_recycler, null)
-        recyclerView= view.findViewById(R.id.recycler)
+        root = view.findViewById(R.id.root)
+        recyclerView = view.findViewById(R.id.recycler)
         return view
     }
 
@@ -41,4 +42,7 @@ class MyFragment(val index:Int): Fragment() {
         recyclerView!!.adapter = MyAdapter(data)
     }
 
+    fun setNestScrollEnable(isScroll: Boolean) {
+        root?.isNestedScrollingEnabled = isScroll
+    }
 }
