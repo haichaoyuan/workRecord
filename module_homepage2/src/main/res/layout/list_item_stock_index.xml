@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <!-- 上证指数 -->
+    <TextView
+        android:id="@+id/block_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/quote_block_child_margin"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/stock_name_color"
+        android:textSize="@dimen/font_small"
+        tools:text="上证指数" />
+
+    <TextView
+        android:id="@+id/block_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/quote_block_child_margin"
+        android:drawablePadding="@dimen/margin_2"
+        android:textColor="@color/stock_name_color"
+        android:textSize="@dimen/font_large"
+        android:textStyle="bold"
+        tools:text="3452.23" />
+
+    <TextView
+        android:id="@+id/block_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/quote_block_child_margin"
+        android:textColor="@color/list_quote_gray"
+        android:textSize="@dimen/font_small"
+        tools:text="+0.23%" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/lead_stock_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/quote_title_stock_name_color"
+        android:layout_marginEnd="@dimen/quote_block_child_margin"
+        tools:text="午盘 05-12 13:21"
+        android:textSize="@dimen/font_small" />
+
+</LinearLayout>

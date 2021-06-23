@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:elevation="0dp"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/banner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_homepage_top2" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_ad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginEnd="@dimen/margin_15"
+                android:background="@drawable/bg_home_banner" />
+
+            <LinearLayout
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/info_channel_banner_indicator_padding" />
+
+        </RelativeLayout>
+
+        <View style="@style/HLineStyle" />
+
+        <com.example.module_homepage2.base.MyGridView
+            android:id="@+id/home_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/global_white"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:paddingTop="@dimen/home_menu_padding_top"
+            android:paddingBottom="@dimen/home_menu_padding_top"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/home_menu_verticalSpacing" />
+
+        <View style="@style/HLineStyle" />
+
+        <com.example.module_homepage2.view.VerticalViewPager
+            android:id="@+id/vp_stock"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="40dp" />
+
+        <View style="@style/HLineStyle" />
+    </LinearLayout>
+</FrameLayout>

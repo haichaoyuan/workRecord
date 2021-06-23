@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <!-- =======================公共============================ -->
+    <color name="global_white">#ffffffff</color>
+    <color name="global_pressed_white">#ffd9d9d9</color>
+    <!--    <color name="titlebar_bg_color">#ffff5838</color>-->
+    <color name="global_red">#ffe43b00</color>
+    <color name="global_orange">#ffff6600</color>
+    <color name="color_light_blue">#576B95</color>
+    <color name="global_green">#ff46aa1a</color>
+    <color name="global_blue_tv">#ff2d6590</color>
+    <color name="global_blue_bt">#ff2181f7</color>
+    <color name="global_blue_bg">#5486c9</color>
+    <color name="global_black">#ff000000</color>
+    <color name="global_lightblack">#ff333333</color>
+    <color name="transparent_light_black">#b2000000</color>
+    <color name="transparent_plus_black">#40000000</color>
+    <color name="global_darkgray">#ff4c4c4c</color>
+    <color name="global_gray">#ff666666</color>
+    <color name="global_lightgray">#ff999999</color>
+    <color name="global_reddot">#fffe0100</color>
+    <color name="global_background">#F5F5F9</color>
+    <color name="global_standard_blue">#007aff</color>
+    <color name="global_yellow">#F3B32A</color>
+
+    <!-- =======================分割先============================ -->
+    <color name="global_devider">#ffcccccc</color>
+
+    <!-- =======================列表颜色============================ -->
+    <color name="lv_divider">#ffe5e5e5</color>
+    <color name="lv_item_pressed">#ffd9d9d9</color>
+    <color name="tabhost_bg">#fff9f9f9</color>
+    <color name="lv_stroke">#ffe7e7e7</color>
+    <color name="list_option_title">#ff666666</color>
+    <color name="lv_item_gray_normal">#fffafafa</color>
+
+    <!-- =======================公共按钮颜色============================ -->
+    <color name="btn_orange_normal">#ffff5738</color>
+    <color name="btn_orange_pressed">#ffe54022</color>
+    <color name="btn_orange_disable">#ffe5e5e5</color>
+    <color name="btn_greyblue_normal">#FF5486C9</color>
+    <color name="btn_greyblue_pressed">#AA5486C9</color>
+    <color name="btn_greyblue_disable">#C0D4EE</color>
+
+    <!-- =======================交易提醒============================ -->
+
+
+    <!-- =======================手势解锁======================== -->
+    <color name="graphic_reset_blue">#ff225f87</color>
+
+    <!-- =======================登录页面======================== -->
+    <color name="login_cutoff">#5c5c5c</color>
+
+    <!-- =======================注册页面======================== -->
+    <color name="register_succeed">#a6a6a6</color>
+
+    <!-- =======================添加银行卡============================ -->
+    <color name="cardmgr_add_gray">#838383</color>
+    <color name="bind_card_protocol">#ff9a9a9a</color>
+
+    <!-- =======================交易弹窗============================ -->
+    <color name="tradedailog_BorderColor">#809f9f9f</color>
+    <color name="tradedailog_PasswordColor">#4d4d4d</color>
+    <color name="tradedailog_devider">#90e0e0de</color>
+
+    <!-- =======================选中支付方式========================== -->
+
+    <!-- =======================理财详情========================== -->
+    <color name="product_yield_line">#cccccc</color>
+    <color name="product_middle_line">#f2f2f2</color>
+    <color name="product_bottom_line">#e6e6e6</color>
+
+    <!-- =======================安全中心========================== -->
+    <color name="bg_security_actionbar">#ff5771e2</color>
+
+
+    <!-- =======================首页============================ -->
+    <color name="top_color_red">#ff5738</color>
+    <color name="top_color_darkred">#e54e32</color>
+    <color name="home_txt_gray">#ffd6d1</color>
+    <color name="transparent_red">#4dfe684d</color>
+
+
+    <color name="blue_text" >#ff007aff</color>
+    <color name="bg_frame_stroke" >#ffcacaca</color>
+
+    <!-- =======================现金宝收益颜色============================ -->
+    <color name="profit_btn_orange">#ffff5838</color>
+    <color name="profit_btn_darkgray">#fff5f5f5</color>
+
+    <!-- =======================理财首页现金宝收益颜色============================ -->
+    <color name="product_home_xjb_circle_inner">#fffe7a5f</color>
+    <color name="product_home_xjb_circle_outer">#fffbddd6</color>
+
+    <!-- =======================银行卡选择弹窗============================ -->
+    <color name="bg_bankcard_upgrade_row">#ffFEF6E5</color>
+
+
+    <!-- =======================文字颜色============================ -->
+    <color name="txt_dark_gray">#ff494949</color>
+    <color name="txt_light_gray">#ffa3a3a3</color>
+    <color name="txt_orange_hx">#ff5738</color>
+    <color name="txt_dark_yellow">#f5a623</color>
+    <color name="txt_light_dark">#ff595959</color>
+
+    <color name="bg_light_blue">#ffb6d2f7</color>
+
+    <!-- =======================资产分析界面========================== -->
+    <color name="analys_color_red">#ffff6161</color>
+    <color name="analys_color_orange">#fffcbe3c</color>
+    <color name="analys_color_yellow">#fffcde6c</color>
+    <color name="analys_color_coffee">#fff45234</color>
+    <color name="analys_color_green">#fff4cec4</color>
+    <color name="analys_color_blue_green">#ff74c274</color>
+    <color name="analys_color_blue">#ffa4deec</color>
+    <color name="analys_color_gray">#ffcccccc</color>
+
+    <!-- =======================消息中心页码============================ -->
+    <color name="bg_dark_gray">#ffcecece</color>
+    <color name="bg_frame_gray">#ffcccdcf</color>
+    <color name="txt_msg_gray">#ff787878</color>
+    <color name="transparent_white">#99ffffff</color>
+
+    <!-- =======================基金列表========================== -->
+    <color name="background_fund_grid_gray">#88f4f4f4</color>
+    <color name="top_note_text_color">#f76c26</color>
+    <color name="top_note_bg_color">#fefcec</color>
+    <color name="dark_grey_bg">#F5F5F9</color>
+    <color name="light_black">#979797</color>
+
+    <!-- =======================信用卡========================== -->
+    <color name="bg_date_picker_dialog_tabbar">#f6f6f6</color>
+
+    <color name="banner_white">#fffce0</color>
+    <color name="banner_gray">#98331a</color>
+    <color name="banner_yellow">#ffe262</color>
+    <color name="bg_dialog">#66000000</color>
+    <!-- =======================高端详情========================== -->
+    <color name="header_top_note_bg_color">#fefcec</color>
+    <color name="header_top_text_color">#f76c26</color>
+    <color name="color_grey">#9ba1a2</color>
+
+    <color name="dark_yellow_bg">#fcecd2</color>
+
+    <color name="default_key_normal">#FFFFFF</color>
+    <color name="default_key_pressed">#DADEE5</color>
+    <color name="ok_key_pressed">#ffff6600</color>
+
+    <color name="color_member_lv">#CDAC74</color>
+    <color name="color_member_lv_item">#B4A078</color>
+    <color name="color_member_bg_tip">#EFEFF4</color>
+    <color name="color_member_seekbar_bg">#5E5A4F</color>
+    <color name="color_member_viewpager_title">#676767</color>
+    <color name="color_bg_member_detail_header">#2D2C28</color>
+    <color name="color_member_detail_header">#FBC269</color>
+    <color name="color_risk_level_low">#1BB48E</color>
+    <color name="color_finance_transparency">#DD000000</color>
+    <color name="color_bank_card_transparency">#22ffffff</color>
+    <color name="color_finance_condition_filter_transparency">#99000000</color>
+
+    <color name="lunarTextColor">#B2B2B2</color>
+    <color name="hintColor">#999999</color>
+    <color name="selectCircleColor">#FF5738</color>
+    <color name="holidayColor">#39AF81</color>
+    <color name="workdayColor">#EC7230</color>
+    <color name="pointColor">#FF5738</color>
+    <color name="gesture_lock_aphorism_color">#2A2A2A</color>
+    <color name="fund_concept_list_divider_color">#F3F3F3</color>
+
+
+    <!-- 红：用于股票红涨 -->
+    <color name="quote_red">#E73146</color>
+    <!-- 绿：用于股票绿跌 -->
+    <color name="quote_green">#07A168</color>
+    <!-- 绿：用于股票平盘 -->
+    <color name="quote_even">#5C6267</color>
+
+
+
+    <!-- =======================公共============================ -->
+
+    <color name="transparent">#00000000</color>
+    <color name="app_bg_color">#f5f5f9</color>
+    <color name="titlebar_bg_color">#ff364c8b</color>
+
+    <color name="global_white_fifty_percent">#32ffffff</color>
+    <color name="global_white_ninety_percent">#f0ffffff</color>
+    <color name="global_darkred">#CF2C3E</color>
+    <color name="global_blue">#157efb</color>
+    <color name="global_blue_btn">#3b8cf1</color>
+    <color name="global_lightblue">#569AF0</color>
+    <color name="global_darkblue">#ff374676</color>
+    <color name="global_lightgray_three">@color/lv_content_gray</color>
+    <color name="color_red">#ff1616</color>
+    <color name="color_green">#6eb375</color>
+    <color name="global_color_gray">#cccccc</color>
+
+    <color name="global_content_gray">#999999</color>
+    <color name="global_bule_gray_color">#7f97c2</color>
+
+    <color name="global_gold_color">#FBC269</color>
+    <color name="color_dark_green">#07A168</color>
+    <!-- ======================弹窗相关色========================= -->
+    <color name="dialog_divider">#e1e1e1</color>
+    <color name="dialog_bg_stroke">#ffcccccc</color>
+
+    <!-- ======================灰色分割线======================== -->
+    <color name="line_color">#ffebebeb</color>
+
+    <!-- ======================灰色特殊分割线======================== -->
+    <color name="line_special_color">#ff979797</color>
+
+    <!-- =====================列表颜色========================= -->
+    <color name="lv_content_gray">#999999</color>
+
+
+    <!--蒙层色值-->
+    <color name="hazy_color">#7F262626</color>
+    <color name="global_mask_color">#cc000000</color>
+
+    <!-- =======================键盘颜色============================ -->
+    <color name="global_gray_col">#ffDADEE5</color>
+    <color name="keyboard_gray">#ffE6E8EC</color>
+    <color name="global_blue_color">#ff007aff</color>
+    <color name="popup_bg_color">#ffCED3D6</color>
+    <color name="global_white_col">#ffffffff</color>
+    <color name="global_divider_line">#ffe9e9e9</color>
+
+    <color name="COLOR_F5F5F9">#F5F5F9</color>
+</resources>

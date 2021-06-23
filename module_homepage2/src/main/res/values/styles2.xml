@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <style name="ZTBWidget.Button.Large.GlobalRed">-->
+<!--        <item name="android:textColor">@color/global_white</item>-->
+<!--        <item name="android:background">@drawable/selector_btn_global_red</item>-->
+<!--    </style>-->
+
+<!--    &lt;!&ndash;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝原来style＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝&ndash;&gt;-->
+
+<!--    <style name="WindowTitleBackground">-->
+<!--        <item name="android:background">@color/titlebar_bg_color</item>-->
+<!--    </style>-->
+
+
+<!--    <style name="Trade_Buy_Input_No_Border_Text_Style">-->
+<!--        <item name="android:textColor">@color/global_lightblack</item>-->
+<!--        <item name="android:textStyle">normal</item>-->
+<!--        <item name="android:textSize">@dimen/font_smaller</item>-->
+<!--        <item name="android:gravity">left|center_vertical</item>-->
+<!--        <item name="android:layout_height">fill_parent</item>-->
+<!--        <item name="android:layout_width">0dp</item>-->
+<!--        <item name="android:layout_weight">1</item>-->
+<!--        <item name="android:background">@null</item>-->
+<!--        <item name="android:paddingLeft">@dimen/trade_textview_padding_l_r</item>-->
+<!--        <item name="android:layout_marginTop">0dp</item>-->
+<!--        <item name="android:layout_marginBottom">0dp</item>-->
+
+<!--    </style>-->
+
+<!--    &lt;!&ndash; 交易页面 底部LinearLayout &ndash;&gt;-->
+<!--    &lt;!&ndash; 交易页面 底部LinearLayout 内部Button &ndash;&gt;-->
+
+<!--    &lt;!&ndash; 键盘样式 &ndash;&gt;-->
+
+
+<!--    &lt;!&ndash; 方正登录界面样式 &ndash;&gt;-->
+
+<!--    &lt;!&ndash; 东海商城 &ndash;&gt;-->
+
+<!--    <style name="Trade_Cang_Btn">-->
+<!--        <item name="android:layout_width">0dp</item>-->
+<!--        <item name="android:layout_weight">1</item>-->
+<!--        <item name="android:layout_height">20dip</item>-->
+<!--        <item name="android:background">@drawable/select_cang_bg</item>-->
+<!--        &lt;!&ndash;<item name="android:background">@drawable/bg_radio_positon</item>&ndash;&gt;-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textSize">12sp</item>-->
+<!--        <item name="android:textColor">@color/btn_trade_selector</item>-->
+<!--        &lt;!&ndash;  <item name="android:textColor">@color/select_cang_color</item>  &ndash;&gt;-->
+
+<!--    </style>-->
+
+
+<!--    <style name="trade_loan_line_style">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">1px</item>-->
+<!--        <item name="android:background">@color/divider_line_color</item>-->
+<!--    </style>-->
+
+<!--    <style name="document_list_style">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">@dimen/margin_50</item>-->
+<!--    </style>-->
+
+<!--    <style name="pledge_lend_giveback_detail_btn_text_style">-->
+<!--        <item name="android:textSize">@dimen/pledge_detail_text_size</item>-->
+<!--        <item name="android:textColor">@color/global_white</item>-->
+<!--    </style>-->
+
+<!--    <style name="pledge_lend_giveback_detail_title_text_style">-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:textSize">@dimen/pledge_detail_item_text_size</item>-->
+<!--        <item name="android:textColor">@color/pledge_text_black_color</item>-->
+<!--    </style>-->
+
+<!--    <style name="pledge_lend_giveback_detail_item_text_style">-->
+<!--        <item name="android:textSize">@dimen/pledge_detail_item_text_size</item>-->
+<!--        <item name="android:textColor">@color/pledge_gray_color</item>-->
+<!--    </style>-->
+
+<!--    <style name="pledge_lend_giveback_detail_item_momey_text_style">-->
+<!--        <item name="android:textSize">@dimen/pledge_query_trade_count_text_black_size</item>-->
+<!--        <item name="android:textColor">@color/pledge_text_black_color</item>-->
+<!--    </style>-->
+
+<!--    <style name="pledge_query_second_title_style">-->
+<!--        <item name="android:layout_width">0dp</item>-->
+<!--        <item name="android:layout_height">match_parent</item>-->
+<!--        <item name="android:layout_weight">1</item>-->
+<!--        <item name="android:textColor">@color/pledge_gray_color</item>-->
+<!--        <item name="android:textSize">@dimen/pledge_detail_text_size</item>-->
+<!--    </style>-->
+
+<!--    <style name="PledgeBorrowMoneyConfirmStyle">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">49dp</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@color/global_white</item>-->
+<!--        <item name="android:textSize">@dimen/font_large</item>-->
+<!--        <item name="android:background">@drawable/selector_pledge_btn</item>-->
+<!--    </style>-->
+
+<!--    <style name="pledge_query_canbe_loan_black_text_style">-->
+<!--        <item name="android:textColor">@color/pledge_text_black_color</item>-->
+<!--        <item name="android:textSize">@dimen/pledge_query_recode_item_mar</item>-->
+<!--    </style>-->
+
+<!--    <style name="pledge_give_back_layout">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">@dimen/margin_50</item>-->
+<!--    </style>-->
+
+
+<!--    <style name="HXDialog_SHare" parent="@style/HXDialog">-->
+<!--        <item name="android:windowFullscreen">true</item>-->
+<!--        <item name="android:layout_gravity">bottom</item>-->
+<!--        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+<!--    </style>-->
+
+<!--    <style name="DialogAnimation">-->
+<!--        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>-->
+<!--        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>-->
+<!--    </style>-->
+
+<!--    <style name="l2_user_info_verify_label">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">46dp</item>-->
+<!--        <item name="android:textSize">@dimen/font_normal</item>-->
+<!--        <item name="android:textColor">@color/global_lightblack</item>-->
+<!--        <item name="android:layout_marginRight">16.5dp</item>-->
+<!--        <item name="android:gravity">center_vertical</item>-->
+<!--    </style>-->
+
+<!--    <style name="tf_hold_textview_with_arrow">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:background">@color/global_white</item>-->
+<!--        <item name="android:drawableRight">@drawable/ico_arrow_right</item>-->
+<!--        <item name="android:padding">@dimen/padding_page</item>-->
+<!--        <item name="android:textSize">@dimen/font_middle</item>-->
+<!--        <item name="android:textColor">@color/global_lightblack</item>-->
+<!--    </style>-->
+
+
+<!--    <style name="ActivityAnimBottom" parent="@android:style/Animation">-->
+<!--        <item name="android:windowEnterAnimation">@anim/activity_push_down_in</item>-->
+<!--        <item name="android:windowExitAnimation">@anim/activity_push_down_out</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--        <item name="android:windowBackground">@android:color/white</item>-->
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+<!--        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>-->
+<!--        <item name="android:textViewStyle">@style/ZTBWidget.TextView</item>-->
+<!--        <item name="android:buttonStyle">@style/MyButtonStyle</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme.Transparent">-->
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+<!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:windowIsFloating">true</item>-->
+<!--        <item name="android:backgroundDimEnabled">false</item>-->
+<!--    </style>-->
+
+<!--    <style name="IdCardInfoStyle">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">46dp</item>-->
+<!--        <item name="android:textSize">@dimen/font_middle</item>-->
+<!--        <item name="android:textColor">@color/global_lightblack</item>-->
+<!--        <item name="android:textColorHint">@color/global_lightgray_three</item>-->
+<!--        <item name="android:background">@null</item>-->
+<!--        <item name="android:gravity">center_vertical</item>-->
+<!--    </style>-->
+
+<!--    <style name="IdCardInfoLabelStyle">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">46dp</item>-->
+<!--        <item name="android:textSize">@dimen/font_normal</item>-->
+<!--        <item name="android:textColor">@color/global_lightgray_three</item>-->
+<!--        <item name="android:layout_marginRight">16.5dp</item>-->
+<!--        <item name="android:gravity">center_vertical</item>-->
+<!--    </style>-->
+
+<!--    <style name="IdCardBtnStyle">-->
+<!--        <item name="android:layout_width">130dp</item>-->
+<!--        <item name="android:layout_height">43dp</item>-->
+<!--        <item name="android:textColor">@color/global_white</item>-->
+<!--        <item name="android:textSize">@dimen/font_large</item>-->
+<!--        <item name="android:layout_alignParentRight">true</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:background">@drawable/bg_btn_white_borker</item>-->
+<!--    </style>-->
+
+<!--    <style name="OpenAccountTextLabelStyle" parent="ZTBWidget.TextView.Middle.Gray">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:layout_marginTop">@dimen/margin_10</item>-->
+<!--        <item name="android:layout_marginBottom">@dimen/margin_10</item>-->
+<!--        <item name="android:layout_marginLeft">@dimen/margin_10</item>-->
+<!--    </style>-->
+
+<!--    <style name="ParsswordSettingInputStyle" parent="EditTextStyle">-->
+<!--        <item name="android:inputType">numberPassword</item>-->
+<!--        <item name="android:maxLength">6</item>-->
+<!--    </style>-->
+
+<!--    <style name="SelectBankStyle">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">48dp</item>-->
+<!--        <item name="android:paddingLeft">@dimen/padding_page</item>-->
+<!--        <item name="android:gravity">center_vertical</item>-->
+<!--        <item name="android:textSize">@dimen/font_small</item>-->
+<!--        <item name="android:textColor">@color/global_gray</item>-->
+<!--        <item name="android:background">@drawable/layer_list_white_with_divider_bottom</item>-->
+<!--    </style>-->
+
+<!--    <style name="ErrorPromptStyle">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textSize">@dimen/font_small</item>-->
+<!--        <item name="android:textColor">@color/global_red</item>-->
+<!--        <item name="android:visibility">gone</item>-->
+<!--    </style>-->
+
+<!--    <style name="DialogNOTitle" parent="@android:style/Theme.Dialog">-->
+<!--        <item name="android:windowFrame">@null</item>-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+<!--    </style>-->
+
+<!--    <style name="oa_home_item_linea">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:layout_marginLeft">@dimen/msg_verify_edit_height</item>-->
+<!--        <item name="android:layout_marginTop">@dimen/open_acco_item_mar</item>-->
+<!--        <item name="android:orientation">horizontal</item>-->
+<!--    </style>-->
+<!--    <style name="oa_home_item_text_linea">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:layout_marginLeft">@dimen/oa_margin</item>-->
+<!--        <item name="android:layout_gravity">center</item>-->
+<!--        <item name="android:orientation">vertical</item>-->
+<!--    </style>-->
+
+<!--    <style name="oa_home_item">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textSize">@dimen/oa_home_text_size</item>-->
+<!--        <item name="android:textColor">@color/global_blue_btn</item>-->
+<!--    </style>-->
+
+<!--    <style name="oa_home_item_notice">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textSize">@dimen/oa_homenot_text_size</item>-->
+<!--        <item name="android:textColor">@color/oa_gray</item>-->
+<!--        <item name="android:layout_marginTop">@dimen/oa_margin_label_top</item>-->
+<!--    </style>-->
+
+<!--    <style name="oa_home_image">-->
+<!--        <item name="android:layout_width">@dimen/oa_open_home_icon_hei</item>-->
+<!--        <item name="android:layout_height">@dimen/oa_open_home_icon_hei</item>-->
+<!--        <item name="android:scaleType">centerInside</item>-->
+<!--    </style>-->
+
+<!--    &lt;!&ndash; oa 选择账户页面&ndash;&gt;-->
+<!--    <style name="oa_select_account_layout">-->
+<!--        <item name="android:orientation">horizontal</item>-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">@dimen/msg_verify_edit_height</item>-->
+<!--        <item name="android:background">@drawable/layer_list_white_with_divider_bottom</item>-->
+<!--    </style>-->
+
+<!--    <style name="oa_select_account_layout_txt">-->
+<!--        <item name="android:layout_width">@dimen/margin_20</item>-->
+<!--        <item name="android:layout_height">@dimen/margin_20</item>-->
+<!--        <item name="android:background">@drawable/selector_toggle_multi_btn</item>-->
+<!--        <item name="android:layout_marginRight">@dimen/margin_15</item>-->
+<!--        <item name="android:textOff"></item>-->
+<!--        <item name="android:textOn"></item>-->
+<!--    </style>-->
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>
+

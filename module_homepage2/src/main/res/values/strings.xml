@@ -1,0 +1,1814 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">module_homepage2</string>
+
+    <string name="home_searchbar_hint">搜索证券代码/名称首字母</string>
+
+
+    <!-- =======================错误提示信息============================ -->
+    <string name="prompt_empty_oldpwd">请输入旧密码</string>
+    <string name="prompt_empty_newspwd">请输入新密码</string>
+    <string name="prompt_empty_verify">请输入确认密码</string>
+    <string name="prompt_invalid_input">密码输入不一致,请重试</string>
+    <string name="prompt_invalid_verify">新旧密码不能相同,请重试</string>
+    <string name="prompt_empty_address">联系地址不能为空</string>
+    <string name="prompt_empty_combination_name">组合名称不能为空</string>
+    <string name="button_cancel">取消</string>
+
+    <!-- =======================单位============================ -->
+    <string name="stock_unit">股</string>
+    <string name="money_unit">元</string>
+
+    <!-- ======================首页======================== -->
+    <string name="home_menu_mystock">自选股</string>
+    <string name="home_menu_stockindex">大盘指数</string>
+    <string name="home_menu_ranking">涨跌排名</string>
+    <string name="home_menu_hotblock">热门板块</string>
+    <string name="home_menu_oa">开户</string>
+    <string name="home_menu_trade">交易</string>
+
+    <string name="home_hotinfo">重要资讯</string>
+    <string name="home_hotinfo_more">更多</string>
+    <string name="home_hotinfo_detail_title">资讯详情</string>
+    <string name="home_datacenter">数据中心</string>
+    <string name="home_info_ipo_desc">新股动态一览</string>
+    <string name="home_info_winnerslist_desc">追踪主力动向</string>
+    <string name="home_info_finance_desc">洞察市场牛熊</string>
+    <string name="home_info_largetrade_desc">监控机构动态</string>
+    <string name="home_info_circulation_desc">关注市场流通</string>
+    <string name="home_info_profit_desc">定位高送转</string>
+    <string name="home_ztbinfo">涨停学院</string>
+    <string name="home_active_center">活动中心</string>
+    <string name="home_tools">涨停助手</string>
+
+
+    <!-- =======================交易买入卖出模块=========================== -->
+    <string name="trade_buy_stockcode_hint">证券代码/名称</string>
+    <string name="trade_buy_price_hint">输入价格</string>
+    <string name="trade_buy_count_hint">输入数量</string>
+    <string name="trade_buy_btn">买入</string>
+
+    <string name="entrust_confirm_account">股东账户：</string>
+    <string name="entrust_confirm_code">名称代码：</string>
+    <string name="entrust_confirm_prop">操作类别：</string>
+    <string name="entrust_confirm_bs">委托方向：</string>
+    <string name="entrust_confirm_price">委托价格：</string>
+    <string name="entrust_confirm_amt">委托数量：</string>
+
+    <string name="entrust_setting">设置</string>
+    <string name="trade_empty_txt">暂无持仓</string>
+    <string name="trade_empty_blue">#157efb</string>
+    <string name="trade_stock_errorinfo">无此代码，或该帐号不支持此类股票交易</string>
+    <string name="hk_trade_entrust_bs_bid">竞价</string>
+    <string name="trade_empty_stock_holding">暂无股票持仓</string>
+    <string name="trade_empty_financing_holding">暂无理财持仓</string>
+
+
+    <!-- =======================交易查询=========================== -->
+    <string name="trade_query_today_entrust">当日委托</string>
+    <string name="trade_query_today_deal">当日成交</string>
+    <string name="trade_query_history_entrust">历史委托</string>
+    <string name="trade_query_history_deal">历史成交</string>
+    <string name="trade_query_money_flow">资金流水</string>
+
+    <!-- =======================余额查询=========================== -->
+
+    <!-- =======================账户模块=========================== -->
+    <string name="account_pwd_title">密码修改</string>
+    <string name="account_pwd_txt_current">当前账户</string>
+    <string name="account_pwd_txt_type">密码类型</string>
+    <string name="account_pwd_txt_oldpwd">旧密码</string>
+    <string name="account_pwd_txt_newpwd">新密码</string>
+    <string name="account_pwd_txt_veifypwd">确认密码</string>
+    <string name="account_pwd_type_both">交易密码及资金密码</string>
+    <string name="account_pwd_txt_oldpwd_hint">输入旧密码</string>
+    <string name="account_pwd_txt_newpwd_hint">设置6位数字新密码</string>
+    <string name="account_pwd_txt_veifypwd_hint">再次输入新密码</string>
+    <string name="account_pwd_dialog_title">密码修改</string>
+    <string name="account_pwd_dialog_msg">交易密码及资金密码修改成功,请重新登录</string>
+    <string name="account_hotline">客服热线</string>
+
+
+    <!-- =======================手机激活模块=========================== -->
+    <string name="social_account_other">使用其他账号登录</string>
+
+
+    <!-- =======================港股开通=========================== -->
+    <string name="lock_act">激活锁定账户</string>
+    <string name="lock_act_now">立即激活</string>
+    <string name="hongkong_stock">港股通</string>
+    <string name="open_hk">港股通开通</string>
+    <string name="open_notice_text">您尚未开通港股通</string>
+    <string name="open_condition_notice_text">需满足以下条件，才能开通港股通：</string>
+    <string name="sAaccount">深A股东账户</string>
+    <string name="risk_level">风险等级</string>
+    <string name="risk_level_notice">提示：风险等级须达到&#034;平衡型&#034;级以上</string>
+    <string name="risk_level_test">风险测评</string>
+    <string name="connfirm_book_str">投资者确认书</string>
+    <string name="agree_protcol_content">已阅读并同意</string>
+    <string name="protcol_">《港股通相关协议》</string>
+    <string name="hk_open_btn_text">一键开通</string>
+    <string name="account_hotline_">客服热线:</string>
+    <string name="account_number">400-916-0666</string>
+    <string name="hongkong_help_title">问题列表</string>
+    <string name="agree_protocol">您未同意港股通相关协议</string>
+    <string name="hongkong_result_title">港股通开通结果</string>
+    <string name="hongkong_result_succeed_info">恭喜，港股通开通成功！</string>
+    <string name="hongkong_result_succeed_btn">港股通交易</string>
+    <string name="hongkong_result_fail_info">港股通开通失败！</string>
+    <string name="hongkong_result_fail_info_notice">提示：如有疑问，请拨打客服电话</string>
+    <string name="hongkong_dialog_title">港股通相关协议</string>
+    <string name="hongkong_state_succeed">已开通</string>
+    <string name="hongkong_state_hasnot">立即开通</string>
+    <string name="back_open_hongkong">返回港股通开通</string>
+    <string name="no_account">您暂无深A股东户，不能开通港股通</string>
+    <string name="hongkong_result_msg">您的港股通佣金率为</string>
+
+
+    <!-- =======================港股交易首页=========================== -->
+    <string name="hkstock_trade_title">港股通交易</string>
+    <string name="hkstock_total">总资产(元）</string>
+    <string name="hkstock_marketvalue">港股市值</string>
+    <string name="hkstock_profit">港股盈亏</string>
+    <string name="hkstock_balance">港股可用资金</string>
+
+    <!-- =======================港股交易=========================== -->
+    <string name="hkstock_trade_buymultiple">每手:<xliff:g id="name">%1$d</xliff:g>股</string>
+    <string name="hkstock_trade_priceUnit">港元</string>
+
+
+    <!-- =======================港股通说明=========================== -->
+    <string name="hkstock_desp_title">港股通说明</string>
+    <string name="hkstock_desp_initlimit">初始额度(元）</string>
+    <string name="hkstock_desp_curlimit">当前额度(元）</string>
+    <string name="hkstock_desp_buyprice">买入价(汇率）</string>
+    <string name="hkstock_desp_sellprice">卖出价(汇率）</string>
+    <string name="hkstock_desp_rate">港股通汇率</string>
+    <string name="hkstock_desp_rate_desp">港股买卖参考汇率查询</string>
+    <string name="hkstock_desp_balance">港股通余额</string>
+    <string name="hkstock_desp_balance_desp">市场可用余额查询</string>
+    <string name="hkstock_desp_guide">新手指南</string>
+    <string name="hkstock_desp_guide_desp">了解港股通交易</string>
+
+    <!-- =======================港股通余额=========================== -->
+    <string name="hkstock_balance_title">港股通余额</string>
+    <string name="hkstock_balance_total">港股通余额(元）</string>
+    <string name="hkstock_balance_todaytotal">今天初始额度(元）</string>
+    <string name="hkstock_balance_status">状态</string>
+    <string name="hkstock_balance_knowledge">汇率额度小知识</string>
+    <string name="hkstock_balance_daylimit">每日额度：港股通的每日额度为<xliff:g id="name">%1$s</xliff:g>人民币</string>
+    <string name="hkstock_balance_info">当日可用余额=每日额度-买入申报金额+卖出成交金额+被撤销和被联交所拒绝接受的买入申报金额+买入成交价低于申报价的差额。</string>
+    <string name="hkstock_balance_available">额度可用</string>
+    <string name="hkstock_balance_unavailable">额度用完</string>
+
+    <!-- =======================港股通汇率=========================== -->
+    <string name="hkstock_rate_title">港股通汇率</string>
+    <string name="hkstock_rate_date"><xliff:g id="name">%1$s</xliff:g>汇率参考</string>
+    <string name="hkstock_rate_buy">买入</string>
+    <string name="hkstock_rate_buy_info">买入港股参考汇率</string>
+    <string name="hkstock_rate_buy_data">1HK$=<xliff:g id="name">%1$s</xliff:g>￥</string>
+    <string name="hkstock_rate_sell">卖出</string>
+    <string name="hkstock_rate_sell_info">卖出港股参考汇率</string>
+    <string name="hkstock_rate_knowledge">汇率问答小知识</string>
+    <string name="hkstock_rate_knowledge_title">1、什么是买入/卖出港股参考汇率</string>
+    <string name="hkstock_rate_knowledge_content">港股通日间交易使用的为参考汇率，参考汇率又分为买入参考汇率和卖出参考汇率。客户在买入及卖出港股时分别使用的是卖出及买入港股参考汇率。</string>
+
+
+    <!-- =======================用户资料=========================== -->
+    <string name="notice_title">提示:</string>
+    <string name="notice_value_one">身份证件已过期,请重新上传有效身份证!</string>
+    <!--<string name="notice_value_two">身份证关键信息与影像资料保持一致;</string>-->
+    <!--<string name="notice_value_three">若需修改关键信息,请重新上传身份证</string>-->
+    <string name="no_pass">审核未通过</string>
+    <string name="certificate_type">证件类型</string>
+    <string name="certificate_number">证件号码</string>
+    <string name="certificate_startdate">证件起始日</string>
+    <string name="certificate_enddate">证件结束日</string>
+    <string name="new_phone_number">新手机号</string>
+    <string name="input_new_phone_number">输入新手机号码</string>
+    <string name="test_code">验  证  码</string>
+    <string name="modify_info_success">修改申请成功，审核通过信息自动更新</string>
+    <string name="audit_success">"审核通过"</string>
+    <string name="audit_in_process">"审核中"</string>
+    <string name="audit_fail">"审核未通过"</string>
+    <!-- =======================新股申购提示信息============================ -->
+
+    <string name="apply_new_stock_notice">新股申购提醒</string>
+    <string name="be_choosen_new_stock">中签提醒</string>
+    <string name="today_apply_new_stock">今天可申购新股</string>
+    <string name="congratulation_apply_successful">恭喜您中签</string>
+    <string name="apply_new_stock_btn_text">一键打新</string>
+    <string name="go_to_see_btn_text">去查看</string>
+
+    <string name="no_notice">不再弹框提示新股</string>
+    <string name="newstock_dialog_notice">提示</string>
+    <string name="newstock_dialog_cconfirm">确认</string>
+    <string name="newstock_dialog_appoinement_str">智能打新说明</string>
+    <string name="newstock_appointment_protocol">我已阅读并确认《甬兴证券智能打新服务协议》</string>
+
+    <string name="newstock_intelligent_risk_book">我已阅读并同意《智能打新风险揭示书》</string>
+    <string name="newstock_intelligent_risk_title">智能打新风险揭示书</string>
+    <string name="newstock_appointment_protocol_title">甬兴证券智能打新服务协议</string>
+
+    <string name="newstock_dialog_appoinement_activity_text">1.智能打新是由客户发起，提前预约申购新股的服务；\n\n2.发行价为预估或者暂未定，以发行日实际价格为准；\n\n3.满额申购股数以申购日当天实际最大可申购数为准；\n\n4.如果您没有开通创业板将无法申购创业板的新股；\n\n5.实际申购结果以交易所最终申购结果为准。</string>
+
+    <string name="newstock_pop_cconfirm">确定</string>
+
+    <string name="newstock_onekeyapply_stock_notice_str">最大可申购%1$s股,发行价%2$s</string>
+    <string name="newstock_onekeyapply_zhai_notice_str">最大可申购%1$s张,发行价%2$s</string>
+    <string name="newstock_apply_success_notice_str">申购已提交。</string>
+
+    <string name="newstock_apply_fail_notice_str">申购失败:</string>
+
+    <string name="newstock_btn_submit">提交</string>
+
+    <string name="newstock_intell_title_one">股票/申购日期</string>
+    <string name="newstock_intell_title_two">发行价/申购上限</string>
+    <string name="newstock_intell_title_three">申购股数</string>
+
+
+    !-- ========================操作结果页面============================ -->
+    <string name="result_title">处理结果</string>
+
+    !-- ========================账户中心============================ -->
+    <string name="accountcenter_txt_info">个人信息</string><![CDATA[
+
+
+
+    !-- ========================个人信息============================ -->
+    ]]>
+    <string name="account_name">姓名</string>
+    <string name="account_education">学历</string>
+    <string name="account_dialog_title_education">请选择学历</string>
+    <string name="account_job">职业</string>
+    <string name="account_dialog_title_job">请选择职业</string>
+    <string name="account_address">地址</string>
+    <string name="account_mobileno">手机</string>
+    <string name="account_address_hint">请输入您的联系地址</string>
+    <string name="address_title">联系地址</string>
+    <string name="modify_userinfo_succeed">资料修改成功</string>
+    <string name="tax_resident_status">税收居民身份</string>
+    <string name="choose_tax_resident_status">请选择税收居民身份</string>
+    <string name="please_choose">请选择</string>
+    <string name="need_to_be_complete">待完善</string>
+    <string name="tax_resident_status_statement">个人税收居民身份声明</string>
+    <string name="complete_status_dialog_msg">非中国税收居民需要补充您的税收居民身份声明信息。</string>
+    <string name="user_organization_dialog_msg">机构客户请联系客服（400-916-0666）完善税收居民身份信息。</string>
+    <string name="goto_fill_in">去填写</string>
+    <string name="set_succ">设置成功</string>
+
+    !-- ========================绑定资金帐号============================ -->
+    <string name="bind_fund_account_fund_title">请输入您的资金账户相关信息</string>
+    <string name="bind_fund_account_verify_title">请验证开户手机号码</string>
+    <string name="change_fund_account_fund_title">请输入新的资金账户相关信息</string>
+    <string name="unbind_fund_account_verify_title">请验证手机号码</string>
+    <string name="bind_fund_account_fund_btn">绑定</string>
+    <string name="bind_fund_account_verify_btn">验证</string>
+    <string name="bind_fund_account_change_btn">更换资金账户</string>
+    <string name="bind_fund_account_unbind_btn">解绑</string>
+    <string name="bind_fund_account_titlebar_title">我的资金账户</string>
+    <string name="bind_fund_account_bind_account_info">绑定的资金账户: %1$s %2$s</string>
+    <string name="bind_fund_account_xjb_auth_hint">您的手机号在甬兴现金宝已实名为%1$s，若需要绑定他人的资金账户，请切换手机账号尝试</string>
+    <string name="bind_fund_account_xjb_hint_link_text">切换手机账号</string>
+    <string name="bind_fund_account_success_dialog_message">资金账户绑定成功，您将获取更多会员权益;同时已为您提供免密查看资金账户信息的功能，您可通过设置去更改</string>
+
+
+    !-- ========================银行卡变更============================ -->
+    <string name="bankcard_account_condition_title">您需要满足以下条件才可以办理银行卡变更:</string>
+    <string name="bankcard_business_time_title">业务办理时间:交易日</string>
+    <string name="bankcard_business_time">9:00-15:30</string>
+    <string name="bankcard_settlement_success_title_line1">您已满足银行卡变更条件!</string>
+    <string name="bankcard_settlement_success_title_line2">请于下一个交易日办理!</string>
+    <string name="bankcard_settlement_success_subtitle">提示:申请将保留5个交易日，申请保留期间不能有任何资金变动，否则需重新办理。</string>
+    <string name="bankcard_settlement_title">为确保业务顺利办理，请仔细填写:</string>
+    <string name="bankcard_settlement_tips_title">提示:银行卡变更需账户结息且余额为</string>
+    <string name="bankcard_settlement_tips_money_title">0.00元</string>
+    <string name="bankcard_settlement_bank_title">存管银行</string>
+    <string name="bankcard_settlement_account_pwd_title">资金密码</string>
+    <string name="bankcard_settlement_account_pwd_hint">请输入资金密码</string>
+    <string name="bankcard_settlement_account_btn">结息并转账</string>
+    <string name="bankcard_settlement_origin_bank_title">原存管银行</string>
+    <string name="bankcard_settlement_bank_pwd_title">银行密码</string>
+    <string name="bankcard_settlement_new_bank_title">新存管银行</string>
+    <string name="bankcard_bindcard_new_bank_hint">请选择银行</string>
+    <string name="bankcard_settlement_alterbank_btn">确认提交</string>
+    <string name="bankcard_settlement_alterbank_pwd_hint">请输入银行密码</string>
+    <string name="bankcard_settlement_bank_number_title">银行卡号</string>
+    <string name="bankcard_samebank_dialog_message">请选择其他银行!</string>
+    <string name="bankcard_samebank_dialog_submessage">提示：更换同一家银行卡，请到银行办理!</string>
+    <string name="bankcard_abnormal_nobankcard_title">银行卡状态异常</string>
+    <string name="bankcard_abnormal_specified_title">银行卡预指定</string>
+    <string name="bankcard_abnormal_bindcard_btn">立即绑卡</string>
+    <string name="bankcard_abnormal_bankspecified_btn">我知道了</string>
+
+
+    <!-- 中签查询 -->
+
+    <!-- my stock context menus -->
+    <!-- 综合屏 -->
+
+    <!-- 分时 -->
+
+
+    <!-- qihuojiaoyi activity context menus -->
+
+    <!--  add my stock label
+     -->
+
+    <!-- login label -->
+    <!-- stock detail activity label -->
+
+    <!-- fund detail activity label -->
+    <!-- baojia activity label -->
+    <!-- 新版个股详情 -->
+
+
+    <!-- futures putongweituo_activity label -->
+
+    <!-- 		Symbols that are commonly considered word separators in this language
+     -->
+
+    <!-- 指数菜单 -->
+
+    <!-- 资金流菜单 -->
+
+
+    <!-- 三板交易 -->
+
+    <!-- 站点选择 -->
+    <string name="sites_show">启动时显示此界面</string>
+    <!-- string name="sites_velocimetry_unit">kbps</string -->
+    <string name="sites_velocimetry_unit">ms</string>
+    <string name="winner_none">--</string>
+    <string name="button_start">测速</string>
+    <string name="button_confirm">确认</string>
+
+    <!-- 融资融券- 首页 -->
+    <!--
+     	<string name="margin_account_row_accountName">账号:</string>
+	<string name="margin_account_row_lastLogin">上次登入:</string>
+	<string name="margin_account_row_accountChangeBtn">切换账号</string>
+    -->
+
+    <!-- 融资融券 -->
+    <!-- ETF start -->
+
+    <!-- ETF end -->
+    <!-- lof基金 -->
+    <!--lof基金  -->
+    <!-- lof基金 -->
+
+    <!--lof基金  -->
+
+    <!-- 报价回购 -->
+
+    <!-- menu -->
+    <!-- 营业部 -->
+
+    <!-- 交易 title -->
+
+    <!-- K线设置 -->
+
+
+    <!-- DDE资金流 单位 -->
+
+
+    <!-- 程序提示语 -->
+
+    <!-- 电子合同 -->
+
+    <!-- 基金开户 -->
+
+    <!-- 现金宝 -->
+
+    <!-- 平安首页 -->
+
+    <!-- 多笔委托单同时下单提醒 -->
+
+    <!-- 安全助手 -->
+
+    <!-- 消息中心 -->
+
+    <!-- OTC 多金融 -->
+    <!-- change by linrf 增加买入价格   增加卖出价格 -->
+    <!-- change by linrf 增加买入数量  增加卖出数量 -->
+
+    <!-- 转融通 -->
+    <!-- 个股期权 -->
+
+    <!-- 金点子 -->
+
+    <!-- 东海商城 -->
+    <!-- change by linrf  把个股期权改为股票期权 -->
+
+    <!-- 我的信息 -->
+    <string name="my_login_default">甬兴用户</string>
+    <string name="my_zhuanqian">创业板转签</string>
+    <string name="my_gem_open">创业板开通</string>
+    <string name="my_kechangban">科创板开通</string>
+    <string name="open_cbond">可转债开通</string>
+
+
+    <string name="share_title">分享二维码</string>
+
+
+    <!-- add by linrf  我的账户-->
+
+
+    <string name="version">v%1$s</string>
+
+    <!-- 设置 -->
+    <string name="account_tag">您的证券账户信息:</string>
+
+    <!-- 转签 -->
+    <string name="zhuanqian_title">创业板转签</string>
+    <string name="zhuanqian_sub_title">一键转签创业板交易</string>
+    <string name="zhuanqian_desc">如果您在其他券商可以交易创业板，\n轻松一步转签在甬兴证券交易创业板股票！</string>
+    <string name="zhuanqian_status_tag">当前状态:</string>
+    <string name="zhuanqian_status_tag_allowed">您已签约创业板，具备转签条件</string>
+    <string name="zhuanqian_status_tag_allowed_nonworking">非交易时间段仅可转签申请</string>
+    <string name="zhuanqian_status_tag_allowed_nonworking_tip">(下一交易日返回转签结果)</string>
+    <string name="zhuanqian_status_tag_not_allowed">您未签约创业板，不具备转签条件</string>
+    <string name="zhuanqian_agreement_title">创业版转签协议</string>
+    <string name="zhuanqian_agreement_title_format">《创业版转签协议》</string>
+    <string name="zhuanqian_agreement_tag">已阅读并同意</string>
+    <string name="zhuanqian_btn">一键转签</string>
+    <string name="zhuanqian_been">创业板已开通</string>
+    <string name="zhuanqian_been_tips">已转签至甬兴证券，已临柜开通甬兴证券</string>
+    <string name="zhuanqian_suc">恭喜您转签成功</string>
+    <string name="zhuanqian_suc_tips">您可以进行创业板股票交易啦</string>
+    <string name="zhuanqian_back">完成</string>
+    <string name="zhuanqian_submit_suc">创业板转签申请已提交</string>
+
+    <string name="zhuanqian_fail">创业板转签申请失败</string>
+
+
+    <!-- =======================随借随还（股票质押）============================ -->
+    <string name="trade_pledge_question">常见问题</string>
+    <string name="trade_pledge_title">随心借</string>
+    <string name="trade_pledge_query">业务查询</string>
+    <string name="trade_pledge_cancel">撤单</string>
+    <string name="trade_pledge_today_trade">当日委托</string>
+    <string name="trade_pledge_history_trade">查看历史委托</string>
+    <string name="trade_pledge_history_trade_str">历史委托</string>
+    <string name="trade_pledge_dialog_cancel_message">确认是否撤销委托?</string>
+    <string name="trade_pledge_dialog_cancel_fail">撤单失败</string>
+
+    <string name="pledge_detail_title">借还详情</string>
+    <string name="pledge_detail_can_borrow">可借金额</string>
+    <string name="pledge_detail_now_can_borrow">当前借款总额</string>
+    <string name="pledge_detail_had_borrow">已借款</string>
+    <string name="pledge_detail_can_token_money">可取金额</string>
+    <string name="pledge_detail_continue_pledge">继续借</string>
+    <string name="pledge_detail_pedding_repayment">待还款</string>
+    <string name="pledge_detail_pay_back_money">还钱</string>
+    <string name="pledge_detail_take_now">取现</string>
+    <string name="pledge_detail_payback_corpus">待还本金</string>
+    <string name="pledge_detail_payback_interest">待还利息</string>
+    <string name="pledge_detail_had_payback">已还款</string>
+    <string name="pledge_detail_account_can_use">账户可用资金</string>
+    <string name="pledge_detail_lend_giveback_notice">您在借款提交后，借款额当天可取现到银行卡</string>
+    <string name="custom_view_empty">空空而已哦</string>
+    <string name="custom_view_empty_load">重新尝试</string>
+    <!--<string name="pledge_query_stock_index">股指</string>-->
+    <!--<string name="pledge_query_finance">融资</string>-->
+    <!--<string name="pledge_query_supplementary_pledge">补充质押</string>-->
+    <!--<string name="pledge_query_can_be_pledege">可质押券</string>-->
+    <string name="pledge_query_second_title_one">方向/证券</string>
+    <string name="pledge_query_second_title_two">金额/数量</string>
+    <string name="pledge_query_second_title_three">状态/时间</string>
+    <string name="pledge_query_no_recode_s">当日暂无成交记录</string>
+    <string name="pledge_query_check_history_recode">查看历史委托</string>
+    <string name="pledge_query_stock_name">名称</string>
+    <string name="pledge_query_stock_code">代码</string>
+    <string name="pledge_query_loan_rate">质押率</string>
+    <string name="pledge_query_loan_edittext_hint">请输入股票代码／简拼</string>
+    <string name="str_trade_pledge_ok">确认补充</string>
+    <string name="str_trade_pledge_huji">合计补充:</string>
+    <string name="str_trade_pledge_nedd">还需补充:</string>
+    <string name="str_trade_pledge_can">可补充</string>
+    <string name="str_trade_pledge_can_use">可用股数(股)</string>
+    <string name="str_trade_pledge_supp_price">价格(元)</string>
+    <string name="str_trade_pledge_can_money">可用金额(元)</string>
+    <string name="str_trade_pledge_supp_rate">质押率</string>
+    <string name="str_trade_pledge_supp_ok">补充质押</string>
+    <string name="str_trade_pledge_stock_name">名称/代码</string>
+    <string name="str_trade_pledge_ok_rate">补充股数</string>
+    <string name="str_pledge_finace_no_recode">暂无融资记录</string>
+    <string name="str_pledge_canbe_loan_no_recode">暂无可质券</string>
+    <string name="str_trade_pledge_back_fail">委托报单失败</string>
+    <string name="str_trade_pledge_back_text">还款</string>
+
+    <string name="str_need_back_money">待还款金额（元）</string>
+    <string name="str_net_error">网络异常，请检查</string>
+    <string name="my_bottom_text">~我的底线在这儿~</string>
+    <string name="str_pledge_backing">该记录已提交还款申请，谢谢~</string>
+
+    <!--港股通-->
+    <string name="str_pledge_select_stock">请选择补充质押证券</string>
+
+
+    <!--销户-->
+    <string name="cancel_home_title">线上销户</string>
+    <string name="cancel_home_confirm">您确定要销户吗？</string>
+    <string name="cancel_home_tips1">销户后，您将不能再享受甬兴证券的交易服务</string>
+    <string name="cancel_home_tips2"> 即使不销户，也不会收取您任何费用</string>
+    <string name="cancel_home_btn">我要销户</string>
+    <string name="cancel_msg_verify_title">身份验证</string>
+
+    <!--消息中心-->
+
+    <!--资讯-->
+    <string name="info_title">甬兴涨停财经</string>
+    <string name="channel_column_chance">机会</string>
+    <string name="channel_column_strategy">策略</string>
+    <string name="channel_column_main_force">主力</string>
+    <string name="channel_column_handicap">盘口</string>
+    <string name="channel_column_company">公司</string>
+    <string name="channel_column_macroscopic">宏观</string>
+    <string name="channel_column_news">要闻</string>
+    <string name="channel_column_research">读研报</string>
+    <string name="channel_column_investor_school">股民学院</string>
+    <string name="channel_column_notice">淘公告</string>
+
+    <string name="channel_banner_webview_title">资讯详情</string>
+
+    <!--level2购买-->
+    <string name="level_2_services_title">增值服务</string>
+    <string name="level_2_bank_input_hint">请输入银行卡卡号</string>
+    <string name="level_2_bank_support">当前仅支持中国工商银行储蓄卡</string>
+    <string name="level_2_pay_title">银联支付</string>
+
+
+    <!-- =======================理财产品=========================== -->
+    <string name="product_view_more">查看历史产品</string>
+    <string name="product_buy_btn">立即购买</string>
+    <string name="product_details_deadline">投资期限</string>
+    <string name="product_details_pruchaseamt">起投金额</string>
+    <string name="product_details_levelofrisk">风险等级</string>
+    <string name="product_details_desp">产品介绍</string>
+    <string name="product_details_moreinfo">更多产品详情</string>
+    <string name="product_details_btn_sold_out">已售磬</string>
+    <string name="product_details_btn_expect">敬请期待</string>
+    <string name="product_details_btn_book">预约购买</string>
+    <string name="product_purchase_limit">剩余额度</string>
+    <string name="product_purchase_payment_label">可用金额</string>
+    <string name="product_income_type">基准年化收益率</string>
+    <string name="product_purchase_recharge">资金转入</string>
+    <string name="product_purchase_amt">购买金额</string>
+    <string name="product_purchase_hint">请输入购买金额</string>
+    <string name="product_restrict_text">金额限制：%1$s－%2$s，%3$s递增</string>
+    <string name="product_buy_result_product_name">商&#160;&#160;品</string>
+    <string name="product_buy_result_code">订单编号</string>
+    <string name="product_buy_result_fail_message">交易失败,请重新购买</string>
+    <string name="product_buy_result_fail_tel">如有疑问，请联系客服400-916-06669</string>
+    <string name="product_home_dqb_title">精品理财</string>
+    <string name="unit_monetary_wan">万</string>
+    <string name="product_buy_from">起</string>
+    <string name="product_buy_remain">剩余</string>
+    <string name="product_buy_interest">每日计息</string>
+    <string name="product_left_amount">剩余额度:</string>
+    <string name="product_buy_title">买入</string>
+    <string name="product_contract_text">我理解并同意产品合同及风险揭示书相关内容,已知悉并同意投资者风险匹配告知书及投资者确认函</string>
+    <string name="product_contract_file">产品合同及风险揭示书</string>
+    <string name="product_risk_match_title">风险匹配告知书</string>
+    <string name="product_investor_risk_match_link_text">投资者风险匹配告知书及投资者确认函</string>
+    <string name="product_trans_protocal">我同意签署甬兴证券柜台交易业务客户协议</string>
+    <string name="product_trans_protocal_link_text">甬兴证券柜台交易业务客户协议</string>
+    <string name="product_digital_contract">我理解并接受电子签名约定书相关内容</string>
+    <string name="product_digital_contract_link_text">电子签名约定书</string>
+    <string name="product_buy_below_min_tip">输入金额低于最低购买金额%1$s</string>
+    <string name="product_buy_above_max_tip">输入金额高于最大购买金额%1$s</string>
+    <string name="product_buy_increase_tip">输入金额必须是%1$s的整数倍</string>
+    <string name="product_buy_money_not_enough_title">帐户余额不足</string>
+    <string name="product_buy_money_not_enough_message">您的帐户余额不足,请先进行银证转账</string>
+    <string name="product_buy_money_not_enough_positive_text">去转账</string>
+    <string name="product_buy_confirm_title">买入确认</string>
+    <string name="product_sell_confirm_title">卖出确认</string>
+    <string name="product_buy_again_btn">重新购买</string>
+    <string name="product_buy_success_message">购买申请已受理!</string>
+    <string name="product_buy_fail_message">抱歉，购买失败!</string>
+    <string name="product_buy_result_title">购买结果</string>
+    <string name="str_trade_otc_notice">\t\t\t定期宝即定期理财，是相对活期理财产品而言的，具有一定的理财期限的理财产品，一般而言，定期理财产品的收益比活期理财产品的高，投资到期后才能赎回。</string>
+    <string name="str_trade_otc_main_title">定期宝</string>
+    <string name="str_trade_otc_main_history">交易记录</string>
+    <string name="str_trade_otc_empty">您暂无购买定期产品，买点试试看吧!</string>
+    <string name="str_trade_otc_adapter_buy">购买金额(元)</string>
+    <string name="str_trade_otc_adapter_year_rate">预期年化收益率(%)</string>
+    <string name="str_trade_otc_date">期限(天)</string>
+    <string name="str_trade_otc_income">累计收益(元)</string>
+    <string name="str_trade_otc_product_detail">产品持有详情</string>
+    <string name="str_trade_otc_product_ok">购买确认中</string>
+    <string name="str_trade_otc_product_end">资产即将到账</string>
+    <string name="str_trade_otc_end_date">预计将于1~3个工作日到达您的账户</string>
+    <string name="str_trade_otc_product">产品详情</string>
+    <string name="otc_asset_title">我的高端资产</string>
+    <string name="otc_buy_button_text">确认买入</string>
+    <string name="otc_sell_button_text">确认卖出</string>
+    <string name="vip_succsess_query_none">暂无交易记录</string>
+    <string name="vip_asset_title">高端资产 (元）</string>
+    <string name="vip_asset_income_title">持仓收益 (元)</string>
+    <string name="vip_adapter_asset_title1">购买金额</string>
+    <string name="vip_adapter_asset_title2">持有金额</string>
+    <string name="vip_adapter_asset_title3">到账金额</string>
+    <string name="vip_adapter_time_title">投资期限</string>
+    <string name="vip_adapter_current_interest_title">当前收益</string>
+    <string name="vip_adapter_current_interest_predict_title">预计当前收益</string>
+    <string name="vip_adapter_current_fund_interest_title">累计收益</string>
+    <string name="vip_buy_success_title">购买申请已受理</string>
+    <string name="vip_buy_failed_title">购买申请失败</string>
+    <string name="vip_sell_success_title">卖出申请已受理</string>
+    <string name="vip_sell_failed_title">卖出申请失败</string>
+    <string name="vip_buy_failed_btn_text">继续买入</string>
+    <string name="vip_sell_failed_btn_text">继续卖出</string>
+    <string name="vip_details_confirm_date">确认日期 %1$s</string>
+    <string name="vip_details_confirm_profit">确认净值 %1$s</string>
+    <string name="vip_details_confirm_money">确认金额 %1$s</string>
+    <string name="vip_details_confirm_share">确认份额 %1$s</string>
+    <string name="vip_details_particiption_profit"> 分红 %1$s份</string>
+    <string name="vip_details_particiption_profit_yuan"> 分红 %1$s元</string>
+    <string name="topfinance_had_cancel_str">已撤单</string>
+    <string name="vip_purchase_result_totrade_btn">返回交易首页</string>
+
+    <string name="topfinance_details_predict_str">预计将于%1$s确认份额</string>
+    <string name="topfinance_details_predict_shuhui_str">预计%1$s日资金可用</string>
+
+    <string name="topfinance_had_cancel">已撤单</string>
+    <string name="topfinance_unit_yuan">元</string>
+    <string name="topfinance_unit_fen">份</string>
+    <string name="topfinance_money_toyou_str">股票资金账户</string>
+    <string name="topfinance_trade_fail_str">交易失败</string>
+    <string name="otc_detail_title_cancle">撤单</string>
+    <string name="otc_detail_capital_str">股票资金账户</string>
+    <string name="otc_details_process_rengoustr">预计将于产品成立后确认</string>
+    <string name="otc_finance_cancle_title">撤单确认</string>
+    <string name="otc_finance_cancle_message">%1$s \n %2$s %3$s %4$s</string>
+    <string name="otc_finance_cancle_okbtn">确定撤单</string>
+    <string name="otc_finance_go_test_risk">立即测评</string>
+
+    <string name="otc_risk_never_did_notice">您需要先填写风险测评问卷后才能购买该产品</string>
+    <string name="otc_risk_out_date_notice">抱歉,您的风险测已过期,需要重新测评满足条件后才可以购买该产品</string>
+    <string name="otc_risk_too_low_notice">您的风险测评等级需要达到激进型才可以购买该产品，您目前风险等级为%1$s,是否需要重新测评？</string>
+    <string name="vip_product_asset_description_title">说明</string>
+    <string name="vip_phone_number_error_message">购买该产品需要进行手机验证。您的账户还没有绑定手机号，请先去柜台办理。</string>
+    <string name="vip_phone_number_error_btn_text">我知道了</string>
+    <string name="vip_buy_confirm_dialog_positive_text">确认买入</string>
+
+
+    <!--高端详情-->
+    <string name="vip_linechart_no_data">暂无数据</string>
+    <string name="fund_topic_view_more">查看更多</string>
+    <string name="fund_detail_this_product">本产品: </string>
+    <string name="title_similar_money">同类货币基金: </string>
+    <string name="fund_detail_csi_300_index">沪深300: </string>
+    <string name="fund_details_check_history">查看历史</string>
+    <string name="title_seven_annual_rate">七日年化收益率:</string>
+    <string name="setting_about_service_num">客服电话:400-916-0666</string>
+    <string name="title_return_time_section">时间区间</string>
+    <string name="title_return_this_product">本产品(%)</string>
+    <string name="title_return_similar_money">同类货币(%)</string>
+    <string name="law_file">法律文件</string>
+    <string name="notice">公告</string>
+    <string name="vip_no_data">暂无相关内容</string>
+    <string name="vip_history_title_text_date">日期</string>
+    <string name="vip_history_title_mf">历史收益</string>
+    <string name="vip_history_title_sf">历史净值</string>
+    <string name="vip_product_type">产品类型</string>
+    <string name="product_details_constant">固定收益型</string>
+    <string name="vip_nav_date">净值日期</string>
+    <string name="vip_product_stock">权益型</string>
+    <string name="vip_product_money_fund">货币型</string>
+    <string name="history_reward">历史回报</string>
+    <string name="invest_target">投资目标</string>
+
+    <string name="tv_purchase_money_title">购买金额(元)</string>
+    <string name="tv_look_detail_title">查看产品详情</string>
+    <string name="tv_notice_detail">公告详情</string>
+    <string name="tv_trade_record">交易记录</string>
+    <string name="tv_open_explain">开放说明</string>
+    <string name="tv_contract_file">电子合同</string>
+    <string name="btn_purchase_text">继续买入</string>
+    <string name="btn_sell_text">卖出</string>
+    <string name="hold_money_title">持有金额(元)</string>
+    <string name="accumulative_money_title_constant">预计当前收益(元)</string>
+    <string name="accumulative_money_title_mf">累计收益(元)</string>
+    <string name="hold_share_title">持有份额</string>
+    <string name="unit_net_value_title">单位净值</string>
+    <string name="next_open_date_title">下一开放日</string>
+    <string name="value_date_title">起息日</string>
+    <string name="due_date_title">到期日</string>
+    <string name="benchmark_annualized_returns_title">基准年化收益率</string>
+
+    <string name="vip_qualified_title">合格投资者确认</string>
+    <string name="vip_qualified_content">本人承诺自己符合中国证监会规定的\"合格投资者\"条件:\n具备相应风险识别能力和承担所投资集合资产管理计划风险能力且符合下列条件之一的单位和个人：\n\n（一）个人或者家庭金融资产合计不低于100万元人民币；\n（二）公司、企业等机构净资产不低于1000万元人民币。</string>
+    <string name="vip_click_to_view">点击查看</string>
+    <string name="otc_detail_title">交易详情</string>
+
+
+    <!-- =======================社区帐号=========================== -->
+    <string name="social_bind_phone_title">甬兴一账通绑定手机</string>
+    <string name="social_bind_phone">"甬兴一账通手机号："</string>
+    <string name="social_bind_phone_str">甬兴一账通手机号可以同时在甬兴涨停宝和甬兴现金宝登录</string>
+    <string name="social_bind_phone_haveaccount">"您的手机号码已绑定资金账号，为了能提供更好的服务，我们建议您通过证券交易密码验证一并修改开户手机号。"</string>
+    <string name="social_had_verfy_name_in_xjb_notice">"您的手机号已绑定甬兴现金宝账户并实名为%1$s，为了您的账户安全，请前往甬兴现金宝APP修改。"</string>
+    <string name="social_had_verfy_name_in_xjb_okbtn">打开现金宝</string>
+    <string name="social_had_verfiy_name_have_link">您的手机号码与证券开户手机号有关联，为了能提供更好的服务，我们建议您通过证券交易密码验证一并修改开户手机号。</string>
+    <string name="social_not_need">"不需要"</string>
+    <string name="social_change_phone_title">"手机号修改"</string>
+    <string name="social_change_phone_btn">"更换手机号"</string>
+    <string name="social_common_account_shang">"普通A股交易"</string>
+    <string name="social_common_account_trade_password">"证券交易密码"</string>
+    <string name="social_common_account_trade_password_hint">"请输入证券交易密码"</string>
+    <string name="social_chang_phone_notice">"您的社交账号已与证券账号进行了绑定，为了您的信息安全，请输入交易密码进行验证"</string>
+    <string name="settings_no_loggin_tip">点击验证登录</string>
+    <string name="settings_loggin_tip">已验证</string>
+    <string name="settings_user_info_avatar">头像</string>
+    <string name="settings_user_info_nickname">昵称</string>
+    <string name="settings_user_info_bindtel">绑定手机</string>
+    <string name="settings_user_info_bindweixin">微信解绑</string>
+    <string name="settings_user_info_bindqq">QQ解绑</string>
+    <string name="settings_user_info_bind_status">绑定</string>
+    <string name="settings_logout">退出登录</string>
+    <string name="settings_contact_custom_service">联系客服</string>
+    <string name="settings_system_setting">系统设置</string>
+    <string name="settings_agreement">协议签署</string>
+    <string name="settings_about_setting">关于甬兴涨停宝</string>
+    <string name="settings_system_subtitle">通讯站点等</string>
+    <string name="settings_change_nickname_hint">请输入昵称</string>
+    <string name="settings_services">增值服务</string>
+    <string name="my_discuss">我的讨论</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="comment_on_me">评论我的</string>
+    <string name="settings_level2">level2活动</string>
+    <string name="social_my_fund_account">我的资金账户</string>
+    <string name="social_my_simulate_stock">我的组合</string>
+    <string name="social_my_simulate_setting">设置</string>
+    <string name="social_invite_friend">邀请好友</string>
+    <string name="social_my_follow_stock">我关注的组合</string>
+    <string name="skip">跳过</string>
+    <string name="fill_in_account_info">完善头像和昵称</string>
+    <string name="nickname_upload_failed">昵称上传失败</string>
+    <string name="avatar_upload_failed">头像上传失败</string>
+    <string name="account_info_upload_failed">账号信息上传失败</string>
+
+    <string name="had_bind">已绑定</string>
+
+    <!-- =======================模拟组合=========================== -->
+    <string name="simulate_group_name">"组合名称"</string>
+    <string name="simulate_group_name_hint">"10个字符以内"</string>
+    <string name="simulate_group_type">"组合类型"</string>
+    <string name="simulate_create_group_notice">请输入模拟组合名称</string>
+    <string name="simulate_create_group_success">模拟组合创建成功</string>
+    <string name="simulate_create_group_fail">模拟组合创建失败，请稍后重试</string>
+    <string name="simulate_group_delete_dialog">删除确认</string>
+    <string name="simulate_group_delete_dialog_message">是否确认删除该组合？</string>
+    <string name="simulate_group_delete_sucess">模拟组合删除成功</string>
+    <string name="simulate_group_delete_fail">模拟组合删除失败</string>
+
+
+    <string name="simulate_empty_deal_str">暂无成交记录</string>
+    <string name="simulate_empty_cur_deal_str">当日暂无成交记录</string>
+    <string name="simulate_empty_cur_entrust_str">当日暂无委托记录</string>
+    <string name="simulate_empty_view_history_str">查看历史成交</string>
+
+    <string name="total_income_title">总收益</string>
+    <string name="sevenday_income_title">七天收益</string>
+    <string name="thirty_income_title">30天收益</string>
+    <string name="total_income_rank">总收益排行</string>
+    <string name="sevenday_income_rank">七天收益排行</string>
+    <string name="thirty_income_rank">30天收益排行</string>
+    <string name="net_value_title">净值</string>
+    <string name="attention">关注</string>
+    <string name="owner">主理</string>
+    <string name="owner_suggest_myself_default">写点建议吧，便于别人理解你的组合</string>
+    <string name="owner_suggest_others_default">这个人很懒，什么都没留下</string>
+    <string name="lastest_adjust_warehouse">最新调仓</string>
+    <string name="combination_chart_title">股票配置</string>
+    <string name="detailed_positions">详细持仓</string>
+    <string name="earnings_chart_title">收益率走势</string>
+    <string name="combination_trends">组合动态</string>
+    <string name="pie_chart_other">其它</string>
+    <string name="no_position">暂无持仓  100%</string>
+    <string name="available_fund">现金</string>
+    <string name="adjust_warehouse">调仓</string>
+    <string name="share">分享</string>
+    <string name="comment">点评</string>
+    <string name="simulate_combination">组合</string>
+    <string name="modify_failed">修改失败！</string>
+
+    <string name="no_curve_data_text">暂无可显示数据</string>
+    <string name="query_acc_idcard">通过身份证查询</string>
+    <string name="query_acc_trade_pwd">通过甬兴资金账号查询</string>
+    <string name="query_acc_title">证券帐户查询</string>
+
+    <string name="btn_detail">详细信息</string>
+
+
+    <string name="simulate_game_notice_str">提示：大赛初始资金以组合参赛时的实时资金为基准，组合参赛前的收益不计入比赛收益。</string>
+    <string name="simulate_nothave_group_notice_str">你还没有创建组合\n用组合开始帮你记录投资思路</string>
+
+    <string name="simulate_group_notdelete">参赛组合不可删除</string>
+    <string name="sim_max_retracement_no_data">该组合暂无最大回撤</string>
+    <string name="sim_linechart_legend_combination">组合</string>
+    <string name="sim_linechart_legend_hushen">沪深300</string>
+    <string name="sim_no_data">暂无数据</string>
+
+
+    <!-- =======================炒股大赛=========================== -->
+    <string name="simulate_contest_supervisor">主理</string>
+    <string name="simulate_contest_empty_follow_text">想随时了解高手的操作？\n关注个组合吧！</string>
+    <string name="simulate_contest_follow_button">去组合风云榜看看</string>
+    <string name="simulate_contest_follow_title1">组合名称</string>
+    <string name="simulate_contest_follow_title2">总收益</string>
+    <string name="simulate_contest_invite_empty">您还未邀请好友参赛</string>
+    <string name="simulate_contest_invite_button">立即邀请</string>
+    <string name="simulate_contest_invite_title1">用户</string>
+    <string name="simulate_contest_invite_title2">参赛组合</string>
+    <string name="simulate_contest_invite_title3">比赛收益</string>
+    <string name="simulate_contest_on_hint">炒股大赛进行中</string>
+
+
+    <string name="alter_combination_info_title">修改组合信息</string>
+    <string name="combination_name">组合名称</string>
+    <string name="owner_suggest_title">主理人建议</string>
+    <string name="owner_suggest_hint">写点建议吧,便于别人理解你的组合(30字内)</string>
+
+    <string name="next_video">下一步，视频认证</string>
+    <string name="reset_pwd_title">重置密码</string>
+    <string name="cancel_order_title">撤单确认</string>
+    <string name="cancel_order_message">是否确认撤单</string>
+
+    <string name="group_top_title">组合风云榜</string>
+    <string name="seven_day_profit">七天收益</string>
+    <string name="thirty_day_profit">30天收益</string>
+    <string name="net_value_with_colon">净值:</string>
+    <string name="total_profit">总收益</string>
+    <string name="win_precent_before">跑赢</string>
+    <string name="win_precent_after">组合</string>
+
+    <string name="specific_position">详细仓位</string>
+    <string name="profit_analyze">收益分析</string>
+    <string name="current_price">现价</string>
+    <string name="cost_price">成本价</string>
+    <string name="positions">仓位</string>
+    <string name="profit_loss">盈亏(</string>
+    <string name="proportion">占比</string>
+
+    <string name="monthly_profit_distribution">月度收益分布</string>
+    <string name="max_retracement">最大回撤</string>
+    <string name="profit_contribution">个股收益贡献</string>
+    <string name="hold_days">持仓天数</string>
+    <string name="accumulative_trade_times">累计买卖</string>
+    <string name="average_positions">持仓平均仓位</string>
+
+
+    <!-- =======================资产分析 持仓树============================ -->
+    <string name="holding_stock_name_title">股票名称</string>
+    <string name="holding_profit_title">总盈亏</string>
+
+    <!-- ============================持仓================================ -->
+
+    <string name="position_financing_fund_title">基金</string>
+    <string name="position_financing_repurchase_title">国债逆回购</string>
+    <string name="position_financing_vip_title">高端理财</string>
+    <string name="position_financing_fund_amount_title">持有金额</string>
+    <string name="position_financing_fund_profit_title">持有收益</string>
+
+    <string name="member_center_level_one">新手会员</string>
+    <string name="member_center_level_two">白银会员</string>
+    <string name="member_center_level_three">黄金会员</string>
+    <string name="member_center_level_four">铂金会员</string>
+    <string name="member_center_level_five">钻石会员</string>
+    <string name="member_center_tight">尊敬的%s，您可以享受以下专属权益</string>
+
+    <!-- ============================权益详情================================ -->
+    <string name="rights_year_percent">年化业绩比较基准</string>
+    <string name="rights_product_time_limit">产品期限</string>
+    <string name="rights_product_rest_limit">剩余额度</string>
+
+    <!-- ============================查询证券帐户================================ -->
+    <string name="query_acc_share_title">独家查询证券账户，便捷易用，赶紧来试一试吧！</string>
+    <string name="query_acc_share_msg">甬兴证券独家提供APP内查询证券账户，7*24小时随心查，便捷易用，信息详尽！</string>
+
+
+    <!-- ============================开户模块================================ -->
+    <string name="open_account_recommend_phone_num_hint">填写推荐人手机号码(选填)</string>
+    <string name="take_pic_tip">请保持照片清晰完整，避免反光</string>
+    <string name="identity_card_front">身份证正面</string>
+    <string name="identity_card_back">身份证反面</string>
+    <string name="cancel_queue">取消排队</string>
+    <string name="pick_photo">选择照片</string>
+    <string name="retry_upload">重新上传</string>
+    <string name="start">开始</string>
+
+    <string name="pwd_setting_fundpwd_hint">请输入6位数字密码</string>
+    <string name="pwd_setting_input_pwd_agin">请再次输入密码</string>
+    <string name="pwd_setting_fund_and_trade_pwd_same">资金密码与交易密码相同</string>
+    <string name="pwd_setting_agree_pwd_protocol">已阅读并同意密码协议</string>
+
+    <string name="prompt_cameraPermission_error">请检查手机，查看是否有第三方应用禁用摄像头权限</string>
+
+    <string name="HelloTitle">"Hello AnyChat"</string>
+    <string name="endCall1">End call</string>
+
+    <string name="open_account_video_prepare_tips">视频认证时间\n交易日9:00—21:00（双休9:00—18:00，节假日除外）</string>
+    <string name="trade_video_prepare_tips">视频认证时间\n交易日9:00—15:30</string>
+
+    <string name="idcard_name">姓 名</string>
+    <string name="idcard_sex">性别</string>
+    <string name="idcard_nation">民族</string>
+    <string name="idcard_address">地 址</string>
+    <string name="idcard_num">身份证号</string>
+    <string name="idcard_organization">签发机关</string>
+    <string name="idcard_effect">有效期限</string>
+    <string name="idcard_scanner_retry">"重新拍摄"</string>
+    <string name="idcard_scanner_edit">"修改"</string>
+    <string name="idcard_scanner_yes">"信息正确\n拍摄反面"</string>
+    <string name="idcard_scanner_yes_next">"信息正确\n下一步"</string>
+    <string name="hx_open_account">甬兴证券开户</string>
+    <string name="open_count_rate">开户进度</string>
+    <string name="low_commssion">在线开户</string>
+    <string name="low_commssion_notice">开户即尊享万2.5佣金</string>
+    <string name="fast_quotation">极速行情</string>
+    <string name="fast_quotation_notice">沪港深实时高速行情，掌握市场主动</string>
+    <string name="fast_trade">闪电交易</string>
+    <string name="fast_trade_notice">毫秒下单，快人一步</string>
+    <string name="fast_open_account">极速开户</string>
+    <string name="ready_open_account">开户前请准备二代身份证、银行借记卡、wifi环境</string>
+    <string name="oa_hot_line">客服热线：</string>
+    <string name="oa_result_refresh">刷新结果</string>
+    <string name="text_back">返回</string>
+
+
+    <string name="cancel_authority_weixin">解绑后将无法用微信登录甬兴涨停宝，确定解绑？</string>
+    <string name="cancel_authority_qq">解绑后将无法用QQ登录甬兴涨停宝，确定解绑？</string>
+
+
+    <string name="newstock_noenable_notice_str">您没有申购额度，无法进行申购</string>
+
+    <string name="newstock_noenable_shang_notice_str">无沪市额度。</string>
+
+    <string name="newstock_noenable_stib_notice_str">无科创板额度。</string>
+
+    <string name="newstock_noenable_shen_notice_str">无深市额度。</string>
+
+    <!--<string name="newstock_apply_success_notice_str">申购已提交。</string>-->
+
+    <!--<string name="newstock_apply_fail_notice_str">申购失败:</string>-->
+
+    <string name="quote_url_switch">行情站点切换</string>
+    <string name="quote_switch_success">站点已切换</string>
+    <string name="quote_switch_not_need">所选站点与当前站点一致，不需要切换</string>
+    <string name="btn_switch">切换站点</string>
+
+    <string name="already_open">已开通</string>
+    <string name="open_now">立即开通</string>
+    <string name="title_open_stib">科创板权限开通</string>
+    <string name="open_stib_condition">科创板权限开通条件检测：</string>
+    <string name="no_sh_account">您暂无沪A股东户，不能开通科创板</string>
+    <string name="agree_stib_protocol">您未同意科创板相关协议</string>
+    <string name="stib_result_title">开通结果</string>
+    <string name="stib_result_succeed_info">恭喜，开通成功！</string>
+    <string name="stib_result_succeed_remark">科创板交易权限已开通 \n 您可以直接参与科创板交易</string>
+    <string name="stib_result_succeed_btn">完成</string>
+    <string name="stib_result_fail_info">开通失败</string>
+    <string name="stib_result_fail_remark">失败原因：%1$s</string>
+    <string name="stib_result_fail_btn">再试一次</string>
+    <string name="protcol_stib">《科创板开通相关协议》</string>
+    <string name="protcol_stib_title">科创板开通相关协议</string>
+
+
+    <string name="gem_open_agree_btn">确认签署</string>
+    <string name="gem_open_agree_title">《创业板投资风险揭示书》已变更\n请重新阅读并签署后再进行交易</string>
+    <string name="gem_open_agree_tip">根据《深圳证券交易所创业板投资者适当性管理实施办法（2020年修订）》要求：首次参与按照注册制相关法律法规发行上市的创业板股票、存托凭证申购、交易的，应当以纸面或电子方式重新签署《创业板投资风险揭示书》。</string>
+
+    <string name="protcol_gem_title">创业板开通相关协议</string>
+    <string name="gem_open_title">创业板权限开通</string>
+    <string name="gem_open_suc_title">创业板权限开通</string>
+    <string name="gem_open_suc_sub_title">恭喜，开通成功！</string>
+    <string name="gem_open_fail_sub_title">开通失败</string>
+    <string name="gem_open_suc_tip">创业板交易权限已开通\n您可以直接参与创业板交易</string>
+    <string name="gem_open_suc_btn">完成</string>
+    <string name="gem_open_fail_btn">返回业务办理</string>
+    <string name="gem_open_dialog_i_known">我知道了</string>
+    <string name="gem_open_condition">创业板权限开通条件检测：</string>
+    <string name="gem_open_agreement_tip"><Data><![CDATA[我已阅读并同意签署<font color="#007aff">《创业板投资风险揭示书》、《适当性匹配意见及投资者确认书》</font>]]></Data></string>
+
+    <string name="permission_des">拒绝 甬兴涨停宝 访问该权限可能影响您功能使用的完整性，建议您在手机设置中开启该权限</string>
+    <!--可转债-->
+    <string name="cbond_open_h5_title">可转债权限开通</string>
+    <string name="cbond_open_title">开通结果</string>
+    <string name="cbond_open_suc_title">权限开通成功</string>
+    <string name="cbond_open_suc_sub_title">开通成功</string>
+    <string name="cbond_open_suc_tip">权限开通成功：\n</string>
+    <string name="cbond_open_suc_tip_sh">沪A可转换公司债券权限 \n </string>
+    <string name="cbond_open_suc_tip_sz">深A可转换公司债券权限</string>
+    <string name="risk_cbond_open_h5_title">风险警示权限开通</string>
+    <string name="risk_cbond_open_suc_tip_sh">沪A风险警示权限 \n </string>
+    <string name="risk_cbond_open_suc_tip_sz">深A风险警示权限</string>
+    <string name="base_inst_fund">基础设施基金权限开通</string>
+    <string name="base_inst_fund_open_suc_tip_sh">沪A基础设施基金权限 \n </string>
+    <string name="base_inst_fund_open_suc_tip_sz">深A基础设施基金权限</string>
+
+    <string name="cbond_open_agreement_tip"><Data><![CDATA[我已阅读并同意签署<font color="#007aff">《可转债投资风险揭示书》、《适当性匹配意见及投资者确认书》</font>]]></Data></string>
+    <string name="risk_cbond_open_agreement_tip"><Data><![CDATA[我已阅读并同意签署<font color="#007aff">《风险警示权限开通相关协议》</font>]]></Data></string>
+    <string name="base_inst_fund_open_agreement_tip"><Data><![CDATA[我已阅读并同意签署<font color="#007aff">《基础设施基金权限开通相关协议》</font>]]></Data></string>
+    <string name="cbond_gem_title">可转债开通相关协议</string>
+    <string name="risk_cbond_gem_title">风险警示权限开通相关协议</string>
+    <string name="base_inst_fund_cbond_gem_title">基础设施基金权限开通相关协议</string>
+    <string name="cbond_open_condition">可转债权限开通条件检测：</string>
+    <string name="risk_bond_open_condition">风险警示权限开通条件检测：</string>
+    <string name="base_inst_fund_bond_open_condition">基础设施基金权限开通条件检测：</string>
+    <string name="risk_alert_board">风险警示权限开通</string>
+
+    <!--  激活锁定  -->
+    <string name="lock_act_title">激活锁定账户</string>
+    <string name="lock_act_normal_title">账户状态正常</string>
+    <string name="lock_act_normal_remark">系统查询到您已开立证券账户，账户状态正常，无需办理激活锁定业务。</string>
+    <string name="lock_act_exp_title">账户状态异常</string>
+    <string name="lock_act_exp_remark">系统查询到您已开立证券账户，账户状态异常，无法办理激活锁定业务，请联系客服。</string>
+    <string name="lock_act_un_open_title">无账户</string>
+    <string name="lock_act_un_open_remark">系统未查询到您的证券账户，点击下方按钮，开户即享万2.5佣金</string>
+    <string name="lock_act_confirm">确认</string>
+    <string name="lock_act_todo">立即激活</string>
+    <string name="lock_act_to_open">立即开户</string>
+    <string name="lock_act_fxq">系统查询到您已开立资金账户，因客户信息不满足反洗钱要求，账户状态为锁定，可在线激活锁定账户。</string>
+    <string name="lock_act_xjb">系统查询到您已开立资金账户，账户状态为锁定，可在线激活锁定账户。</string>
+    <string name="lock_stock_account">股票账户</string>
+    <string name="lock_stock_account2">股东账户</string>
+    <string name="lock_fund_account">理财账户</string>
+    <string name="lock_next_step">下一步 设置密码</string>
+    <string name="lock_sh_open_fund_account">上海开放式基金账户</string>
+    <string name="lock_shen_open_fund_account">深圳开放式基金账户</string>
+    <string name="lock_otc_account">OTC账户</string>
+    <string name="lock_act_pwd_tip">本人自愿开立证券账户、自行设置账户密码，已阅读并理解风险揭示内容，知晓证券交易规则及风险。</string>
+
+    // =========================================================================================
+    // =================================== oa
+    // =========================================================================================
+    <string name="oa_stock_account">股票账户</string>
+    <string name="oa_hu_a_account">沪A账户</string>
+    <string name="oa_shen_a_account">深A账户</string>
+    <string name="oa_fund_account">基金账户</string>
+    <string name="oa_hu_open_account">上海开放式基金账户</string>
+    <string name="oa_shen_open_account">深圳开放式基金账户</string>
+    <string name="oa_otc_account">OTC账户</string>
+    <string name="oa_select_account_tip">注意：如需从其他券商转入账户，请在视频认证环节与客服人员说明。</string>
+    <string name="oa_select_account_tip2">为您开通理财账户，包括上海开放式基金账户、深圳开放式基金账户、OTC 账户</string>
+    <string name="oa_select_account_tip3">开通的证券账户包括上海A股、深圳A股</string>
+    <string name="oa_sure_open">下一步</string>
+    <string name="oa_set_password_tip">本人已知晓证券市场风险，阅读且充分理解开户协议条款，自行设置账户密码，并自愿开立账户。</string>
+
+
+
+    // =========================================================================================
+    // =================================== account
+    // =========================================================================================
+    <string name="account_tip_current_time_business_forbidden">当前时间段禁止办理业务</string>
+    <string name="account_i_know">我知道了</string>
+    <string name="account_account_cancel_appointment">下一步</string>
+    <string name="account_confirm_account_info">请确认开通的账号</string>
+    <string name="account_account_password_info">温馨提示：根据规定，一个人最多只能有三个股东账户。若您已超过三户，可以通过“从其他券商转入”进行转户。上海A股账户的转户需要您在原开户券商办理撤销指定交易后才能转户。</string>
+    <string name="account_account_password_info2">若您已经有深圳A股账户，我们将优先登记使用您的深圳A股账户。</string>
+
+    // =========================================================================================
+    // =================================== oa
+    // =========================================================================================
+    <string name="single_video_head_info">接下来需要通过视频方式对您进行身份验证；</string>
+    <string name="single_video_head_info2">请保持光线充足，避免逆光，避免复杂背景拍摄</string>
+    <string name="single_video_choose_auto_manual">您可以选择自助服务或者人工服务</string>
+    <string name="single_video_bottom_tip">注意：如需转户，请选择人工服务</string>
+    <string name="single_video_self_service">自助服务</string>
+    <string name="single_video_self_service_sub_title">由您本人根据系统提示录制视频</string>
+    <string name="single_video_manual">人工服务</string>
+    <string name="single_video_i_ready">我准备好了</string>
+    <string name="single_video_prepare_tip">请进行人脸识别并录制一段视频来认证身份</string>
+    <string name="single_video_result_tip">请确认影像和声音无误后提交</string>
+    <string name="single_video_result_tip_avatar">1. 头像是否完整；</string>
+    <string name="single_video_result_tip_audio">2. 语音是否清晰；</string>
+    <string name="single_video_result_tip_people">3. 视频里不能出现其他人。</string>
+    <string name="single_video_record_again">重新录制</string>
+    <string name="single_video_ready_to_submit">确认提交</string>
+    <string name="single_video_finish_record">完成录制</string>
+    <string name="single_video_start_record">开始录制</string>
+    <string name="single_video_please_use_mandarin">请点击“开始录制”，并用普通话大声朗读：</string>
+    <string name="single_video_please_use_mandarin2">请用普通话大声朗读：</string>
+    <string name="single_video_video_record_content">我是%s，我已知晓证券市场风险、阅读且充分理解开户协议条款并自愿在甬兴证券开户。</string>
+    <string name="single_video_failure_num_over_limit">您身份检测失败次数已达上限，您可以选择继续进行身份检测，也可以转到人工认证。</string>
+    <string name="single_video_failure_in_service_time">身份检测不通过，建议您转到人工服务。</string>
+    <string name="single_video_failure_out_service_time">身份检测不通过，请重新检测。若有疑问，请联系客服。</string>
+    <string name="single_video_result_confirm_image_audio">请确认影像和声音无误后提交</string>
+
+
+
+    <!-- =======================错误提示信息============================ -->
+    <string name="prompt_invalid_url">网页地址有误</string>
+
+    <string name="home_info_ipo">新股IPO</string>
+    <string name="home_info_winnerslist">龙虎榜</string>
+    <string name="home_info_finance">融资融券</string>
+    <string name="home_info_largetrade">大宗交易</string>
+    <string name="home_info_circulation">限售解禁</string>
+    <string name="home_info_profit">分红送配</string>
+    <string name="menu_ceiling_analyse">涨停分析</string>
+    <string name="menu_everyday_resume_trade">每日复盘</string>
+
+
+    <!-- =======================行情=========================== -->
+    <string name="quote_title">行情</string>
+    <string name="quote_menu_money">资金</string>
+
+
+    <!-- =======================个股评论=========================== -->
+    <string name="delete_post_dialog_msg">确定删除此贴?</string>
+    <string name="delete_comment_dialog_msg">确定删除此评论?</string>
+    <string name="delete_comment_failed">删除评论失败</string>
+    <string name="delete_post_failed">删除帖子失败</string>
+    <string name="popup_delete_text">删除</string>
+    <string name="collect">收藏</string>
+    <string name="collect_succ">收藏成功</string>
+    <string name="cancel_collect">取消收藏</string>
+    <string name="cancel_collect_succ">已取消收藏</string>
+    <string name="accusation">举报</string>
+    <string name="commit">提交</string>
+
+    <!-- =======================资讯评论=========================== -->
+    <string name="comment_input_sharecontent">分享内容加载中</string>
+    <string name="comment_publish_fail">评论失败,请歇一歇再来吧</string>
+    <string name="comment_hint_default">我来说两句&#8230;</string>
+
+    <!-- =======================交易模块=========================== -->
+    <string name="trade_main_title">交易</string>
+    <string name="trade_main_hx">甬兴证券户(<xliff:g id="name">%1$s</xliff:g>)</string>
+    <string name="trade_main_name">*<xliff:g id="name">%1$s</xliff:g>(<xliff:g id="num">%2$s</xliff:g>)</string>
+    <string name="trade_main_name_offline">*<xliff:g id="name">%1$s</xliff:g>(离线)</string>
+    <string name="trade_main_total">总资产(¥)</string>
+    <string name="trade_main_marketvalue">持仓市值</string>
+    <string name="trade_main_profit">持仓盈亏</string>
+    <string name="trade_main_today_profit">当日参考盈亏</string>
+    <string name="trade_main_funds">可用资金</string>
+    <string name="trade_main_total_dollar">总资产($)</string>
+    <string name="trade_main_marketvalue_dollar">美元持仓市值</string>
+    <string name="trade_main_profit_dollar">美元持仓盈亏</string>
+    <string name="trade_main_funds_dollar">美元可用资金</string>
+    <string name="trade_main_total_hkdollar">总资产(HK)</string>
+    <string name="trade_main_marketvalue_hkdollar">港币持仓市值</string>
+    <string name="trade_main_profit_hkdollar">港币持仓盈亏</string>
+    <string name="trade_main_funds_hkdollar">港币可用资金</string>
+    <string name="trade_main_holding">持仓</string>
+    <string name="trade_default_amount">--</string>
+    <string name="trade_holding_default_amount">0.00</string>
+    <string name="trade_main_buy">买入</string>
+    <string name="trade_main_sale">卖出</string>
+    <string name="trade_main_query">查询</string>
+    <string name="trade_main_withdraw">撤单</string>
+    <string name="trade_main_bank">银证转账</string>
+    <string name="trade_main_newstock">新股申购</string>
+    <string name="trade_main_pledge">随心借</string>
+    <string name="trade_main_pledge_rate">年利率低至<xliff:g id="name">%1$s</xliff:g>％</string>
+    <string name="trade_main_pledge_experience">立即体验</string>
+    <string name="trade_main_pledge_amt_info">最高借款金额</string>
+    <string name="trade_main_pledge_desp1">什么是随心借</string>
+    <string name="trade_main_pledge_desp2">借款利率优惠</string>
+    <string name="trade_main_pledge_lend">已借金额<xliff:g id="name">%1$s</xliff:g>元</string>
+    <string name="trade_main_pledge_borrow">可借金额</string>
+
+    <string name="trade_main_alert_exitmsg">您确定退出当前账号吗？</string>
+
+    <string name="trade_main_hkstock">港股通</string>
+    <string name="trade_main_hkstock_info">支持深港通交易</string>
+    <string name="trade_main_bussine">业务办理</string>
+    <string name="trade_main_vip">高端理财</string>
+    <string name="trade_main_rrp">国债逆回购</string>
+    <string name="trade_main_general">账户总览</string>
+    <string name="trade_main_analyze">股票分析</string>
+
+
+    <string name="trade_main_nologin_title">欢迎加入涨停宝</string>
+    <string name="trade_main_nologin_info">开户即享万2.5佣金</string>
+    <string name="trade_main_nologin_oa">还没有股票账户？立即开户</string>
+    <string name="trade_main_nologin_btn">立即登录</string>
+
+    <string name="trade_holding_rrp_btn">借出</string>
+    <string name="trade_main_gray">#666666</string>
+
+    <string name="my_no_login">未登录</string>
+
+    <!-- =======================交易设置页=========================== -->
+    <string name="trade_setting_title">账户设置</string>
+    <string name="trade_setting_acc">账户管理</string>
+    <string name="trade_setting_current">当前账户</string>
+    <string name="trade_setting_btn">退出</string>
+    <string name="trade_first_remind">为了您的便捷体验，您的账号(＊<xliff:g id="name">%1$s</xliff:g>)持仓／交易记录可以免密查看了。您可以在“我的－设置”页关闭此功能。</string>
+
+
+    <!-- =======================交易查询=========================== -->
+    <string name="trade_query_dialog_title">详情</string>
+    <string name="position_repurchase_title1">借出金额</string>
+    <string name="position_repurchase_title2">可用/可取</string>
+    <string name="position_repurchase_title3">利率/预估收益</string>
+
+    <string name="tradeconfirm_dialog_title">交易确认</string>
+
+
+    <string name="margin_trade_price_hint">五档成交剩余撤销</string>
+    <string name="prompt_network_error">网络异常，请重新请求数据！</string>
+
+
+    <string name="codeisnull">代码不能为空！</string>
+
+
+
+
+    <!-- =======================港股交易=========================== -->
+
+
+    <!-- =======================资产分析 持仓树============================ -->
+
+    <!-- ============================持仓================================ -->
+
+    <string name="trade_empty_stock_holding2">暂无证券持仓</string>
+
+
+    <!-- =======================账户模块=========================== -->
+    <string name="account_funds">资金账户</string>
+    <string name="account_fund_stock_A">A股账户</string>
+    <string name="account_fund_stock_A_sh">上海A股</string>
+    <string name="account_fund_stock_A_shen">深圳A股</string>
+    <string name="account_fund_stock_other">其他</string>
+    <string name="account_new_account">新账户</string>
+    <string name="account_come_from_other_broker">从其他券商转入</string>
+    <string name="account_no">账户号</string>
+    <string name="account_please_enter_or_choose_account">请选择或输入账号</string>
+    <string name="account_choose_account">选择账户</string>
+    <string name="account_choose_other_broker_account_head">选择其他券商股东户</string>
+    <string name="account_choose_other_broker_account_content">请选择您要转出的账户</string>
+
+    <!-- =======================锁定界面=========================== -->
+    <string name="lock_title">请输入交易密码</string>
+    <string name="lock_tip">由于长时间未操作，为了您的交易安全\n请输入交易密码解锁</string>
+
+    <!-- =======================登录模块=========================== -->
+    <string name="login_title">账户登录</string>
+    <string name="login_stock_account">普通账户</string>
+    <string name="login_account_hint">输入资金账户</string>
+    <string name="login_pwd_hint">输入交易密码</string>
+    <string name="login_dialog_session">请选择保持登录时间</string>
+    <string name="login_session_tv">保持登录</string>
+    <string name="login_session_time">5分钟</string>
+    <string name="login_resetpwd">忘记密码?</string>
+    <string name="login_del_account">确认清除该账户记录？</string>
+    <string name="login_btn_text">登录</string>
+    <string name="trade_main_top_add">添加新资金账户</string>
+
+    <!-- =======================用户资料=========================== -->
+    <!--<string name="notice_value_two">身份证关键信息与影像资料保持一致;</string>-->
+    <!--<string name="notice_value_three">若需修改关键信息,请重新上传身份证</string>-->
+    <!-- =======================新股申购提示信息============================ -->
+
+    <!-- =======================个股详情=========================== -->
+    <string name="stock_remind_setting">提醒设置</string>
+    <string name="stock_remind">个股提醒</string>
+    <string name="stock_remind_up_limit">股价涨到</string>
+    <string name="stock_remind_down_limit">股价跌到</string>
+    <string name="stock_remind_up_day_percent">日涨幅超</string>
+    <string name="stock_remind_down_day_percent">日跌幅超</string>
+    <string name="stock_remind_up_5_limit">5分钟涨速达</string>
+    <string name="stock_remind_down_5_limit">5分钟跌速达</string>
+
+    <string name="stock_remind_repeat">提醒频率</string>
+    <string name="stock_remind_report_f10">公告研报提醒</string>
+    <string name="stock_remind_tips">提醒功能依赖于行情计算服务和手机推送系统，可能会出现延时</string>
+    <string name="stock_remind_tips_permission">为确保及时收到预警通知，请确认已开启消息通知权限</string>
+    <string name="stock_remind_tips_mystock">即将前往个股提醒设置页面，是否确认跳转</string>
+
+
+    <string name="remind_period_once">仅提醒一次</string>
+    <string name="remind_period_once_tips"> <![CDATA[当股票多次达到提醒目标价时，仅<font color="#e73146">第一次</font>到价时提醒。]]></string>
+    <string name="remind_period_day">每日一次</string>
+    <string name="remind_period_day_tips"> <![CDATA[当股票多次达到提醒目标价时，仅<font color="#e73146">每个交易日第一次</font>到价时提醒。]]></string>
+    <string name="stock_btn_qfq">前复权</string>
+
+    <string name="stock_file_pdf_info">是否下载该文件？</string>
+    <string name="five_price_limitup">涨停</string>
+
+    <!-- =======================五挡线=========================== -->
+    <string name="five_price_limitdown">跌停</string>
+    <string name="load_more">加载更多</string>
+
+
+    <!-- =======================下拉刷新列表====================== -->
+    <string name="loading">加载中&#8230;</string>
+    <string name="loading_infos_other">正在加载中&#8230;</string>
+    <string name="enter_authcode_btn">获取验证码</string>
+
+    !-- ========================填写验证码============================ -->
+    <string name="enter_authcode_btn_title">重新获取</string>
+    <string name="enter_authcode_btn_resend">秒后重发</string>
+    <string name="stock_search_title">股票查询</string>
+
+
+    <!-- =======================新股申购提示信息============================ -->
+
+
+    <!--自选股tab-->
+
+    <string name="no_data">--</string>
+    <string name="search_stock_no_data">无匹配结果</string>
+    <!-- App strings -->
+
+    <string name="buy">买入</string>
+
+    <!-- 站点选择 -->
+    <string name="sell">卖出</string>
+    <string name="margin_buy">融买</string>
+    <string name="margin_sell">融卖</string>
+    <string name="add_my_stock">加自选</string>
+    <string name="del_my_stock">删自选</string>
+    <string name="discuss_stock">讨论</string>
+    <string name="longin_invalid_dialog_text">账号、密码不能为空！</string>
+
+
+    <!-- login label -->
+    <string name="priceisnull">价格不能为空！</string>
+    <string name="balanceisnull">金额不能为空！</string>
+    <string name="balanceiserror">金额错误！</string>
+    <string name="balanceiszero">金额不能为0！</string>
+    <string name="balanceisnegative">金额不能为负数！</string>
+    <string name="priceiserror">输入价格错误！</string>
+    <string name="priceiszero">价格不能为0！</string>
+    <string name="priceisnegative">价格不能为负数！</string>
+    <string name="amountisnull">数量不能为空！</string>
+    <string name="amountiserror">委托数量错误！</string>
+    <string name="amountisnegative">委托数量小于0</string>
+    <string name="amountiszero">委托数量不能为0</string>
+    <string name="dialog_ok_btn_text">确定</string>
+    <string name="dialog_cancel_btn_text">取消</string>
+    <string name="buy1_label">买1</string>
+
+    <!-- stock detail activity label -->
+
+    <!-- fund detail activity label -->
+    <!-- baojia activity label -->
+    <!-- 新版个股详情 -->
+
+
+    <string name="buy2_label">买2</string>
+    <string name="buy3_label">买3</string>
+    <string name="buy4_label">买4</string>
+    <string name="buy5_label">买5</string>
+    <string name="sell1_label">卖1</string>
+    <string name="sell2_label">卖2</string>
+    <string name="sell3_label">卖3</string>
+    <string name="sell4_label">卖4</string>
+    <string name="sell5_label">卖5</string>
+    <string name="dialog_title_waring_defalut">提示</string>
+    <!-- future price activity label -->
+    <!-- chicang  and chedanliebiao activity label -->
+    <!-- chaxunzijin activity label -->
+    <string name="PeriodDay">日K</string>
+    <string name="PeriodWeek">周K</string>
+    <string name="PeriodMonth">月K</string>
+    <string name="Period1Minute">1分</string>
+    <string name="Period5Minute">5分</string>
+    <string name="Period15Minute">15分</string>
+    <string name="Period30Minute">30分</string>
+    <string name="Period60Minute">60分</string>
+    <string name="zuixin_label">最新</string>
+
+    <string name="mt_FenShi">分时</string>
+    <string name="five_FenShi">五日</string>
+    <string name="minute">分钟</string>
+    <string name="share_failed">分享失败</string>
+
+    <string name="login_failed">登录失败</string>
+    <string name="download_format">正在下载%1$s</string>
+
+
+    <!--版本更新-->
+    <string name="app_update_dialog_title">发现新版本</string>
+    <string name="app_update_done">已是最新版本</string>
+    <string name="app_update_exit">退出应用</string>
+    <string name="app_update_cancel">以后再说</string>
+    <string name="app_update_confirm">立即升级</string>
+    <string name="zhuanqian_status_waiting">申请中</string>
+
+    <!--转签状态-->
+    <string name="zhuanqian_status_suc">已开通</string>
+    <string name="zhuanqian_status_todo">立即开通</string>
+    <string name="handicap">盘口</string>
+
+
+    <!--新版盘口-->
+    <string name="handicap_queue">买卖队列</string>
+    <string name="handicap_money_flow">资金流向</string>
+    <string name="handicap_trade_action">交易行为</string>
+    <string name="handicap_trade_margin">融资融券</string>
+    <string name="comment_input_invalid">输入的字符不合法</string>
+
+    <!-- =======================资讯评论=========================== -->
+    <string name="comment_input_invalid_max">已达到最大字数限制</string>
+    <string name="comment_publish_success">发表成功</string>
+    <string name="hint_publish_discuss">请输入5个字符以上</string>
+
+    <!-- =======================个股评论=========================== -->
+    <string name="publish_discuss">发表讨论</string>
+    <string name="publish_comment">发表点评</string>
+    <string name="publish">发表</string>
+    <string name="whether_exit_no_save_post">您的帖子还未发表，是否确认退出?</string>
+    <string name="whether_exit_no_save_comment">您的点评还未发表，是否确认退出?</string>
+    <string name="sharewindows_title">分享到</string>
+
+
+    <!-- =======================分享社交====================== -->
+    <string name="sharewindows_weixin">微信好友</string>
+    <string name="sharewindows_weixinarea">微信朋友圈</string>
+    <string name="sharewindows_sina">新浪微博</string>
+    <string name="sharewindows_qq">QQ好友</string>
+    <string name="share_succeed">分享成功</string>
+    <string name="share_cancel">分享已取消</string>
+    <string name="login_cancel">登录已取消</string>
+    <string name="simulate_text">"模拟"</string>
+
+
+    <!-- =======================模拟组合=========================== -->
+    <string name="simulate_stock_dialog_mess">选择模拟组合</string>
+
+    <string name="simulate_stock_dialog_buy">模拟买入</string>
+    <string name="simulate_stock_dialog_sell">模拟卖出</string>
+    <string name="simulate_grouplist_fail_str">模拟列表数据请求失败，请稍后重试</string>
+
+
+    <string name="quote_500_level">全景500档</string>
+
+    <string name="quote_trade_detail">查看逐笔明细</string>
+    <string name="repurchase_time_label">资金实际占用</string>
+
+
+    <!-- =======================国债逆回购=========================== -->
+    <string name="repurchase_sell_btn_text">借出</string>
+    <string name="repurchase_amount_hint">输入借出金额</string>
+    <string name="repurchase_price_hint">输入借出年利率</string>
+    <string name="repurchase_interest_label">借出年利率</string>
+    <string name="repurchase_amount_label">借出金额</string>
+    <string name="repurchase_max_amount_value">最大可借出金额:%1$s</string>
+    <string name="repurchase_predict_interest_label">预期收益</string>
+    <string name="repurchase_predict_fee_label">手续费(参考)</string>
+    <string name="repurchase_current_entrust_label">当日委托:</string>
+    <string name="repurchase_entrust_title1">品种/时间</string>
+    <string name="repurchase_entrust_title2">本金/利率</string>
+    <string name="repurchase_entrust_title3">状态</string>
+    <string name="repurchase_entrust_title4">操作</string>
+    <string name="repurchase_withdraw_btn">撤单</string>
+    <string name="repurchase_day_label">天</string>
+    <string name="lend1_label">借出1</string>
+    <string name="lend2_label">借出2</string>
+    <string name="lend3_label">借出3</string>
+    <string name="lend4_label">借出4</string>
+    <string name="lend5_label">借出5</string>
+    <string name="borrow1_label">借入1</string>
+    <string name="borrow2_label">借入2</string>
+    <string name="borrow3_label">借入3</string>
+    <string name="borrow4_label">借入4</string>
+    <string name="borrow5_label">借入5</string>
+    <string name="time_line_title1">借出</string>
+    <string name="time_line_title2">可用</string>
+    <string name="time_line_title3">可取</string>
+    <string name="repurchase_five_view_title">即时借款年利率％</string>
+    <string name="str_trade_otc_more">查看更多产品</string>
+    <string name="dialog_close">关闭</string>
+
+    <string name="profit_hint">预期收益＝（出借资金＊实际年化收益率／365）＊资金占用天数</string>
+    <string name="fee_hint_dialog_view_title1">品种</string>
+    <string name="fee_hint_dialog_view_title2">手续费比率</string>
+    <string name="fee_hint_dialog_view_title3">每十万元\n手续费(元)</string>
+    <string name="fee_hint_dialog_day1">1天</string>
+    <string name="fee_hint_dialog_day2">2天</string>
+    <string name="fee_hint_dialog_day3">3天</string>
+    <string name="fee_hint_dialog_day4">4天</string>
+    <string name="fee_hint_dialog_day7">7天</string>
+    <string name="fee_hint_dialog_day14">14天</string>
+    <string name="fee_hint_dialog_day28">28天</string>
+    <string name="fee_hint_dialog_day28more">28天以上</string>
+    <string name="fee_hint_dialog_percent1">成交金额的0.001%</string>
+    <string name="fee_hint_dialog_percent2">成交金额的0.002%</string>
+    <string name="fee_hint_dialog_percent3">成交金额的0.003%</string>
+    <string name="fee_hint_dialog_percent4">成交金额的0.004%</string>
+    <string name="fee_hint_dialog_percent7">成交金额的0.005%</string>
+    <string name="fee_hint_dialog_percent14">成交金额的0.010%</string>
+    <string name="fee_hint_dialog_percent28">成交金额的0.020%</string>
+    <string name="fee_hint_dialog_percent28more">成交金额的0.030%</string>
+    <string name="fee_hint_fee1">1</string>
+    <string name="fee_hint_fee2">2</string>
+    <string name="fee_hint_fee3">3</string>
+    <string name="fee_hint_fee4">4</string>
+    <string name="fee_hint_fee7">5</string>
+    <string name="fee_hint_fee14">10</string>
+    <string name="fee_hint_fee28">20</string>
+    <string name="fee_hint_fee28more">30</string>
+    <string name="fee_hint_message">注：深证市场手续费最低0.1元。手续费仅供参考，以实际费用为准。</string>
+    <string name="repurchase_confirm_view_type_label">交易品种:</string>
+    <string name="repurchase_confirm_view_price_label">借出年利率:</string>
+    <string name="repurchase_confirm_view_amount_label">借出金额:</string>
+    <string name="repurchase_confirm_view_lockdays_label">资金实际占用:</string>
+    <string name="repurchase_confirm_view_profit_label">预期收益:</string>
+    <string name="percent_sign">%</string>
+    <string name="income_thousand">1千收益(元)</string>
+    <string name="income_hundred_thousand">10万收益(元)</string>
+    <string name="repurchase_stock_code_input_hint">请输入国债逆回购代码</string>
+    <string name="product_details_valuedate">起息日</string>
+    <string name="product_details_deadlinedate">到期日</string>
+    <string name="product_details_completedate">到账日</string>
+    <string name="text_yuan">元</string>
+    <string name="user_risk_dialog_title_notice">提示</string>
+
+
+    <!-- 适当性管理 -->
+    <string name="user_risk_dialog_title_result_notice">适当性评估结果警示</string>
+    <string name="user_risk_dialog_title_vip_finance_notice">风险测评更新提示</string>
+    <string name="user_asppropriateness_dialog_title_out_date">风险测评已过期</string>
+
+
+    <string name="user_asppropriateness_dialog_title_never_did">未测评</string>
+    <string name="user_asppropriateness_dialog_title">风险测评提示</string>
+    <string name="user_asppropriateness_dialog_willout_date_message">风险测评将过期，将影响交易，请尽快完成测评！</string>
+    <string name="user_asppropriateness_dialog_hadout_date_message">风险测评已过期,将影响交易,请尽快重新测评！</string>
+    <string name="user_asppropriateness_dialog_vip_finance_message">根据适当性管理新规,您需要重新进行风险测评才能进行交易。</string>
+    <string name="user_asppropriateness_dialog_neverdid_message">未完成风险测评,将影响交易,请尽快完成测评！</string>
+    <string name="user_asppropriateness_dialog_notmatch_message">该产品的风险等级超过您的风险承受能力，建议您根据自身情况做出投资判断</string>
+    <string name="user_asppropriateness_dialog_btnstr_cancel">取消</string>
+    <string name="user_asppropriateness_dialog_btnstr_testagin">重新测评</string>
+    <string name="user_asppropriateness_dialog_btnstr_test">测评</string>
+    <string name="user_asppropriateness_dialog_btnstr_buygoon">仍要买入</string>
+    <string name="user_asppropriateness_dialog_btnstr_borrowgoon">仍要借钱</string>
+    <string name="user_asppropriateness_dialog_partrisk_isnot_message">您开通的部分业务风险超出您目前的风险承受能力,将影响您的相关交易操作。</string>
+
+
+    <string name="user_asppropriateness_dialog_userrisklevel_message">您的风险等级：%1$s</string>
+    <string name="user_asppropriateness_dialog_productrisklevel_message">产品风险等级：%1$s</string>
+
+    <string name="user_asppropriateness_result_dialog_title">适当性评估结果警示</string>
+
+    <string name="user_asppropriateness_result_risk_level">风险等级：%1$s</string>
+    <string name="user_asppropriateness_suggest">建议您根据自身风险承受能力审慎评估。</string>
+    <string name="user_asppropriateness_suggest_haveprotocol">建议您根据自身风险承受能力审慎评估;若您仍要交易,您需同意以下协议。</string>
+    <string name="user_asppropriateness_protcol">已阅读并同意&#171;产品或服务不适当警示及投资者确认书&#187;</string>
+
+    <string name="user_asppropriateness_protcol_cbond">我已阅读并同意签署&#171;产品或服务不适当警示及投资者确认书&#187;及&#171;可转债交易特别风险警示函&#187;</string>
+    <string name="user_asppropriateness_protcol_stib">我已阅读并同意签署&#171;产品或服务不适当警示及投资者确认书&#187;及&#171;科创板股票交易特别风险警示函&#187;</string>
+    <string name="user_asppropriateness_protcol_gem">我已阅读并同意签署&#171;产品或服务不适当警示及投资者确认书&#187;及&#171;创业板股票交易特别风险警示函&#187;</string>
+
+    <string name="stib_connfirm_book_str">产品或服务不适当警示及投资者确认书</string>
+    <string name="trade_title_newstock">新股申购</string>
+
+
+    <!-- =======================新股申购提示信息============================ -->
+
+    <string name="trade_title_newstock_introduce">说明</string>
+    <string name="trade_title_setting_notice">智能打新</string>
+    <string name="name_code">名称/代码</string>
+
+
+    <string name="value_profit">发行价</string>
+    <string name="maxvalue_total">申购上限</string>
+    <string name="newstock_sstatus">状态</string>
+    <string name="new_stock_name">名称</string>
+
+    <string name="new_stock_code">代码</string>
+    <string name="new_stock_price">价格</string>
+    <string name="new_stock_apply_total">申购量</string>
+    <string name="new_stock_advance_notice">新股预告</string>
+
+    <string name="apply_purchase_text">今日申购(周一 0只)</string>
+
+    <string name="no_data_text">暂无申购</string>
+    <string name="no_apply_list_data_text">无中签信息记录</string>
+    <string name="one_key_apply">一键打新</string>
+    <string name="one_key_apply_str">一键申购</string>
+    <string name="confirm_apply_text">申购确认</string>
+    <string name="confirm_apply_btn_text">确定申购</string>
+    <string name="no_data_str">暂无可预约新股</string>
+
+    <string name="notice1">申购时间为交易时间段</string>
+
+
+    <string name="notice2">沪市为9:30-11:30和13:00-15:00</string>
+    <string name="notice3">深市为9:30-11:30和13:00-15:00</string>
+    <string name="notice4">(预约和交易时间段打新的结果一致)</string>
+    <string name="goon_apply">继续打新</string>
+
+    <string name="appointment_now_apply">立即智能打新</string>
+    <string name="please_choose_new_stock">请选择您要打新的新股</string>
+    <string name="apply_code">名称/申购日</string>
+    <string name="today_apply_newstock">今日可申购新股:</string>
+
+    <string name="apply_total_notice">发行价/数量</string>
+
+    <string name="distribute_total">配号/个数</string>
+    <string name="distribute_status_successday">状态/中签日</string>
+    <string name="apply_price_s">申购价格</string>
+    <string name="apply_details_s">新股详情</string>
+    <string name="apply_btn_str">确定申购</string>
+    <string name="apply_notice_s">新股申购提醒</string>
+
+    <string name="newstock_appointment">智能打新</string>
+    <string name="newstock_appointment_valid_date">预约有效期</string>
+    <string name="newstock_appointment_valid_date_notice">距离有效日期结束(%1$s)还剩%2$s天</string>
+    <string name="play_a_new_secrete_text">打新规则</string>
+
+    <string name="play_a_new_secrete">\t1、打新市值要求：T-2日（T日为申购日）前20个交易日（含T-2日）的日均持有市值在1万元以上即可参与打新。沪市和深市的市值分开计算，持有多个证券账户的，多个证券账户的市值合并计算。\n\n\t
+        2、深市可配额度：深市每5000元市值为一个单位，每个单位可申购500股，不足5000元的不计入申购额度。\n\n\t3、沪市可配额度：沪市每1万元市值为一个单位，每个单位可申购1000股，不足1万元的不计入申购额度。科创板每5000元市值为一个单位，每个单位可申购500股，不足5000元的不计入申购额度。\n\n\t
+        4、中签缴款：申购时无需缴款，中签结果（T+2日）公布后请及时补足缴款金额。16:00为补足中签缴款的最后时间点。\n\n\t5、
+        郑重提示：投资者连续12个月内累计出现3次中签但未足额缴款的情形时，6个月内不得参与网上新股申购。</string>
+    <string name="newstock_notice_str">以下为目前已公布新股，打新当日按实际新股进行申购；若发行价为预估或暂未定，以发行日实际价格为准；满额申购股数为申购日实际最大可申购数。</string>
+
+    <string name="newstock_need_money_str">请在16:00前缴款，若12月内累计3次未足额缴款，6个月内不得参与新股申购。</string>
+
+    <string name="newstock_trans_notice_str">抱歉，当前时间不能进行中签缴款，请在银证转账服务时间(交易日9:00-16:00)办理</string>
+
+    <string name="newstock_ikonw_str">我知道了</string>
+
+
+
+    <string name="newstock_onekeyapply_cdr_notice_str">最大可申购%1$s份,发行价%2$s</string>
+
+
+    <string name="trade_main_newstock_stockname">股票名称</string>
+    <string name="trade_main_newstock_stockcode">股票代码</string>
+    <string name="trade_main_newstock_stockprice">申购价格</string>
+    <string name="cancel_btn_text">取消</string>
+    <string name="bank_security_account_into">资金账户</string>
+
+
+    <!-- =======================银转证=========================== -->
+    <string name="bank_security_account_out">资金账户</string>
+    <string name="bank_security_name">存管银行</string>
+    <string name="bank_security_amt">转出金额</string>
+    <string name="bank_security_amt_hint">请输入转入金额</string>
+    <string name="security_bank_amt_hint">可转金额<xliff:g id="name">%1$s</xliff:g>%2$s</string>
+    <string name="security_bank_amt_all">全部转出</string>
+    <string name="bank_security_bankpwd">银行密码</string>
+    <string name="bank_security_bankpwd_hint">请输入银行密码</string>
+    <string name="bank_security_bankpwd_hint2">请输入资金密码</string>
+    <string name="bank_security_balance">银行余额</string>
+    <string name="bank_security_balancecheck">查询余额</string>
+    <string name="bank_security_balance_recheck">重新查询</string>
+    <string name="bank_security_balance_disabled">查询余额(当前时间不支持查询)</string>
+    <string name="bank_security_in">确认转入</string>
+    <string name="bank_security_fundspwd">资金密码</string>
+    <string name="bank_security_out">确认转出</string>
+    <string name="bank_security_business_title"><![CDATA[转账时间通常为交易日<font color="#e73146">9:00-16:00</font>，不同银行可能有差异。]]></string>
+    <string name="bank_security_dialog_title">请选择存管银行</string>
+    <string name="bank_security_succeed_info">转账委托成功，请查询流水！</string>
+    <string name="prompt_empty_banksecurity">您没有银证转账相关银行！请确认</string>
+    <string name="prompt_empty_banksecurity_pwd">银行密码不能为空!</string>
+    <string name="prompt_invalid_banksecurity_amt">转账金额不正确</string>
+    <string name="str_trade_hint_title">为确保业务顺利办理，请仔细填写：</string>
+    <string name="str_trade_bank_to_security">银证转账</string>
+    <string name="str_trade_money">转账流水</string>
+    <string name="str_trade_bank_cash">转账金额不能为0</string>
+    <string name="str_money_type_rmb">人民币</string>
+    <string name="str_money_type_hkdollar">港币</string>
+    <string name="str_money_type_dollar">美元</string>
+    <string name="home_info_hotline">客服电话: 400-916-0666</string>
+    <string name="stock_custom_select_scheme">自定义选股策略</string>
+
+    <!--策略选股-->
+    <string name="my_scheme">我的方案</string>
+    <string name="choiceness_scheme">精选方案</string>
+    <string name="stock_scheme_activity_title">涨停选股</string>
+    <string name="check_all">全选</string>
+    <string name="edit">编辑</string>
+    <string name="add_select_security">+添加至我的方案</string>
+    <string name="edit_select_security">编辑此方案</string>
+    <string name="update_select_security">更新此方案</string>
+    <string name="select_security_str">选股策略:</string>
+    <string name="no_scheme_msg">暂无我的方案，快去添加吧！</string>
+    <string name="period">周期：</string>
+
+    <!--相似K线-->
+    <string name="model">模型：</string>
+    <string name="simliar_kline_bottom_title">今日相似度最高的股票</string>
+    <string name="simliar_kline_bottom_content">所有数据仅供参考，不构成投资建议！</string>
+    <string name="risk_warning">风险提示</string>
+    <string name="kline_need_permission">查看更多相似k线需要获得功能权限</string>
+    <string name="at_once_go">立即前往</string>
+    <string name="view_other_similar_kline">查看其它相似K线</string>
+    <string name="similar_kline_no_data_text">今日未找到K线走势相似度最高的个股哦，去看看今日之最吧！</string>
+    <string name="simkline_risk_warning_tile">相似k线功能风险揭示书</string>
+    <string name="simkline_title_top">相似k线—今日最高</string>
+    <string name="simkline_classroom_title">相似K线</string>
+    <string name="integral_conversion_title">积分兑换</string>
+    <string name="ask_whether_give_up_modify">您确认放弃本次修改？</string>
+
+    <!--个人信息-->
+    <string name="confirm_give_up">确定放弃</string>
+    <string name="go_back">返回</string>
+    <string name="analysis_position_profit">持仓盈亏</string>
+
+
+    <!-- 账户分析 -->
+    <string name="analysis_position_today_profit">当日参考盈亏</string>
+    <string name="analysis_position_debt">负债</string>
+    <string name="analysis_aviable_money">可用资金</string>
+    <string name="analysis_cantake_money">可取资金</string>
+    <string name="account_assets_structure">账户资产结构</string>
+
+    <string name="profit_loss_details">盈亏明细</string>
+    <string name="monthly_bill">月账单</string>
+    <string name="analysis_now_stock_position">当前股票持仓</string>
+    <string name="analysis_stock_str">股票分析</string>
+
+    <string name="analysis_now_position_profit">当前持仓收益</string>
+
+    <string name="analysis_position_profit_rate">持仓收益率</string>
+    <string name="analysis_select_stocksucc_rate">选股成功率</string>
+    <string name="analysis_position_str">仓位</string>
+    <string name="analysis_profit_top3">盈利TOP3</string>
+
+    <string name="analysis_loss_top3">亏损TOP3</string>
+    <string name="analysis_name_code">名称/代码</string>
+
+    <string name="analysis_have_day">持有天数</string>
+    <string name="analysis_profit">盈利</string>
+    <string name="analysis_profit_rate">收益率</string>
+    <string name="analysis_position_value_now">当前持仓市值</string>
+    <string name="analysis_query_history">查看历史</string>
+    <string name="analysis_stock_position">持仓股票分析</string>
+    <string name="analysis_position_distribute">持仓分布</string>
+    <string name="analysis_have_dayandcount">持有天数/持仓股数</string>
+
+    <string name="analysis_profit_cost">盈亏/成本价</string>
+    <string name="analysis_dialog_title">当日参考盈亏显示规则</string>
+    <string name="analysis_dialog_messgae">1、当日参考盈亏为您总账户参考值，包含人民币各项资产\n2、非交易日及交易日8:30显示前一日交易日的当日盈亏;\n3、每个交易日8:30-9:15，市场行情初始化时不显示；\n4、交易日晚清算数据期间数据可能不准确</string>
+    <string name="analysis_dialog_btn_text">确定</string>
+    <string name="idcard_outday_msg">您的身份证信息已过期，需要先更新后才能办理</string>
+
+
+    <string name="update_idcard">更新身份信息</string>
+    <string name="stib_unprofit_votingdiff">科创板上市条件中，允许符合科创板定位但尚未盈利或存在累计未弥补亏损的企业，和符合相关要求的特殊股权结构的企业在科创板上市。\n\n表决权差异，是指发行人在一般规定的普通股份之外，发行拥有特别表决权的股份。每一特别表决权股份拥有的表决权数量大于每一普通股份拥有的表决权数量，其他股东权利与普通股份相同。</string>
+    <string name="gem_unprofit_votingdiff">注册制条件下创业板的上市条件中，允许符合一定条件但尚未盈利或存在累计未弥补亏损的企业上市。\n\n表决权差异，是指发行人在一般规定的普通股份之外，发行拥有特别表决权的股份。每一特别表决权股份拥有的表决权数量大于每一普通股份拥有的表决权数量，其他股东权利与普通股份相同。\n\n协议控制架构，是指当事人以其控制的境外公司名义，返程设立外商独资企业(WFOE)，并以WFOE名义，通过一系列协议控制境内企业的经营活动，进而取得境内企业的主要收入和利润。</string>
+    <string name="fund_twenty_percent">深交所为进一步提高基金产品定价效率，将跟踪指数成份股仅为创业板股票或其他实行20%涨跌幅限制股票的指数型ETF、LOF或分级基金B类份额，以及80%以上非现金资产投资创业板股票或其他实行20%涨跌幅限制股票的LOF涨跌幅调整为20%，具体名单由深交所公布。</string>
+
+
+
+    <string name="stib_not_open">您未开通科创板交易权限。您需要先开通科创板权限才能交易科创板股票。</string>
+    <string name="stib_go_open">去开通</string>
+    <string name="stib_open_title">开通科创板</string>
+    <string name="risk_out_day_for_stib">您的风险测评已过期，需要先更新风险测评才能进行交易。</string>
+    <string name="lowest_risk_level">(最低风险承受能力)</string>
+    <string name="still_goon">仍要买入</string>
+    <string name="title_warring_letter">风险警示函</string>
+    <string name="hint_new_stock_with_stib">--，科创板 --</string>
+
+    <string name="agree_dialog_des_2">根据《中华人民共和国网络安全法》相关规定，甬兴证券建议您同意签署《甬兴涨停宝隐私政策》和《甬兴涨停宝服务协议》。 \n若您仍不同意签署，您也可选择甬兴证券营业部现场交易、电话委托、PC端网上交易等方式继续使用甬兴证券相关服务。</string>
+    <string name="agreement_i_know">我知道了</string>
+    <string name="agreement_agree_and_goon">同意并继续</string>
+    <string name="agreement_disagree">不同意</string>
+    <string name="agreement_service_dis">甬兴涨停宝服务协议</string>
+    <string name="agreement_secret_dis">甬兴涨停宝隐私政策</string>
+    <string name="agreement_service">《甬兴涨停宝服务协议》</string>
+    <string name="agreement_secret">《甬兴涨停宝隐私政策》</string>
+    <string name="agreement_dialog_des">尊敬的甬兴涨停宝用户:\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;您好！感谢您信任并使用甬兴涨停宝，为更好地为您提供服务，在您使用甬兴涨停宝时，平台需要收集使用用户部分个人信息。 我们非常重视个人信息安全，采用符合业界标准的安全防护措施和数据安全保障措施，全力保护您的个人信息安全。\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在使用软件之前，为了让您更好地了解我们是如何保护用户的个人信息，请您仔细阅读《甬兴涨停宝隐私政策》和《甬兴涨停宝服务协议》，再次感谢您的信任！
+ </string>
+    <string-array name="remind_repeat_source">
+        <item>仅提醒一次</item>
+        <item>每日一次</item>
+    </string-array>
+
+    <string name="cbond_open_age_tip">暂不支持80岁以上用户线上开通可转债权限\n请前往线下营业部办理</string>
+    <string name="cbond_open_mechanism_tip">暂不支持普通机构投资者线上开通可转债权限\n请前往线下营业部办理</string>
+    <string name="cbond_open_professional_tip">经检测，您是专业投资者，可直接进行可转债交易操作</string>
+
+    <string name="risk_open_professional_tip">专业投资者无需办理风险警示权限，可直接交易 ST，*ST 股票</string>
+    <string name="risk_open_mechanism_tip">暂不支持机构用户线上开通风险警示权限\n请前往线下营业部办理</string>
+    <string name="risk_open_age_tip">暂不支持80岁以上用户线上开通风险警示权限</string>
+
+    <string name="base_inst_fund_open_professional_tip">专业投资者无需办理基础设施基金权限，可直接交基础设施基金</string>
+    <string name="base_inst_fund_open_mechanism_tip">暂不支持机构用户线上开通基础设施基金权限\n请前往线下营业部办理</string>
+    <string name="base_inst_fund_open_age_tip">暂不支持80岁以上用户线上开通基础设施基金权限</string>
+
+    <string name="gem_open_age_tip">暂不支持80岁以上用户线上开通创业板权限\n请前往线下营业部办理</string>
+    <string name="gem_open_mechanism_tip">暂不支持机构用户线上开通创业板权限\n请前往线下营业部办理</string>
+    <string name="gem_open_checking">正在查询中登公司创业板签署状态，请稍后…</string>
+    <string name="gem_notime_btn">前往新开创业板</string>
+    <string name="gem_notime_tip"><Data><![CDATA[非中登查询时间段不支持创业板转签，您可选择新开创业板权限<br/> 请在交易日<font color="#e73146">9:00-16:00</font>办理创业板转签业务]]></Data></string>
+
+    <string name="gem_idcard_outday_msg">您的证件信息已过期，需要先更新后才能办理</string>
+    <string name="gem_update_idcard">更新证件信息</string>
+
+    <!-- fund -->
+    <string name="fund_hold_money">持有金额（元）</string>
+    <string name="fund_purchase_money">购买金额（元）</string>
+    <string name="fund_trade_record">交易记录</string>
+    <string name="fund_trade_empty_financing_holding">暂无理财资产</string>
+    <!-- 交易首页-新增 -->
+    <string name="trade_total_asset">总资产</string>
+    <string name="trade_total_asset_info">总资产指您目前资金账户中的资产总额，包括证券资产、理财资产、现金。</string>
+    <string name="trade_hold_market_value">持仓市值</string>
+    <string name="trade_hold_market_value_info">持仓市值指您目前所持有的证券资产、理财资产的总和。</string>
+    <string name="trade_hold_market_profit">持仓盈亏</string>
+    <string name="trade_hold_market_profit_info">持仓盈亏指您目前所持有的证券资产盈亏、理财资金盈亏总和。</string>
+    <string name="trade_available_money">可用资金</string>
+    <string name="trade_available_money_info">指您目前资金账户中可用来购买证券、理财产品的资金，不包含冻结部分的资金。</string>
+
+</resources>

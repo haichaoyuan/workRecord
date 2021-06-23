@@ -1,0 +1,570 @@
+<resources>
+
+    <!-- 默认 -->
+    <dimen name="padding_none">0dp</dimen>
+    <dimen name="padding_tiny">2dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_page">15dp</dimen>
+    <dimen name="padding_page_large">18dp</dimen>
+
+    <!--============================公共==========================-->
+    <dimen name="font_title">17dp</dimen>
+    <dimen name="titlebar_height">44dp</dimen>
+    <dimen name="tabbar_height">49dp</dimen>
+    <dimen name="btn_height">44dp</dimen>
+    <dimen name="titlebar_btn_margin">15dp</dimen>
+    <dimen name="statusBar_height">25dp</dimen>
+    <dimen name="titlebar_statusBar_height">69dp</dimen>
+    <dimen name="dialog_title">17dp</dimen>
+    <dimen name="settings_height">60dp</dimen>
+
+
+    <!-- 选中的哪个下划线高度 -->
+    <dimen name="title_height">35dp</dimen>
+    <dimen name="bottom_line_height">1.5dp</dimen>
+    <dimen name="bottom_line_width">50dp</dimen>
+
+    <!--===========================字体大小=========================-->
+    <dimen name="font_super_xxlarge">42dp</dimen>
+    <dimen name="font_super_xlarge">33dp</dimen>
+    <dimen name="font_xxlarge">21dp</dimen>
+    <dimen name="font_xlarge">20dp</dimen>
+    <dimen name="font_large">18dp</dimen>
+    <dimen name="font_slarge">17dp</dimen>
+    <dimen name="font_normal">16dp</dimen>
+    <dimen name="font_middle">15dp</dimen>
+    <dimen name="font_small">14dp</dimen>
+    <dimen name="font_smaller">13dp</dimen>
+    <dimen name="font_tiny">12dp</dimen>
+    <dimen name="font_tiny_more">11dp</dimen>
+    <dimen name="font_stiny">10dp</dimen>
+
+    <!--圆角-->
+    <dimen name="radius_small">2dp</dimen>
+    <dimen name="radius_medium">3dp</dimen>
+    <dimen name="radius_normal">4dp</dimen>
+    <dimen name="radius_large">13dp</dimen>
+
+    <!--===========================底部按钮高度=========================-->
+    <dimen name="page_bottom_btn_height">44dp</dimen>
+
+    <!--===========================公共线的高度=========================-->
+    <dimen name="line_height">1px</dimen>
+    <dimen name="twodpwide_line_height">4px</dimen>
+
+    <!--定义diloag-->
+    <dimen name="dialog_bg_stroke">1px</dimen>
+
+    <!--===========================普通列表=========================-->
+    <dimen name="lv_divider_height">1px</dimen>
+
+    <!--===========================模块间距=========================-->
+    <dimen name="space_between">7dp</dimen>
+
+    <!-- ===================ToggleButton===================== -->
+    <dimen name="width_tb">50dp</dimen>
+    <dimen name="height_tb">31dp</dimen>
+
+    <!-- ===================自定义alertDialog===================== -->
+    <dimen name="list_prefered_height">49dp</dimen>
+    <dimen name="alert_panel_height">45dp</dimen>
+    <dimen name="alert_msg_minheight">90dp</dimen>
+    <dimen name="button_small_prefered_height">30dp</dimen>
+    <dimen name="customAlert_paddingLeft">12dp</dimen>
+    <dimen name="customAlert_paddingRight">7dp</dimen>
+    <dimen name="minHeight_btn">49dp</dimen>
+
+    <!-- ===================按数字定义常用数值===================== -->
+    <dimen name="margin_0.2">0.2dp</dimen>
+    <dimen name="margin_0.5">0.5dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_13">13dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_17">17dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_19">19dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_21">21dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_23">23dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_27">27dp</dimen>
+    <dimen name="margin_28">28dp</dimen>
+    <dimen name="margin_29">29dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_33">33dp</dimen>
+    <dimen name="margin_34">34dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_38">38dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_42">42dp</dimen>
+    <dimen name="margin_44">44dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+    <dimen name="margin_46">46dp</dimen>
+    <dimen name="margin_47">47dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+    <dimen name="margin_49">49dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_58">58dp</dimen>
+    <dimen name="margin_59">59dp</dimen>
+    <dimen name="margin_55">55dp</dimen>
+    <dimen name="margin_57">57dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_65">65dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_72">72dp</dimen>
+    <dimen name="margin_75">75dp</dimen>
+    <dimen name="margin_93">93dp</dimen>
+    <dimen name="margin_170">170dp</dimen>
+    <dimen name="margin_181">181dp</dimen>
+
+    <!-- ===================甬兴键盘===================== -->
+    <dimen name="keyboard_eng_btn_xpadding">1dip</dimen>
+    <dimen name="keyboard_num_btn_xpadding">1dip</dimen>
+    <!--  数字键盘按钮水平两个按钮间距  -->
+    <dimen name="keyboard_num_btn_ypadding">2dip</dimen>
+    <!--  数字键盘按钮垂直两个按钮间距  -->
+    <dimen name="keyboard_padding_screen">3dip</dimen>
+    <!--  键盘按钮跟屏幕两侧的间距  -->
+
+    <dimen name="keyboard_line">0.2dip</dimen>
+    <dimen name="msg_verify_edit_height">50dp</dimen>
+
+    <dimen name="toast_hover">64dp</dimen>
+    <dimen name="popupwindow_width">270dp</dimen>
+
+
+    <!--===========================启动页面=========================-->
+    <dimen name="splash_countdown_size">11dp</dimen>
+
+    <!--===========================其它页面=========================-->
+    <dimen name="member_toptab_height">72dp</dimen>
+
+    <!--===========================home页面=========================-->
+    <dimen name="home_menu_width">39dp</dimen>
+    <dimen name="home_menu_verticalSpacing">8dp</dimen>
+    <dimen name="home_menu_padding_top">12dp</dimen>
+    <dimen name="home_info_padding_top">7dp</dimen>
+    <dimen name="home_info_drawablePadding">8dp</dimen>
+
+    <dimen name="home_info_item_padding">12dp</dimen>
+    <dimen name="home_info_item_height">60dp</dimen>
+    <dimen name="home_info_item_width">80dp</dimen>
+
+    <dimen name="home_data_item_height">55dp</dimen>
+    <dimen name="home_data_item_margin_left">15dp</dimen>
+    <dimen name="home_data_item_top">9dp</dimen>
+    <dimen name="home_data_item_margin_top">0dp</dimen>
+    <dimen name="home_data_item_line_height">34dp</dimen>
+
+
+    <dimen name="home_searchbar_height">28dp</dimen>
+    <dimen name="home_searchbar_marginleft">13dp</dimen>
+    <dimen name="home_searchbar_drawablePadding">5dp</dimen>
+    <dimen name="home_msg_margin">7dp</dimen>
+
+    <dimen name="home_flag_padding_left">10dp</dimen>
+    <dimen name="home_flag_padding_right">8dp</dimen>
+    <dimen name="home_zttools_padding_bottom">7dp</dimen>
+    <dimen name="home_flag_width">2dp</dimen>
+    <dimen name="home_flag_height">12dp</dimen>
+
+
+    <!--===========================交易Tab页面=========================-->
+    <dimen name="trade_tab_list_title_height">32dp</dimen>
+    <dimen name="trade_query_time_height">29dp</dimen>
+    <dimen name="trade_query_time_width">86dp</dimen>
+
+
+    <!--===========================社区账号激活=========================-->
+    <dimen name="social_account_margintop">60dp</dimen>
+    <dimen name="social_account_sns_margintop">25dp</dimen>
+    <dimen name="social_account_sns_marginright">75dp</dimen>
+
+
+    <!--===========================交易买入卖出模块=========================-->
+    <dimen name="trade_input_height">33dp</dimen>
+    <dimen name="trade_submitbtn_height">36dp</dimen>
+    <dimen name="trade_remark_padding">6dp</dimen>
+
+    <!--===========================结果页面=========================-->
+    <dimen name="result_info_size">20dp</dimen>
+    <dimen name="result_info_marginTop">74dp</dimen>
+    <dimen name="result_info_paddingTop">35dp</dimen>
+    <dimen name="result_btn_marginTop">60dp</dimen>
+
+    <!--===========================个人信息=========================-->
+    <dimen name="userinfo_header_height">75dp</dimen>
+    <dimen name="userinfo_editaddress_height">150dp</dimen>
+    <dimen name="social_user_avatar_dimen_small">55dp</dimen>
+    <dimen name="social_user_avatar_dimen_big">65dp</dimen>
+
+    <!--===========================港股交易=========================-->
+    <dimen name="hktrade_totaltv_size">35dp</dimen>
+    <dimen name="hktrade_marginTop">9dp</dimen>
+    <dimen name="hktrade_bottom_height">48dp</dimen>
+    <dimen name="hktrade_decp_size">19dp</dimen>
+    <dimen name="hktrade_balance_size">20dp</dimen>
+    <dimen name="hktrade_balance_padding_bottom">22dp</dimen>
+    <dimen name="hktrade_padding_bottom">6dp</dimen>
+
+
+    <!--===========================消息中心=========================-->
+    <dimen name="font_num">10dp</dimen>
+
+    <!--=============================原值暂时不管============================-->
+    <!-- 分时价格 -->
+
+
+    <!-- mingxi -->
+    <!-- 分时 -->
+
+
+    <!-- 测速行高 -->
+    <dimen name="site_item_height">40dp</dimen>
+
+    <!-- 分时叠加 pop -->
+    <!-- 验证码字体大小 -->
+
+    <!-- 交易撤单 按钮列 宽度 -->
+    <dimen name="list_div_height">1dp</dimen>
+    <!-- 东海商城 -->
+
+
+    <dimen name="t5">14sp</dimen>
+    <dimen name="t6">12sp</dimen>
+    <dimen name="t7">10sp</dimen>
+    <dimen name="trade_column_w">180dp</dimen>
+
+    <!-- 我的账户 -->
+
+
+    <!--水平滑动列表-->
+    <dimen name="horizontal_scroll_list_item_quoto_width">80dp</dimen>
+
+    <!--===========================随借随还（股票质押）=========================-->
+    <dimen name="pledge_detail_btn_height">23dp</dimen>
+    <dimen name="pledge_detail_btn_width">56dp</dimen>
+    <dimen name="pledge_detail_text_size">13dp</dimen>
+    <dimen name="pledge_query_no_recode_text_size">13dp</dimen>
+    <dimen name="pledge_query_recode_item_mar">13dp</dimen>
+    <dimen name="pledge_detail_item_text_size">15dp</dimen>
+    <dimen name="pledge_query_trade_count_text_black_size">16dp</dimen>
+    <dimen name="pledge_query_title_height">35dp</dimen>
+    <dimen name="pledge_query_trade_count_item_mar_left">10dp</dimen>
+    <dimen name="pledge_borrow_money_money_text_size">32dp</dimen>
+    <dimen name="select_pledge_stock_width">223dp</dimen>
+
+    <!--资讯-->
+
+    <!--消息中心-->
+    <dimen name="msg_center_icon_size">17dp</dimen>
+    <dimen name="msg_center_icon_margin_left">21dp</dimen>
+    <dimen name="msg_center_icon_margin_right">13dp</dimen>
+    <dimen name="msg_center_title_margin_top">15dp</dimen>
+    <dimen name="msg_center_unreadcont_margin_left">4dp</dimen>
+    <dimen name="msg_center_unreadcont_margin_top">19dp</dimen>
+    <dimen name="msg_center_tag_margin_top">3dp</dimen>
+    <dimen name="msg_center_tag_margin_bottom">10dp</dimen>
+    <dimen name="msg_center_zero">0dp</dimen>
+    <dimen name="msg_center_content_margin_right">28dp</dimen>
+    <dimen name="msg_center_time_margin_right">33dp</dimen>
+    <dimen name="msg_center_arrow_margin_right">15dp</dimen>
+
+    <dimen name="msg_list_content_margin_top">7dp</dimen>
+    <dimen name="msg_list_stick_margin_top">9dp</dimen>
+    <dimen name="msg_list_stick_margin_right">6dp</dimen>
+    <dimen name="msg_list_tag_padding">3dp</dimen>
+    <dimen name="msg_list_line_height">7dp</dimen>
+
+    <!--资讯 频道-->
+    <dimen name="info_channel_banner_title_padding">8dp</dimen>
+    <dimen name="info_channel_banner_indicator_padding">9dp</dimen>
+    <dimen name="info_channel_banner_indicator_radius">3.5dp</dimen>
+    <dimen name="info_channel_banner_indicator_strokeWidth">0dp</dimen>
+
+    <dimen name="info_channel_columns_icon_size">32dp</dimen>
+    <dimen name="info_channel_columns_name_marginTop">14dp</dimen>
+
+    <!--交易凭证-->
+    <dimen name="xjb_financial_item_height">87dp</dimen>
+    <dimen name="xjb_financial_salestatus_dimen">56dp</dimen>
+    <dimen name="xjb_financial_left_panel_width">130dp</dimen>
+    <dimen name="xjb_financial_divider_margin">18dp</dimen>
+    <dimen name="xjb_financial_detail_padding">23dp</dimen>
+
+
+    <!-- ==================理财产品详细===================== -->
+    <dimen name="product_details_btn_height">90dp</dimen>
+    <dimen name="product_yield_line_margin">8dp</dimen>
+    <dimen name="product_yield_line_width">23dp</dimen>
+    <dimen name="product_yield_line_marginTop">24dp</dimen>
+    <dimen name="product_details_flag_width">63dp</dimen>
+    <dimen name="product_details_flag_height">23dp</dimen>
+    <dimen name="product_details_yield_margintop">24dp</dimen>
+    <dimen name="product_purchase_productname_height">33dp</dimen>
+    <dimen name="product_buy_result_head_height">180dp</dimen>
+    <dimen name="product_detail_large_font">20dp</dimen>
+    <dimen name="product_estyield_large_font">24dp</dimen>
+    <dimen name="vip_product_result_image_padding">74dp</dimen>
+    <dimen name="vip_asset_text_size">24sp</dimen>
+
+    <!--高端-->
+    <dimen name="header_width_max">130dp</dimen>
+    <dimen name="text_size_h17">17dp</dimen>
+    <dimen name="text_size_h18">18dp</dimen>
+    <dimen name="text_size_h27">27dp</dimen>
+    <dimen name="text_size_h40">40dp</dimen>
+    <dimen name="segmenttab_height">32dp</dimen>
+    <dimen name="unit_profit_empty_height">260dp</dimen>
+    <dimen name="tv_invest_target_line_space">5dp</dimen>
+
+    <dimen name="tf_hold_status_text_size">17dp</dimen>
+    <dimen name="hold_common_tab_indicator_width">56dp</dimen>
+    <dimen name="hold_position_linechart_height">180dp</dimen>
+    <dimen name="tl_underline_height">3px</dimen>
+    <dimen name="segment_bottom_divider_height">10dp</dimen>
+
+    <!--模拟组合详情页-->
+    <dimen name="total_income_size">33dp</dimen>
+    <dimen name="rel_pie_chart_height">230dp</dimen>
+    <dimen name="line_chart_height">230dp</dimen>
+    <dimen name="segment_margin">88dp</dimen>
+    <dimen name="indicator_corner_radius">3dp</dimen>
+    <dimen name="owner_suggestion_height">180dp</dimen>
+
+    <!--十挡-->
+    <dimen name="level_price_text">14dp</dimen>
+    <dimen name="level_price_text_land">12dp</dimen>
+
+    <!-- k线-->
+    <dimen name="focus_width">90dp</dimen>
+
+    <dimen name="money_bar_width">28dp</dimen>
+    <dimen name="hushen_menu_width">30dp</dimen>
+
+    <dimen name="idcard_height">170dp</dimen>
+    <dimen name="idcard_content_margin">48dp</dimen>
+    <dimen name="idcard_text_margin">@dimen/margin_15</dimen>
+    <dimen name="idcard_text_max_margin">@dimen/margin_40</dimen>
+    <dimen name="idcard_btn_max_height">80dp</dimen>
+
+    <dimen name="open_account_home_margin_top">89dp</dimen>
+    <dimen name="open_account_home_new_margin_top">100dp</dimen>
+    <dimen name="open_account_home_continue_margin_top">25dp</dimen>
+    <dimen name="open_account_home_check_margin_top">@dimen/margin_15</dimen>
+
+
+    <!--textview的drawable间距-->
+    <dimen name="drawable_padding_large">5dp</dimen>
+    <dimen name="hx_honor_height">140dp</dimen>
+    <dimen name="corn_height">15dp</dimen>
+    <dimen name="open_acco_item_hei">30dp</dimen>
+    <dimen name="oa_home_text_size">16dp</dimen>
+    <dimen name="oa_margin">15dp</dimen>
+    <dimen name="oa_margin_top">10dp</dimen>
+    <dimen name="oa_margin_label_top">5dp</dimen>
+    <dimen name="oa_homenot_text_size">12dp</dimen>
+    <dimen name="oa_margin_btn">14dp</dimen>
+    <dimen name="oa_btn_mar">30dp</dimen>
+    <dimen name="oa_supor_tran_acc_wid">80dp</dimen>
+    <dimen name="oa_supor_tran_acc_hei">35dp</dimen>
+    <dimen name="open_acco_item_mar">30dp</dimen>
+    <dimen name="oa_margin_small">12dp</dimen>
+    <dimen name="oa_open_home_icon_hei">40dp</dimen>
+    <dimen name="oa_bank_logo_hei">35dp</dimen>
+
+    <!--  闪屏广告间距控制   -->
+    <dimen name="magic_fix">70dp</dimen>
+
+
+
+
+    <!--===========================Main页面=========================-->
+    <dimen name="stock_keybord_size">24dp</dimen>
+
+
+    <!--===========================home页面=========================-->
+    <dimen name="home_menu_margintop">7dp</dimen>
+
+
+    <!--===========================自选股=========================-->
+    <dimen name="selfstock_index_size">22dp</dimen>
+
+    <!--===========================行情板块=========================-->
+    <dimen name="quote_hushen_node_height">38dp</dimen>
+    <dimen name="quote_block_child_margin">12dp</dimen>
+
+    <!--===========================行情=========================-->
+    <dimen name="kline_candle_stroke">1dp</dimen>
+
+    <!-- 行情间距 -->
+    <dimen name="quote_list_offset_right">15dp</dimen>
+
+    <!--===========================交易设置页=========================-->
+    <dimen name="trade_setting_margintop">10dp</dimen>
+    <dimen name="trade_setting_btn_margintop">55dp</dimen>
+    <dimen name="trade_setting_label_height">60dp</dimen>
+
+    <!--===========================交易首页=========================-->
+    <dimen name="trade_home_title_margin_left">5dp</dimen>
+
+    <dimen name="trade_home_top_height">160dp</dimen>
+    <dimen name="trade_home_asset_marginTop">33dp</dimen>
+    <dimen name="trade_home_asset_marginLeft">17dp</dimen>
+
+    <dimen name="trade_home_tv_drawablePadding">8dp</dimen>
+    <dimen name="trade_home_marginbottom">10dp</dimen>
+    <dimen name="trade_home_cutoff_height">34dp</dimen>
+    <dimen name="trade_home_asset_bottom_marginTop">3dp</dimen>
+
+
+    <dimen name="trade_home_option_height">70dp</dimen>
+    <dimen name="trade_home_pledge_paddingtop">10dp</dimen>
+    <dimen name="trade_home_pledge_size">17dp</dimen>
+    <dimen name="trade_home_pledge_amt_margintop">24dp</dimen>
+    <dimen name="trade_home_pledge_amt_size">29dp</dimen>
+    <dimen name="trade_home_pledge_drawablePadding">10dp</dimen>
+
+    <dimen name="trade_home_function_margin">14dp</dimen>
+    <dimen name="trade_home_function_info_margintop">0dp</dimen>
+
+    <dimen name="font_tradehome_title">24dp</dimen>
+    <dimen name="font_tradehome_info">17dp</dimen>
+    <dimen name="trade_home_nologin_margintop">51dp</dimen>
+    <dimen name="trade_home_nologin_btn_marginright">20dp</dimen>
+    <dimen name="trade_home_nologin_info_margintop">0dp</dimen>
+    <dimen name="trade_home_nologin_oa_margintop">25dp</dimen>
+
+    <!-- ====================交易弹窗===================== -->
+    <dimen name="tradeDialog_pw_width">240dp</dimen>
+    <dimen name="tradeDialog_pw_height">44dp</dimen>
+
+    <!--===========================交易Tab页面=========================-->
+
+
+
+    <!--===========================登录首页=========================-->
+    <dimen name="login_btn_margintop">24dp</dimen>
+    <dimen name="login_lable_height">57dp</dimen>
+    <dimen name="login_arrow_margin_right">13dp</dimen>
+    <dimen name="login_session_drawablePadding">6dp</dimen>
+
+
+    <!--===========================个股详情=========================-->
+    <dimen name="stock_details_middle_height">390dp</dimen>
+    <dimen name="stock_details_menu_height">46dp</dimen>
+    <dimen name="stock_details_price_fontsize">27dp</dimen>
+
+
+
+
+
+    <!--===========================新股交易=========================-->
+    <dimen name="list_empty_tv_size">10dp</dimen>
+
+
+    <!--=============================原值暂时不管============================-->
+    <dimen name="two_line_info_text_size">16sp</dimen>
+    <dimen name="fenshidata_fontheight">15dip</dimen>
+    <dimen name="fenshidata_datawidth">64dip</dimen>
+    <dimen name="fenshi_price_text_size">9sp</dimen>
+    <!-- 分时价格 -->
+
+
+    <dimen name="keyboard_btn_text_size">16sp</dimen>
+    <!-- 键盘按钮字体大小 -->
+
+    <!-- KLine -->
+    <dimen name="kline_M5height">20dp</dimen>
+    <!-- k线M5，M10的高度 -->
+    <dimen name="kline_text_size_s">10sp</dimen>
+    <!-- k线14px字体 -->
+    <!-- k线与成交量之间的距离 -->
+    <!-- 成交量与指标之间的距离 -->
+    <dimen name="kline_text_size">9sp</dimen>
+    <!-- k线蜡烛的宽度 -->
+    <dimen name="kline_bar_width">5dp</dimen>
+
+    <!-- mingxi -->
+    <!-- 分时 -->
+    <dimen name="space_chengjiaoliang_height">20dp</dimen>
+
+
+
+    <dimen name="page_padding">15dp</dimen>
+    <dimen name="title_listview_first_column_width">88dp</dimen>
+    <dimen name="btn_corners">2dp</dimen>
+
+    <!-- 我的账户 -->
+
+
+    <!--水平滑动列表-->
+    <dimen name="horizontal_scroll_list_item_left_title_width">110dp</dimen>
+    <dimen name="horizontal_scroll_list_item_height">58dp</dimen>
+
+
+    <!-- 行情-->
+    <dimen name="handicap_pop_space">30dp</dimen>
+
+
+    <!--资讯 频道-->
+    <dimen name="info_channel_banner_indicator_margin">6dp</dimen>
+
+
+    <!--高端-->
+    <dimen name="common_normal_size">10dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+
+    <!--十挡-->
+
+    <!-- k线-->
+
+    <dimen name="edit_text_height">48dp</dimen>
+    <dimen name="drawable_padding">3dp</dimen>
+
+
+    <!-- ==================国债逆回购===================== -->
+    <dimen name="repurchase_time_layout_height">80dp</dimen>
+    <dimen name="repurchase_input_height">35dp</dimen>
+    <dimen name="repurchase_btn_height">12dp</dimen>
+    <dimen name="repurchase_withdraw_btn_width">59dp</dimen>
+    <dimen name="repurchase_withdraw_btn_height">24dp</dimen>
+    <dimen name="font_size_11">11sp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="repurchase_cur_entrust_height">34dp</dimen>
+    <dimen name="lend_btn_height">40dp</dimen>
+    <dimen name="product_details_middle_height">100dp</dimen>
+    <dimen name="product_details_middle_margin">32dp</dimen>
+    <dimen name="trade_column_h">45dp</dimen>
+    <dimen name="trade_textview_padding_l_r">5dp</dimen>
+    <dimen name="trade_hkstock_devider_height">17dp</dimen>
+
+    <dimen name="new_stock_little_large">17dp</dimen>
+    <dimen name="new_stock_nodata_width">80dp</dimen>
+
+
+    <dimen name="home_hotline_margin">24dp</dimen>
+    <dimen name="home_hotline_drawablePadding">5dp</dimen>
+    <dimen name="similar_kline_height">100dp</dimen>
+    <dimen name="similar_kline_container_height">130dp</dimen>
+    <dimen name="similar_kline_chart_text_padding">3dp</dimen>
+</resources>

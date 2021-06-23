@@ -1,0 +1,350 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Empty parent idiom -->
+    <style name="NoParent" />
+
+    <style name="ZTBWidget">
+        <item name="android:paddingLeft">@dimen/padding_none</item>
+        <item name="android:paddingRight">@dimen/padding_none</item>
+        <item name="android:paddingTop">@dimen/padding_none</item>
+        <item name="android:paddingBottom">@dimen/padding_none</item>
+    </style>
+
+    <style name="ZTBWidget.TextView">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Large">
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Large.LightBlack">
+        <item name="android:textColor">@color/global_lightblack</item>
+    </style>
+
+
+    <style name="ZTBWidget.TextView.Normal">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Normal.LightBlack">
+        <item name="android:textColor">@color/global_lightblack</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Middle">
+        <item name="android:textSize">@dimen/font_middle</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Middle.LightBlack">
+        <item name="android:textColor">@color/global_lightblack</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Middle.BlackGray">
+        <item name="android:textColor">@color/global_darkgray</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Middle.Gray">
+        <item name="android:textColor">@color/global_gray</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Middle.LightGray">
+        <item name="android:textColor">@color/global_lightgray</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Small">
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Small.LightBlack">
+        <item name="android:textColor">@color/global_lightblack</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Small.LightGray3">
+        <item name="android:textColor">@color/global_lightgray_three</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Small.Gray">
+        <item name="android:textColor">@color/global_gray</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Small.LightGray">
+        <item name="android:textColor">@color/global_lightgray</item>
+    </style>
+
+
+    <style name="ZTBWidget.TextView.Smaller">
+        <item name="android:textSize">@dimen/font_smaller</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Smaller.LightBlack">
+        <item name="android:textColor">@color/global_lightblack</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Smaller.Gray">
+        <item name="android:textColor">@color/global_gray</item>
+    </style>
+    <style name="ZTBWidget.TextView.Smaller.LightGray">
+        <item name="android:textColor">@color/global_lightgray_three</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Tiny">
+        <item name="android:textSize">@dimen/font_tiny</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Tiny.LightBlack">
+        <item name="android:textColor">@color/global_lightblack</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Tiny.LightGray">
+        <item name="android:textColor">@color/global_lightgray</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.Tiny.LightestGray">
+        <item name="android:textColor">@color/lv_content_gray</item>
+    </style>
+
+<!--    <style name="ZTBWidget.TextView.Empty">-->
+<!--        <item name="android:textColor">@color/global_lightgray</item>-->
+<!--        <item name="android:textSize">10dp</item>-->
+<!--        <item name="android:drawablePadding">15dp</item>-->
+<!--        <item name="android:text">@string/empty_text</item>-->
+<!--        <item name="android:drawableTop">@drawable/ico_empty</item>-->
+<!--    </style>-->
+
+    <style name="ZTBWidget.TextView.ActionBar">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.ActionBar.Public">
+        <item name="android:textSize">@dimen/font_title</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.ActionBar.Medium">
+        <item name="android:textSize">@dimen/font_middle</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.HeaderPanel">
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.HeaderPanel.Label">
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.HeaderPanel.Emphasize">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.PageContent">
+        <item name="android:padding">@dimen/padding_page</item>
+        <item name="android:textColor">@color/global_gray</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.PageTitle">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/dialog_title</item>
+        <item name="android:textColor">@color/global_darkblue</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.PageContent.About">
+        <item name="android:padding">@dimen/padding_medium</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/global_lightgray</item>
+        <item name="android:textSize">@dimen/font_tiny</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.ListHeader">
+        <item name="android:padding">@dimen/padding_tiny</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.ListContent">
+        <item name="android:padding">@dimen/padding_tiny</item>
+        <item name="android:textSize">@dimen/font_middle</item>
+        <item name="android:textColor">@color/global_gray</item>
+    </style>
+
+    <style name="ZTBWidget.TextView.ListFooter">
+        <item name="android:padding">@dimen/padding_tiny</item>
+        <item name="android:textSize">@dimen/font_tiny</item>
+        <item name="android:textColor">@color/global_lightgray</item>
+    </style>
+
+<!--    <style name="ZTBWidget.Button">-->
+<!--        <item name="android:textColor">@color/btn_public_color</item>-->
+<!--    </style>-->
+
+<!--    <style name="ZTBWidget.Button.Small">-->
+<!--        <item name="android:textSize">@dimen/font_small</item>-->
+<!--        <item name="android:padding">@dimen/padding_tiny</item>-->
+<!--    </style>-->
+
+<!--    <style name="ZTBWidget.Button.Large">-->
+<!--        <item name="android:minHeight">@dimen/btn_height</item>-->
+<!--        <item name="android:textSize">@dimen/font_normal</item>-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--    </style>-->
+
+<!--    <style name="ZTBWidget.Button.Large.Blue">-->
+<!--        <item name="android:background">@drawable/selector_btn_public</item>-->
+<!--    </style>-->
+
+<!--    <style name="ZTBWidget.Button.Large.Blue.Next">-->
+<!--        <item name="android:layout_marginLeft">@dimen/padding_page</item>-->
+<!--        <item name="android:layout_marginRight">@dimen/padding_page</item>-->
+<!--        <item name="android:enabled">false</item>-->
+<!--        <item name="android:textColor">@color/btn_public_color</item>-->
+<!--        <item name="android:text">@string/public_btn_next</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--    </style>-->
+
+<!--    <style name="ZTBWidget.Button.Large.Blue.Bottom">-->
+<!--        <item name="android:background">@drawable/selector_btn_bottom</item>-->
+<!--        <item name="android:textColor">@color/btn_public_color</item>-->
+<!--        <item name="android:text">@string/public_btn_next</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--    </style>-->
+
+<!--    <style name="ZTBWidget.Button.Large.Blue.TRANSPARENT">-->
+<!--        <item name="android:background">@drawable/selector_btn_transparent_to_blue</item>-->
+<!--        <item name="android:enabled">false</item>-->
+<!--        <item name="android:textColor">@color/selector_btn_text_blue_to_white</item>-->
+<!--        <item name="android:text">@string/public_btn_next</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--    </style>-->
+
+
+<!--    <style name="ZTBWidget.Button.Large.red">-->
+<!--        <item name="android:textColor">@color/global_white</item>-->
+<!--        <item name="android:background">@drawable/selector_btn_red_public</item>-->
+<!--    </style>-->
+
+<!--    <style name="ZTBWidget.Button.Dialog">-->
+<!--        <item name="android:minHeight">@dimen/button_small_prefered_height</item>-->
+<!--        <item name="android:background">@android:color/transparent</item>-->
+<!--        <item name="android:textSize">@dimen/dialog_title</item>-->
+<!--        <item name="android:textColor">@color/global_blue</item>-->
+<!--    </style>-->
+
+    <style name="HXDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">stateUnchanged|adjustPan</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="HXDialog_Trade" parent="@style/HXDialog">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="VLineStyle">
+        <item name="android:layout_width">@dimen/line_height</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+    <style name="HLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+    <style name="HXWidget.TabLayout" parent="@style/ZTBWidget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/margin_35</item>
+        <item name="android:background">@color/global_white</item>
+    </style>
+
+    <style name="DivideStyle" parent="@style/HLineStyle">
+        <item name="android:layout_marginLeft">@dimen/padding_page</item>
+    </style>
+
+    <style name="NobackDialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+<!--    <style name="load_bar_style">-->
+<!--        <item name="android:indeterminateDrawable">@drawable/process</item>-->
+<!--    </style>-->
+
+    <style name="keyboard_stock_number_text">
+        <item name="android:textColor">@color/global_lightblack</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="keyboard_number_text">
+        <item name="android:textColor">@color/global_lightblack</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+<!--    <style name="keyboard_english">-->
+<!--        <item name="android:layout_width">0dp</item>-->
+<!--        <item name="android:layout_height">43dp</item>-->
+<!--        <item name="android:paddingBottom">6dp</item>-->
+<!--        <item name="android:layout_weight">1</item>-->
+<!--        <item name="android:textColor">@color/global_lightblack</item>-->
+<!--        <item name="android:background">@drawable/selector_btn_keyboard_white_gray</item>-->
+<!--        &lt;!&ndash; <item name="android:textStyle">bold</item> &ndash;&gt;-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textSize">@dimen/margin_22</item>-->
+<!--        <item name="android:layout_marginLeft">@dimen/margin_2</item>-->
+<!--        <item name="android:layout_marginRight">@dimen/margin_2</item>-->
+<!--    </style>-->
+
+    <style name="keyboard_english_row_margin">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">8dip</item>
+    </style>
+
+<!--    <style name="footer_load_more_style">-->
+<!--        <item name="android:indeterminateDrawable">@drawable/anim_adapter_footer_progress</item>-->
+<!--    </style>-->
+
+    <style name="ZTBWidget.TextView.ListEmpty">
+        <item name="android:textSize">@dimen/font_tiny</item>
+        <item name="android:textColor">@color/global_lightgray</item>
+    </style>
+
+    <style name="Dialog_FullScreen_Cover">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+<!--    <style name="ToastBg">-->
+<!--        <item name="android:background">@drawable/background_standard_gray</item>-->
+<!--    </style>-->
+
+    <style name="ToastText">
+        <item name="android:text">Default</item>
+        <item name="android:textColor">@color/global_white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+</resources>

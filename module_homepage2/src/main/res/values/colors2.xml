@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="stock_name_color">#ff222226</color>
+    <color name="list_quote_gray">#ffaeb4c2</color>
+    <color name="quote_title_stock_name_color">#676769</color>
+</resources>
