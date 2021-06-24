@@ -14,6 +14,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.module_homepage2.base.UIUtils
+import com.example.module_homepage2.xtablayout.XTabLayout
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabLayout
 import com.shhxzq.ztb.ui.home.ui.adapter.HomeMsgListFragmentPageAdapter2
@@ -60,7 +61,6 @@ class HomePage2Activity : AppCompatActivity() {
                     return true
                 }
             })
-
         }
         appbar.addOnOffsetChangedListener(object : AppBarStateChangeListener() {
             override fun onAppBarOffsetChanged(appBarLayout: AppBarLayout, verticalOffset: Int) {
@@ -97,22 +97,26 @@ class HomePage2Activity : AppCompatActivity() {
     }
 
     private fun initTabLayout() {
-        for (it in CHANNELS) {
-            tab_layout.addTab(tab_layout.newTab().setText(it))
+        for(i in CHANNELS.indices){
+            tab_layout.addTab(tab_layout.newTab().setText(CHANNELS[i]), i == CHANNELS.size - 1)
         }
         tab_layout!!.tabMode = TabLayout.MODE_FIXED
         tab_layout.setSelectedTabIndicatorColor(ContextCompat.getColor(this, R.color.color_3B4B87))
         tab_layout.setTabTextColors(Color.BLACK, ContextCompat.getColor(this, R.color.color_3B4B87))
-        tab_layout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-            override fun onTabSelected(tab: TabLayout.Tab) {
+        tab_layout.addOnTabSelectedListener(object : XTabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: XTabLayout.Tab) {
                 //点击tab的时候，RecyclerView自动滑到该tab对应的item位置
                 val position = tab.position
                 viewPager.currentItem = position
             }
 
-            override fun onTabUnselected(tab: TabLayout.Tab) {}
-            override fun onTabReselected(tab: TabLayout.Tab) {}
+            override fun onTabUnselected(tab: XTabLayout.Tab) {}
+            override fun onTabReselected(tab: XTabLayout.Tab) {}
         })
+        tab_layout.post {
+//          解决默认未设置新的字体大小
+            tab_layout.getTabAt(0)?.select()
+        }
     }
 
     private fun initViewPager() {
@@ -139,7 +143,7 @@ class HomePage2Activity : AppCompatActivity() {
             }
 
             override fun onPageSelected(position: Int) {
-                val tabAt: TabLayout.Tab? = tab_layout.getTabAt(position)
+                val tabAt: XTabLayout.Tab? = tab_layout.getTabAt(position)
                 if (tabAt != null && !tabAt.isSelected) {
                     tabAt.select()
                 }

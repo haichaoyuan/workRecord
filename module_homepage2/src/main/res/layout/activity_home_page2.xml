@@ -40,11 +40,25 @@
                         android:layout_height="wrap_content" />
                 </LinearLayout>
 
-                <com.google.android.material.tabs.TabLayout
+<!--                <com.google.android.material.tabs.TabLayout-->
+<!--                    android:id="@+id/tab_layout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@color/white"-->
+<!--                    app:tabTextAppearance="@style/TabLayoutTextStyle" />-->
+                <com.example.module_homepage2.xtablayout.XTabLayout
                     android:id="@+id/tab_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
+                    app:xTabDividerWidthWidthText="true"
+                    app:xTabIndicatorHeight="4dp"
+                    app:xTabIndicatorRoundX="2dp"
+                    app:xTabIndicatorRoundY="2dp"
+                    app:xTabTextColor="#000"
+                    app:xTabTextSize="16sp"
+                    app:xTabDisplayNum="4"
+                    app:xTabSelectedTextSize="18sp"
                     app:tabTextAppearance="@style/TabLayoutTextStyle" />
 
                 <View style="@style/HLineStyle" />
