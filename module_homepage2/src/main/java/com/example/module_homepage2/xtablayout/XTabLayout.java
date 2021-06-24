@@ -323,7 +323,7 @@ public class XTabLayout extends HorizontalScrollView {
 
         a.recycle();
 
-        // TODO add attr for these
+        //  add attr for these
         final Resources res = getResources();
         mTabTextMultiLineSize = res.getDimensionPixelSize(R.dimen.design_tab_text_size_2line);
         mScrollableTabMinWidth = res.getDimensionPixelSize(R.dimen.design_tab_scrollable_min_width);

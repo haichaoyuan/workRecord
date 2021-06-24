@@ -24,7 +24,7 @@ fun Number.asPriceFormat(info: StockStaticInfo?): String {
         return NO_DATA
     }
 
-    //TODO 先按 优品的精度处理
+    // 先按 优品的精度处理
     info?.let {
         return format(info.precise)
     }

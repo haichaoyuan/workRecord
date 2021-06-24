@@ -22,7 +22,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter {
     public static final int VIEW_TYPE_FOOTER = 2;
     protected List<Item> mData;
     /**
-     * 复用同一个View对象池,todo
+     * 复用同一个View对象池,
      */
     private RecyclerView.RecycledViewPool mRecycledViewPool;
     /**
@@ -32,7 +32,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter {
 
     private RecyclerView mRecyclerView;
     /**
-     * RecyclerView高度:??? todo
+     * RecyclerView高度:???
      */
     private int mRecyclerViewHeight;
 
@@ -49,7 +49,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter {
             final View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.bar_item, parent, false);
             return new ItemViewHolder(view);
         } else {
-            //Footer是最后留白的位置，以便最后一个item能够出发tab的切换,todo
+            //Footer是最后留白的位置，以便最后一个item能够出发tab的切换,
             View view = new View(parent.getContext());
             Log.e("footer", "parentHeight: " + mRecyclerViewHeight + "--" + "itemHeight: " + itemHeight);
             view.setLayoutParams(

@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat;
 import com.google.android.material.appbar.AppBarLayout;
 
 /**
- * Description: TODO
+ * Description:
  *
  * @author yexiuliang on 2018/7/26
  */
