@@ -100,7 +100,7 @@ class StockIndexPageAdapter(private val context: Context) : PagerAdapter() {
                 blockNum.setTextColor(color)
                 blockNum.text = data.newPrice.asPriceFormat(data)
                 // 百分数
-                blockPercent.text = data.chgValue.asChangeFormat(data)
+                blockPercent.text = data.chgValue.asChangeFormat(data) +"%"
                 blockPercent.setTextColor(color)
                 //额外说明
                 var currentTime = DateTimeUtils.getCurrentTimeWithMonth2Minute()

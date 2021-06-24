@@ -1,7 +1,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">module_homepage2</string>
 
-    <string name="home_searchbar_hint">搜索证券代码/名称首字母</string>
+    <string name="home_searchbar_hint">输入证券代码/名称首字母</string>
 
 
     <!-- =======================错误提示信息============================ -->

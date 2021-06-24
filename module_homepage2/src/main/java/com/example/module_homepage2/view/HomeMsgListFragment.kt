@@ -38,6 +38,15 @@ class HomeMsgListFragment(val index:Int): Fragment() {
         recyclerView!!.layoutManager = LinearLayoutManager(context)
         homeMsgListAdapter = HomeMsgListAdapter(ArrayList())
         recyclerView!!.adapter = homeMsgListAdapter
+
+
+        var data = ArrayList<HotInfo>()
+        for (i in 1..100){
+            val item = HotInfo()
+            item.title = "{$index}___title{$i}"
+            data.add(item)
+        }
+        homeMsgListAdapter.setNewInstance(data)
     }
 
     fun updateUi(data:MutableList<HotInfo>){

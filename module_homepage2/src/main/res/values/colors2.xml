@@ -3,4 +3,9 @@
     <color name="stock_name_color">#ff222226</color>
     <color name="list_quote_gray">#ffaeb4c2</color>
     <color name="quote_title_stock_name_color">#676769</color>
+    <color name="color_333">#333</color>
+    <color name="color_3B4B87">#3B4B87</color>
+
+    <!-- =======================首页============================ -->
+    <color name="home_blue">#3b8cf1</color>
 </resources>

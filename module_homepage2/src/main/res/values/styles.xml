@@ -347,4 +347,28 @@
         <item name="android:paddingRight">16dp</item>
     </style>
 
+
+    <style name="MainActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="android:windowBackground">@color/titlebar_bg_color</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:textViewStyle">@style/ZTBWidget.TextView</item>
+        <item name="android:buttonStyle">@style/MyButtonStyle</item>
+        <item name="toolbarStyle">@style/ClubToolbar</item>
+    </style>
+    <style name="Widget.Styled.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/titlebar_bg_color</item>
+        <item name="android:background">@color/titlebar_bg_color</item>
+        <item name="android:height">@dimen/titlebar_height</item>
+        <item name="height">@dimen/titlebar_height</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+    <style name="MyButtonStyle" parent="@style/Widget.AppCompat.Button.Borderless"></style>
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <!-- 设置该属性解决空白部分-->
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
 </resources>

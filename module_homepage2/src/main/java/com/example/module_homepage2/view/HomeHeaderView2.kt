@@ -1,7 +1,9 @@
 package com.example.module_homepage2.view;
+
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
+import android.os.Handler
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.ImageView
@@ -14,6 +16,7 @@ import com.example.module_homepage2.base.*
 import com.shhxzq.ztb.ui.home.ui.adapter.StockIndexPageAdapter
 import com.shhxzq.ztb.ui.home.ui.helper.HomeHandler
 import java.util.*
+import kotlin.collections.ArrayList
 
 /**
  * Des:首页顶部， 2.0 版本
@@ -21,7 +24,7 @@ import java.util.*
 class HomeHeaderView2 : BaseCustomView {
     var homeGridview: MyGridView? = null //九宫格
     var vpAd: ViewPager? = null
-    var vpStock : ViewPager? = null //上滚指数
+    var vpStock: ViewPager? = null //上滚指数
     var bannerLayout: RelativeLayout? = null
     var pointGroup: LinearLayout? = null
 
@@ -57,7 +60,8 @@ class HomeHeaderView2 : BaseCustomView {
 
         //设置广告栏的高度
         val width = UIUtils.widthPixels(context)
-        bannerLayout!!.layoutParams = LayoutParams(width, (width * 0.586).toInt())
+        // 宽高比 ： 0.586 -> 0.405
+        bannerLayout!!.layoutParams = LayoutParams(width, (width * 0.405).toInt())
         //上滑的指数栏
         initStockIndexVp()
     }
@@ -116,6 +120,64 @@ class HomeHeaderView2 : BaseCustomView {
 //            stockIndexPageAdapter!!.updateContent(item!!)
 //            true
 //        }
+        // 此处更新假数据
+        // 上证指数
+        Handler().postDelayed({
+            var item = StockQuoteInfo()
+            item.exch = Exch.SSE
+            item.alias = "上证指数"
+            item.code = "000001"
+            item.chgPct = 1.123 //涨跌幅
+            item.newPrice = 21.123 //现价
+            item.chgValue = 1.123 //涨跌额
+            stockIndexPageAdapter!!.updateContent(item!!)
+            item = StockQuoteInfo()
+            item.exch = Exch.SZSE
+            item.code = "399001"
+            item.alias = "深证成指"
+            item.chgPct = 2.123 //涨跌幅
+            item.newPrice = 31.123 //现价
+            item.chgValue = 2.123 //涨跌额
+            stockIndexPageAdapter!!.updateContent(item!!)
+            item = StockQuoteInfo()
+            item.exch = Exch.SZSE
+            item.code = "399006"
+            item.alias = "创业板指"
+            item.chgPct = -10.123 //涨跌幅
+            item.newPrice = 211.123 //现价
+            item.chgValue = -1.123 //涨跌额
+            stockIndexPageAdapter!!.updateContent(item!!)
+
+            item = StockQuoteInfo()
+            item.exch = Exch.SSE
+            item.code = "000688"
+            item.alias = "科创50"
+            item.chgPct = -10.123 //涨跌幅
+            item.newPrice = 211.123 //现价
+            item.chgValue = -1.123 //涨跌额
+            stockIndexPageAdapter!!.updateContent(item!!)
+
+        }, 3000)
+
+        Handler().postDelayed({
+            val list = ArrayList<Advertise>()
+            var item = Advertise()
+            item.advertiseTargetUrl = "http://h5devtest.yongxingsec.com/h5/activity/buyFund/buyFundYyhty.html"
+            item.code = "1"
+            item.advertisePath = "https://img-pre.ivsky.com/img/tupian/pre/202008/12/hailang-006.jpg"
+            item.timer = "3"
+            item.advertiseType = "0"
+            list.add(item)
+            item = Advertise()
+            item.advertiseTargetUrl = "http://img0.imgtn.bdimg.com/it/u=1735688044,4235283864&fm=26&gp=0.jpg"
+            item.code = "1"
+            item.advertisePath = "http://10.199.101.221:8086/h5/stib/intro/intro.html"
+            item.timer = "3"
+            item.advertiseType = "0"
+            list.add(item)
+            updateAdvertise(list)
+
+        }, 2000)
     }
 
     fun onPause() {
@@ -142,8 +204,8 @@ class HomeHeaderView2 : BaseCustomView {
             initDots(advertises.size)
             pointGroup!!.visibility = VISIBLE
             vpAd!!.setCurrentItem(1, false)
-            mHandler.removeMessages(0)
-            mHandler.sendEmptyMessageDelayed(0, TIME_INTERVAL)
+//            mHandler.removeMessages(0)
+//            mHandler.sendEmptyMessageDelayed(0, TIME_INTERVAL)
         } else {
             pointGroup!!.visibility = GONE
         }
@@ -252,6 +314,11 @@ class HomeHeaderView2 : BaseCustomView {
             return appMenuRes
         }
 
+    fun executeCallback(){
+        mHandler.removeMessages(0)
+        mHandler.sendEmptyMessageDelayed(0, TIME_INTERVAL)
+    }
+
     fun removeCallback() {
         mHandler.removeCallbacksAndMessages(null)
     }
@@ -273,21 +340,25 @@ class HomeHeaderView2 : BaseCustomView {
         if (context != null && !(context as Activity).isFinishing) {
             index++
             if (index % 3 == 0L) {
-                //3s 切换指数
-                val currentStockItem = vpStock!!.currentItem
-                var nextStockItem = currentStockItem + 1
-                if (nextStockItem > vpStock!!.adapter!!.count - 1) {
-                    nextStockItem = 0
+                if(vpStock != null && vpStock!!.adapter != null && vpStock?.adapter?.count!! > 0){
+                    //3s 切换指数
+                    val currentStockItem = vpStock!!.currentItem
+                    var nextStockItem = currentStockItem + 1
+                    if (nextStockItem > vpStock!!.adapter!!.count - 1) {
+                        nextStockItem = 0
+                    }
+                    vpStock!!.currentItem = nextStockItem
                 }
-                vpStock!!.currentItem = nextStockItem
             } else if (index % 5 == 0L) {
-                //5S 切换广告
-                val currentItem = vpAd!!.currentItem
-                var nextItem = currentItem + 1
-                if (nextItem > vpAd!!.adapter!!.count - 1) {
-                    nextItem = 0
+                if(vpAd != null && vpAd!!.adapter != null && vpAd!!.adapter!!.count!! > 0) {
+                    //5S 切换广告
+                    val currentItem = vpAd!!.currentItem
+                    var nextItem = currentItem + 1
+                    if (nextItem > vpAd!!.adapter!!.count - 1) {
+                        nextItem = 0
+                    }
+                    vpAd!!.currentItem = nextItem
                 }
-                vpAd!!.currentItem = nextItem
             } else if (index == (Int.MAX_VALUE - 1).toLong()) {
                 index = 0
             }

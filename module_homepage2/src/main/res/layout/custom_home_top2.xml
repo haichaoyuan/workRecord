@@ -6,8 +6,6 @@
     app:elevation="0dp"
     >
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -51,8 +49,8 @@
             android:background="@color/global_white"
             android:listSelector="@android:color/transparent"
             android:numColumns="4"
-            android:paddingTop="@dimen/home_menu_padding_top"
-            android:paddingBottom="@dimen/home_menu_padding_top"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
             android:scrollbars="none"
             android:verticalSpacing="@dimen/home_menu_verticalSpacing" />
 
@@ -61,8 +59,12 @@
         <com.example.module_homepage2.view.VerticalViewPager
             android:id="@+id/vp_stock"
             android:layout_width="match_parent"
-            android:background="@color/white"
-            android:layout_height="40dp" />
+            android:background="@drawable/bg_round_rect_white"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_height="44dp" />
 
         <View style="@style/HLineStyle" />
     </LinearLayout>

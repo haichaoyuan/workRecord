@@ -3,7 +3,7 @@ package com.shhxzq.ztb.ui.home.ui.listener
 import com.google.android.material.appbar.AppBarLayout
 
 /**
- *
+ * AppBarLayout 滚动
  */
 abstract class AppBarStateChangeListener : AppBarLayout.OnOffsetChangedListener {
     companion object {

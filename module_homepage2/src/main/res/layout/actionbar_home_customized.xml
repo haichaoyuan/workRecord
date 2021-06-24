@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home_titlebar"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/titlebar_statusBar_height">
+    android:background="@color/titlebar_bg_color"
+    android:layout_height="@dimen/titlebar_statusBar_height2">
 
     <ImageView
         android:id="@+id/home_top_bg"
@@ -13,7 +14,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/titlebar_statusBar_height"
+        android:layout_height="@dimen/titlebar_statusBar_height2"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingTop="@dimen/statusBar_height">
@@ -22,7 +23,7 @@
         <LinearLayout
             android:id="@+id/home_search_layout"
             android:layout_width="0dp"
-            android:layout_height="@dimen/home_searchbar_height"
+            android:layout_height="@dimen/home_searchbar_height2"
             android:layout_marginLeft="@dimen/padding_page"
             android:layout_weight="1"
             android:background="@drawable/bg_home_searchbar"
@@ -38,6 +39,7 @@
                 android:drawableLeft="@drawable/ico_home_search"
                 android:drawablePadding="@dimen/home_searchbar_drawablePadding"
                 android:text="@string/home_searchbar_hint"
+                android:textSize="@dimen/text_size_h14"
                 android:textColor="@color/global_white" />
 
 
@@ -46,15 +48,17 @@
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingRight="@dimen/home_msg_margin">
+            android:padding="@dimen/padding_medium"
+            android:paddingRight="@dimen/home_msg_margin"
+            android:paddingLeft="@dimen/home_msg_margin"
+            >
 
             <ImageButton
                 android:id="@+id/msg_image_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/home_msg_margin"
                 android:background="@android:color/transparent"
-                android:padding="@dimen/padding_medium"
+
                 android:src="@mipmap/icon_msg" />
 
             <TextView
@@ -63,11 +67,10 @@
                 android:layout_height="8dp"
                 android:layout_gravity="end|top"
                 android:layout_marginTop="@dimen/margin_8"
-                android:layout_marginRight="@dimen/margin_5"
                 android:background="@drawable/shape_circle_point_yellow"
                 android:gravity="center"
                 tools:visibility ="visible"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
         </FrameLayout>
 
