@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.module_a.StickHeaderListViewActivity
 import com.example.module_appbarlayout.AppbarLayoutEnterActivity
 import com.example.module_autotextview.AutoTextViewActivity
+import com.example.module_homepage2.HomePage2Activity
 import com.example.module_stickheaderscrollview.StickHeadScrollViewActivity
 import com.example.module_videorecord.VideoRecordEnterActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -42,16 +43,20 @@ class MainActivity : AppCompatActivity() {
         btn_test_weixin2.setOnClickListener {
             toWeChatScan(this)
         }
+        //首页2.0
+        btn_homepage2.setOnClickListener {
+            startActivity(Intent(this@MainActivity, HomePage2Activity::class.java))
+        }
     }
 
     companion object {
-        fun toWeChatScan(context: Context){
+        fun toWeChatScan(context: Context) {
             val uri = Uri.parse("weixin://")
             val intent = Intent(Intent.ACTION_VIEW, uri)
             context.startActivity(intent);
         }
 
-        fun toWeChat2(context: Context){
+        fun toWeChat2(context: Context) {
             try {
                 val intent = Intent(Intent.ACTION_MAIN)
                 val cmp = ComponentName("com.tencent.mm", "com.tencent.mm.ui.LauncherUI");

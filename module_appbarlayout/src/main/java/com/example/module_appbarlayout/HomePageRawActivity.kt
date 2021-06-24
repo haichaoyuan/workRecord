@@ -1,9 +1,7 @@
 package com.example.module_appbarlayout
 
 import android.graphics.Color
-import android.os.Build
 import android.os.Bundle
-import android.view.View
 import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -25,7 +23,7 @@ import kotlinx.android.synthetic.main.activity_homepage2.*
 版权声明：本文为CSDN博主「Super 含」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/qq_37492806/article/details/104926969
  */
-class HomePage2Activity : AppCompatActivity() {
+class HomePageRawActivity : AppCompatActivity() {
     private val CHANNELS = arrayOf("直播", "视频", "题库", "资料")
     private val fragmentList: ArrayList<Fragment> = ArrayList()
 
@@ -75,11 +73,11 @@ class HomePage2Activity : AppCompatActivity() {
                 System.out.println("appBarLayout: $appBarLayout, verticalOffset:$verticalOffset")
                 if (supportActionBar!!.getHeight() - appBarLayout!!.getHeight() == verticalOffset) {
                     //折叠监听
-                    Toast.makeText(this@HomePage2Activity, "折叠了", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this@HomePageRawActivity, "折叠了", Toast.LENGTH_SHORT).show();
                 }
                 if (expendedtag == 2 && verticalOffset == 0) {
                     //展开监听
-                    Toast.makeText(this@HomePage2Activity, "展开了", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this@HomePageRawActivity, "展开了", Toast.LENGTH_SHORT).show();
                 }
                 if (expendedtag != 2 && verticalOffset == 0) {
                     expendedtag++;

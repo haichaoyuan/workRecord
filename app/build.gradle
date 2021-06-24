@@ -61,5 +61,6 @@ dependencies {
         implementation project(':module_stickheaderscrollview')
         implementation project(':module_autotextview')
         implementation project(':module_videorecord')
+        implementation project(':module_homepage2')
     }
 }

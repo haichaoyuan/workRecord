@@ -18,7 +18,7 @@
             android:theme="@style/Theme.MyApplication"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name="com.example.module_appbarlayout.HomePage2Activity"
+        <activity android:name="com.example.module_appbarlayout.HomePageRawActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.MyApplication"
             android:screenOrientation="portrait">
