@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:background="@color/global_white"
             android:listSelector="@android:color/transparent"
-            android:numColumns="4"
+            android:numColumns="5"
             android:paddingTop="24dp"
             android:paddingBottom="24dp"
             android:scrollbars="none"

@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
@@ -14,6 +15,7 @@ import com.bumptech.glide.request.transition.DrawableCrossFadeFactory;
 import com.example.module_homepage2.R;
 import com.example.module_homepage2.base.AppMenuRes;
 import com.example.module_homepage2.base.NumberUtil;
+import com.example.module_homepage2.listener.HomeMenuItemClickListener;
 
 import java.util.List;
 
@@ -23,9 +25,17 @@ import java.util.List;
  * Data: 17/2/16
  */
 public class HomeMenu2Adapter extends HomeMenuAdapter {
+    HomeMenuItemClickListener itemClickListener;
+
+
     public HomeMenu2Adapter(Context ctx, List<AppMenuRes> objects) {
         super(ctx, objects);
         drawables = new int[10];
+    }
+
+    public HomeMenu2Adapter setHomeMenuItemClickListener(HomeMenuItemClickListener itemClickListener) {
+        this.itemClickListener = itemClickListener;
+        return this;
     }
 
     @Override
@@ -55,8 +65,7 @@ public class HomeMenu2Adapter extends HomeMenuAdapter {
                 new DrawableCrossFadeFactory.Builder().setCrossFadeEnabled(true).build();
         if (!menuRes.isSimulated())
             Glide.with((Activity) context)
-                    .load(menuRes.getMenuImageUrl()).placeholder(context.getResources().
-                    getDrawable(drawables[position]))
+                    .load(menuRes.getMenuImageUrl()).placeholder(ContextCompat.getDrawable(context, drawables[position]))
                     .transition(DrawableTransitionOptions.with(drawableCrossFadeFactory))
                     .into(holder.icon);
         else
@@ -67,8 +76,12 @@ public class HomeMenu2Adapter extends HomeMenuAdapter {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (itemClickListener != null) {
+                    itemClickListener.onItemClick(menuRes);
+                }
             }
         });
         return convertView;
     }
+
 }

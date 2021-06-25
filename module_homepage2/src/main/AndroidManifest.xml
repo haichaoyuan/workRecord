@@ -17,6 +17,8 @@
             android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
 
+        <activity android:name=".AllServiceActivity"/>
+
         <meta-data
             android:name="com.example.module_homepage2.permissions.MyGlideModule"
             android:value="AppGlideModule"/>
