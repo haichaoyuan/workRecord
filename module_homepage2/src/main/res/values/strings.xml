@@ -1821,4 +1821,8 @@
     <string name="trade_available_money">可用资金</string>
     <string name="trade_available_money_info">指您目前资金账户中可用来购买证券、理财产品的资金，不包含冻结部分的资金。</string>
 
+
+
+    <!-- ====================== 全部服务 ======================== -->
+    <string name="all_service_popular_recommend">热门推荐</string>
 </resources>

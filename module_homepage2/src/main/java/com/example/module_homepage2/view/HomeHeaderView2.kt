@@ -69,7 +69,6 @@ class HomeHeaderView2 : BaseCustomView {
                     )
                 }
             }
-
         })
 
         //上滑的指数栏
@@ -242,7 +241,7 @@ class HomeHeaderView2 : BaseCustomView {
             item.chgValue = -1.123 //涨跌额
             stockIndexPageAdapter!!.updateContent(item!!)
 
-        }, 3000)
+        }, 300)
 
         Handler().postDelayed({
             val list = ArrayList<Advertise>()
@@ -265,12 +264,13 @@ class HomeHeaderView2 : BaseCustomView {
             list.add(item)
             updateAdvertise(list)
 
-        }, 2000)
+        }, 200)
     }
 
     fun onPause() { //        hsIndexView!!.onPause()
         //        StockIndexHelper.onPause()
-    } // =========================================================================================
+    }
+    // =========================================================================================
     // =================================== update data
     // =========================================================================================
     /**
