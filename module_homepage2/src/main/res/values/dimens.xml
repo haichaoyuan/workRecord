@@ -160,6 +160,7 @@
 
     <!--===========================home页面=========================-->
     <dimen name="home_menu_width">39dp</dimen>
+    <dimen name="home_menu_width_small">30dp</dimen>
     <dimen name="home_menu_verticalSpacing">8dp</dimen>
     <dimen name="home_menu_padding_top">12dp</dimen>
     <dimen name="home_info_padding_top">7dp</dimen>

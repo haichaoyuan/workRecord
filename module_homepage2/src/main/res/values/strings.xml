@@ -20,6 +20,16 @@
 
     <!-- ======================首页======================== -->
     <string name="home_menu_mystock">自选股</string>
+    <string name="home_investment_advisor">投顾</string>
+    <string name="home_info_ipo">新股IPO</string>
+    <string name="home_menu_simulate_stock_speculation">模拟炒股</string>
+    <string name="home_menu_icon_online_account_opening">线上开户</string>
+    <string name="home_menu_normal_trade">普通交易</string>
+    <string name="home_menu_open_science_technology">科创板开通</string>
+    <string name="home_menu_open_second_board">创业板开通</string>
+    <string name="home_menu_more">更多</string>
+
+
     <string name="home_menu_stockindex">大盘指数</string>
     <string name="home_menu_ranking">涨跌排名</string>
     <string name="home_menu_hotblock">热门板块</string>
@@ -1103,7 +1113,7 @@
     <!-- =======================错误提示信息============================ -->
     <string name="prompt_invalid_url">网页地址有误</string>
 
-    <string name="home_info_ipo">新股IPO</string>
+
     <string name="home_info_winnerslist">龙虎榜</string>
     <string name="home_info_finance">融资融券</string>
     <string name="home_info_largetrade">大宗交易</string>

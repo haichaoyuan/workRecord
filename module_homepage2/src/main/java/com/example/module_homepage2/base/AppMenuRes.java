@@ -24,6 +24,8 @@ public class AppMenuRes extends Entity {
     public final static int TARGET_MORE = 13; // 更多
     public final static int TARGET_SD_TG = 14; // 思迪投顾
     public final static int TARGET_LOCK_ACT = 15; // 激活锁定
+    public final static int TARGET_OPEN_SCIENCE_TECHNOLOGY = 16; // 科创板开通
+    public final static int TARGET_OPEN_SECOND_BOARD = 17; // 创业板开通
 
     private String menuImageUrl;//图片地址
     private String menuName;//菜单名字

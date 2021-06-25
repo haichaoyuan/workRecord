@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="仿天天基金的更多页面效果" />
+            android:text="AppBar 例子" />
 
         <Button
             android:id="@+id/btn_sticklistview"

@@ -3,6 +3,7 @@ package com.example.module_appbarlayout;
 import android.graphics.Color;
 import android.graphics.PointF;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Window;
 
 import androidx.annotation.Nullable;
@@ -62,6 +63,19 @@ public class MainAppBarLayoutActivity extends AppCompatActivity implements AppBa
         mRecyclerView = findViewById(R.id.recycler_view);
         mAppBar = findViewById(R.id.appbar);
         swipeRefreshLayout = findViewById(R.id.swipe_layout);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener(){
+
+            @Override
+            public void onRefresh() {
+                swipeRefreshLayout.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        swipeRefreshLayout.setRefreshing(false);
+                    }
+                }, 2000);
+
+            }
+        });
         ((CoordinatorLayout.LayoutParams) mAppBar.getLayoutParams()).setBehavior(new FixAppBarLayoutBehavior());
         initRecyclerView();
         initTabLayout();
