@@ -4,7 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class HomeMsgListFragmentPageAdapter(fm: FragmentActivity, val fragmentList: List<Fragment>) :
+class HomeFragmentViewPageAdapter(fm: FragmentActivity, val fragmentList: List<Fragment>) :
     FragmentStateAdapter(fm) {
 
     override fun getItemCount(): Int {

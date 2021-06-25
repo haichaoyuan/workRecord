@@ -3,6 +3,7 @@ package com.example.module_homepage2
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import android.os.Message
 import android.util.Log
 import android.view.View
 import android.view.Window
@@ -12,12 +13,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.viewpager.widget.ViewPager
+import androidx.viewpager2.widget.ViewPager2
 import com.example.module_homepage2.base.UIUtils
 import com.example.module_homepage2.xtablayout.XTabLayout
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabLayout
-import com.shhxzq.ztb.ui.home.ui.adapter.HomeMsgListFragmentPageAdapter2
+import com.shhxzq.ztb.ui.home.ui.adapter.HomeFragmentViewPageAdapter
+import com.shhxzq.ztb.ui.home.ui.helper.HomeHandler
+import com.shhxzq.ztb.ui.home.ui.helper.HomePageHandler
 import com.shhxzq.ztb.ui.home.ui.listener.AppBarStateChangeListener
 import com.shhxzq.ztb.ui.home.ui.view.HomeMsgListFragment
 import kotlinx.android.synthetic.main.actionbar_home_customized.*
@@ -97,7 +100,7 @@ class HomePage2Activity : AppCompatActivity() {
     }
 
     private fun initTabLayout() {
-        for(i in CHANNELS.indices){
+        for (i in CHANNELS.indices) {
             tab_layout.addTab(tab_layout.newTab().setText(CHANNELS[i]), i == CHANNELS.size - 1)
         }
         tab_layout!!.tabMode = TabLayout.MODE_FIXED
@@ -119,6 +122,13 @@ class HomePage2Activity : AppCompatActivity() {
         }
     }
 
+    val handler = HomePageHandler { msg, handler ->
+        val position = msg?.arg1?:0
+        viewPager.currentItem = position
+        true
+    }
+
+
     private fun initViewPager() {
         //主页
         val homeMsgListFragment = HomeMsgListFragment(1)
@@ -129,39 +139,19 @@ class HomePage2Activity : AppCompatActivity() {
         fragmentList.add(homeMsgListFragment2)
         fragmentList.add(homeMsgListFragment3)
         fragmentList.add(homeMsgListFragment4)
-        val fragmentPageAdapter = HomeMsgListFragmentPageAdapter2(
+        val fragmentPageAdapter = HomeFragmentViewPageAdapter(
             this, fragmentList
         )
         viewPager.adapter = fragmentPageAdapter
-        viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
-            override fun onPageScrolled(
-                position: Int,
-                positionOffset: Float,
-                positionOffsetPixels: Int
-            ) {
-
-            }
-
+        viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
                 val tabAt: XTabLayout.Tab? = tab_layout.getTabAt(position)
                 if (tabAt != null && !tabAt.isSelected) {
                     tabAt.select()
                 }
             }
-
-            override fun onPageScrollStateChanged(state: Int) {
-            }
-
         })
-//        viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
-//            override fun onPageSelected(position: Int) {
-//                super.onPageSelected(position)
-//                val tabAt: TabLayout.Tab? = tab_layout.getTabAt(position)
-//                if (tabAt != null && !tabAt.isSelected) {
-//                    tabAt.select()
-//                }
-//            }
-//        })
     }
 
     // =========================================================================================
