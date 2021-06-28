@@ -1,0 +1,515 @@
+{
+  "result": [
+    {
+      "name": "行情",
+      "values": [
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/AczRqh54RK56iXhHUD_Xyh.png",
+          "menuName": "自选股",
+          "menuType": 1,
+          "targetUrl": "11",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "沪深行情",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BFx_TgMMpPXILak5ZRuL_k.png",
+          "menuName": "热门行业",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/html/dataCenter/newStockIPO.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Afd-A3c5NPK40j19t3qnxj.png",
+          "menuName": "热门概念",
+          "menuType": 1,
+          "targetUrl": "9",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Ak5TvFdS5B3JLfc4ElJt15.png",
+          "menuName": "大盘指数",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/news/ceiling/ceilingBefore.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BZIB-bTF5Mt6jqkuOcdaud.png",
+          "menuName": "资金流向",
+          "menuType": 1,
+          "targetUrl": "3",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "创业板",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/CroRqHjodCRq83lECHsB_u.png",
+          "menuName": "科创板",
+          "menuType": 1,
+          "targetUrl": "10",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/A7D5th1RdJvZf5O27VlIpi.png",
+          "menuName": "港通股",
+          "menuType": 1,
+          "targetUrl": "2",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "新三板",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "更多",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        }
+      ]
+    },
+    {
+      "name": "交易",
+      "values": [
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/AczRqh54RK56iXhHUD_Xyh.png",
+          "menuName": "自选股",
+          "menuType": 1,
+          "targetUrl": "11",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "沪深行情",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BFx_TgMMpPXILak5ZRuL_k.png",
+          "menuName": "热门行业",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/html/dataCenter/newStockIPO.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Afd-A3c5NPK40j19t3qnxj.png",
+          "menuName": "热门概念",
+          "menuType": 1,
+          "targetUrl": "9",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Ak5TvFdS5B3JLfc4ElJt15.png",
+          "menuName": "大盘指数",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/news/ceiling/ceilingBefore.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BZIB-bTF5Mt6jqkuOcdaud.png",
+          "menuName": "资金流向",
+          "menuType": 1,
+          "targetUrl": "3",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "创业板",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/CroRqHjodCRq83lECHsB_u.png",
+          "menuName": "科创板",
+          "menuType": 1,
+          "targetUrl": "10",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/A7D5th1RdJvZf5O27VlIpi.png",
+          "menuName": "港通股",
+          "menuType": 1,
+          "targetUrl": "2",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "新三板",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "更多",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        }
+      ]
+    },
+    {
+      "name": "理财",
+      "values": [
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/AczRqh54RK56iXhHUD_Xyh.png",
+          "menuName": "自选股",
+          "menuType": 1,
+          "targetUrl": "11",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "沪深行情",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BFx_TgMMpPXILak5ZRuL_k.png",
+          "menuName": "热门行业",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/html/dataCenter/newStockIPO.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Afd-A3c5NPK40j19t3qnxj.png",
+          "menuName": "热门概念",
+          "menuType": 1,
+          "targetUrl": "9",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Ak5TvFdS5B3JLfc4ElJt15.png",
+          "menuName": "大盘指数",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/news/ceiling/ceilingBefore.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BZIB-bTF5Mt6jqkuOcdaud.png",
+          "menuName": "资金流向",
+          "menuType": 1,
+          "targetUrl": "3",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "创业板",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/CroRqHjodCRq83lECHsB_u.png",
+          "menuName": "科创板",
+          "menuType": 1,
+          "targetUrl": "10",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/A7D5th1RdJvZf5O27VlIpi.png",
+          "menuName": "港通股",
+          "menuType": 1,
+          "targetUrl": "2",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "新三板",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "更多",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        }
+      ]
+    },
+    {
+      "name": "特色数据",
+      "values": [
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/AczRqh54RK56iXhHUD_Xyh.png",
+          "menuName": "自选股",
+          "menuType": 1,
+          "targetUrl": "11",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "沪深行情",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BFx_TgMMpPXILak5ZRuL_k.png",
+          "menuName": "热门行业",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/html/dataCenter/newStockIPO.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Afd-A3c5NPK40j19t3qnxj.png",
+          "menuName": "热门概念",
+          "menuType": 1,
+          "targetUrl": "9",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Ak5TvFdS5B3JLfc4ElJt15.png",
+          "menuName": "大盘指数",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/news/ceiling/ceilingBefore.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BZIB-bTF5Mt6jqkuOcdaud.png",
+          "menuName": "资金流向",
+          "menuType": 1,
+          "targetUrl": "3",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "创业板",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/CroRqHjodCRq83lECHsB_u.png",
+          "menuName": "科创板",
+          "menuType": 1,
+          "targetUrl": "10",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/A7D5th1RdJvZf5O27VlIpi.png",
+          "menuName": "港通股",
+          "menuType": 1,
+          "targetUrl": "2",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "新三板",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "更多",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        }
+      ]
+    },
+    {
+      "name": "特色服务",
+      "values": [
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/AczRqh54RK56iXhHUD_Xyh.png",
+          "menuName": "自选股",
+          "menuType": 1,
+          "targetUrl": "11",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "沪深行情",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BFx_TgMMpPXILak5ZRuL_k.png",
+          "menuName": "热门行业",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/html/dataCenter/newStockIPO.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Afd-A3c5NPK40j19t3qnxj.png",
+          "menuName": "热门概念",
+          "menuType": 1,
+          "targetUrl": "9",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Ak5TvFdS5B3JLfc4ElJt15.png",
+          "menuName": "大盘指数",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/news/ceiling/ceilingBefore.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BZIB-bTF5Mt6jqkuOcdaud.png",
+          "menuName": "资金流向",
+          "menuType": 1,
+          "targetUrl": "3",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "创业板",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/CroRqHjodCRq83lECHsB_u.png",
+          "menuName": "科创板",
+          "menuType": 1,
+          "targetUrl": "10",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/A7D5th1RdJvZf5O27VlIpi.png",
+          "menuName": "港通股",
+          "menuType": 1,
+          "targetUrl": "2",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "新三板",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "更多",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        }
+      ]
+    },
+    {
+      "name": "业务办理",
+      "values": [
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/AczRqh54RK56iXhHUD_Xyh.png",
+          "menuName": "自选股",
+          "menuType": 1,
+          "targetUrl": "11",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "沪深行情",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BFx_TgMMpPXILak5ZRuL_k.png",
+          "menuName": "热门行业",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/html/dataCenter/newStockIPO.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Afd-A3c5NPK40j19t3qnxj.png",
+          "menuName": "热门概念",
+          "menuType": 1,
+          "targetUrl": "9",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Ak5TvFdS5B3JLfc4ElJt15.png",
+          "menuName": "大盘指数",
+          "menuType": 0,
+          "targetUrl": "https://h5-ztb-uat.shhxzq.com/h5/news/ceiling/ceilingBefore.html",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/BZIB-bTF5Mt6jqkuOcdaud.png",
+          "menuName": "资金流向",
+          "menuType": 1,
+          "targetUrl": "3",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "创业板",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/CroRqHjodCRq83lECHsB_u.png",
+          "menuName": "科创板",
+          "menuType": 1,
+          "targetUrl": "10",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/A7D5th1RdJvZf5O27VlIpi.png",
+          "menuName": "港通股",
+          "menuType": 1,
+          "targetUrl": "2",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "新三板",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/appmenu/hx_home_header_8.png",
+          "menuName": "更多",
+          "menuType": 1,
+          "targetUrl": "8",
+          "isSimulated": true
+        }
+      ]
+    },
+    {
+      "name": "资讯",
+      "values": [
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/AczRqh54RK56iXhHUD_Xyh.png",
+          "menuName": "自选股",
+          "menuType": 1,
+          "targetUrl": "11",
+          "isSimulated": true
+        },
+        {
+          "menuImageUrl": "https://ztb-uat.shhxzq.com/cms/outer/2018/02/02/Aq12vZ02NLZ7LM_dmVlUN8.png",
+          "menuName": "沪深行情",
+          "menuType": 1,
+          "targetUrl": "7",
+          "isSimulated": true
+        }
+      ]
+    }
+  ]
+}

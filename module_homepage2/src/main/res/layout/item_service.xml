@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bar_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="餐前"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_20"
+        android:textSize="@dimen/text_size_h17"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bar_item_recycler_view"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
