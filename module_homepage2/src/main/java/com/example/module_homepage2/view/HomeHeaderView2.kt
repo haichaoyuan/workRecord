@@ -151,8 +151,12 @@ class HomeHeaderView2 : BaseCustomView {
         defaultMenus = appMenuRes
     }
 
+    /**
+     * 广告栏的
+     */
     @SuppressLint("ClickableViewAccessibility")
-    private fun initAd() { //设置广告栏的高度
+    private fun initAd() {
+        //设置广告栏的高度
         val width = UIUtils.widthPixels(context) // 宽高比 ： 0.586 -> 0.405
         bannerLayout!!.layoutParams = LayoutParams(width, (width * 0.405).toInt())
 

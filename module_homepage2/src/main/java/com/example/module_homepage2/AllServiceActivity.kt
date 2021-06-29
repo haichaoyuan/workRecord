@@ -38,7 +38,7 @@ class AllServiceActivity : FragmentActivity() {
     /**
      * 是否处于滚动状态，避免连锁反应
      */
-    private var isScroll = false
+    private var isScroll:Boolean? = null
     private var isStartSmoothScroll = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -100,7 +100,7 @@ class AllServiceActivity : FragmentActivity() {
             override fun onTabSelected(tab: XTabLayout.Tab) {
                 //点击tab的时候，RecyclerView自动滑到该tab对应的item位置
                 val position = tab.position
-                if (!isScroll) {
+                if (isScroll != null&& !isScroll!!) {
                     Log.e(TAG, "mSmoothScroller,$position")
                     isStartSmoothScroll = true
                     mSmoothScroller?.targetPosition = position
