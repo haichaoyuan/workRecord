@@ -12,10 +12,3 @@ class HomeHandler(val unit:(msg: Message?, handler:Handler)->Boolean): Handler()
         unit.invoke(msg, this)
     }
 }
-
-class HomePageHandler(val unit:(msg: Message?, handler:Handler)->Boolean): Handler() {
-    override fun handleMessage(msg: Message) {
-        super.handleMessage(msg)
-        unit.invoke(msg, this)
-    }
-}

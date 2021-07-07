@@ -8,6 +8,8 @@ package com.example.module_homepage2.base;
 public class AppMenuRes extends Entity {
     public static String MENU_TYPE_H5 = "0";
     public static String MENU_TYPE_NATIVE = "1";
+    public static String MENU_TYPE_SCHEME = "2";
+
 
     public final static int TARGET_MYSTOCK = 1;// 自选股
     public final static int TARGET_STOCKINDEX = 2;//大盘指数

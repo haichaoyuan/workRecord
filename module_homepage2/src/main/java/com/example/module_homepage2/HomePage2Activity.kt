@@ -13,14 +13,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.viewpager2.widget.ViewPager2
+import androidx.viewpager.widget.ViewPager
 import com.example.module_homepage2.base.UIUtils
 import com.example.module_homepage2.xtablayout.XTabLayout
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabLayout
 import com.shhxzq.ztb.ui.home.ui.adapter.HomeFragmentViewPageAdapter
 import com.shhxzq.ztb.ui.home.ui.helper.HomeHandler
-import com.shhxzq.ztb.ui.home.ui.helper.HomePageHandler
 import com.shhxzq.ztb.ui.home.ui.listener.AppBarStateChangeListener
 import com.shhxzq.ztb.ui.home.ui.view.HomeMsgListFragment
 import kotlinx.android.synthetic.main.actionbar_home_customized.*
@@ -122,7 +121,7 @@ class HomePage2Activity : AppCompatActivity() {
         }
     }
 
-    val handler = HomePageHandler { msg, handler ->
+    val handler = HomeHandler { msg, handler ->
         val position = msg?.arg1?:0
         viewPager.currentItem = position
         true
@@ -140,16 +139,25 @@ class HomePage2Activity : AppCompatActivity() {
         fragmentList.add(homeMsgListFragment3)
         fragmentList.add(homeMsgListFragment4)
         val fragmentPageAdapter = HomeFragmentViewPageAdapter(
-            this, fragmentList
+            supportFragmentManager, fragmentList
         )
         viewPager.adapter = fragmentPageAdapter
-        viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
+        viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+            override fun onPageScrolled(
+                position: Int, positionOffset: Float, positionOffsetPixels: Int
+            ) {
+
+            }
+
             override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
                 val tabAt: XTabLayout.Tab? = tab_layout.getTabAt(position)
                 if (tabAt != null && !tabAt.isSelected) {
                     tabAt.select()
                 }
+            }
+
+
+            override fun onPageScrollStateChanged(state: Int) {
             }
         })
     }

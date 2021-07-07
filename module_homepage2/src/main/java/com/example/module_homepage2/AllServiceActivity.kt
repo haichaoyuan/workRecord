@@ -141,9 +141,11 @@ class AllServiceActivity : FragmentActivity() {
             override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
                 super.onScrollStateChanged(recyclerView, newState)
                 Log.e(TAG, "newState:$newState")
-                if (newState == RecyclerView.SCROLL_STATE_IDLE) { //非滚动
-                    isScroll = false
+                if(newState == RecyclerView.SCROLL_STATE_DRAGGING){//开始拖动
                     isStartSmoothScroll = false
+                    isScroll = true
+                }else if (newState == RecyclerView.SCROLL_STATE_IDLE) { //非滚动
+                    isScroll = false
                 } else {
                     isScroll = true
                 }

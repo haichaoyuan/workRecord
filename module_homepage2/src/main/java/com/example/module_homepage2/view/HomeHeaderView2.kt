@@ -17,6 +17,7 @@ import com.example.module_homepage2.adapter.HomeMenu2Adapter
 import com.example.module_homepage2.base.*
 import com.example.module_homepage2.listener.HomeMenuItemClickListener
 import com.shhxzq.ztb.ui.home.ui.adapter.StockIndexPageAdapter
+import com.shhxzq.ztb.ui.home.ui.helper.AppMenuJumpHelper
 import com.shhxzq.ztb.ui.home.ui.helper.HomeHandler
 
 /**
@@ -63,10 +64,12 @@ class HomeHeaderView2 : BaseCustomView {
         homeGridview!!.adapter = menuAdapter
         menuAdapter!!.setHomeMenuItemClickListener(object : HomeMenuItemClickListener {
             override fun onItemClick(appMenuRes: AppMenuRes) {
-                when (appMenuRes.targetUrl) {
-                    AppMenuRes.TARGET_MORE.toString() -> context.startActivity(
+                if(appMenuRes.targetUrl == AppMenuRes.TARGET_MORE.toString()){
+                    context.startActivity(
                         Intent(context, AllServiceActivity::class.java)
                     )
+                } else {
+                    AppMenuJumpHelper.menuClickImp(context as Activity, appMenuRes)
                 }
             }
         })
