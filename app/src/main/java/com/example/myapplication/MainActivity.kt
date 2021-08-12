@@ -47,6 +47,10 @@ class MainActivity : AppCompatActivity() {
         btn_homepage2.setOnClickListener {
             startActivity(Intent(this@MainActivity, HomePage2Activity::class.java))
         }
+        //edittext
+        btn_test_edittext.setOnClickListener {
+            startActivity(Intent(this@MainActivity, HomePage2Activity::class.java))
+        }
     }
 
     companion object {
