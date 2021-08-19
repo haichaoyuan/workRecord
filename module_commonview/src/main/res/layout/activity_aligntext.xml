@@ -7,15 +7,15 @@
     android:orientation="vertical"
     tools:context=".CommonViewEnterActivity">
 
-    <Button
-        android:id="@+id/btn_edit_text"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EditText"/>
-    <Button
-        android:id="@+id/btn_align_text"
-        android:layout_width="match_parent"
+        android:text="@string/align_text_demo2"/>
+
+    <com.example.module_commonview.textview.AlignTextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AlignTextView"/>
+        android:layout_marginTop="100dp"
+        android:text="@string/align_text_demo2"/>
 
 </LinearLayout>

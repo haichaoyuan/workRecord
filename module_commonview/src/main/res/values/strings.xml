@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">module_commonview</string>
+    <string name="align_text_demo">这是一段中英文混合的文本,I am very happy today测试TextView文本对齐AlignTextView可以通过setAlign()方法设置每一段尾行的对齐方式,默认尾行居左对齐.CBAlignTextView可以像原生TextView一样操作，但是需要使用getRealText()获取文本,欢迎访问open.codeboy.me</string>
+    <string name="align_text_demo2">声明一下：这是一种比较无脑简单粗暴的方式去解决Android文本域对齐的方法，读者可以获取源码根据思路进行改造。迫于项目的紧张压力，需要赶紧上车，不然就没老司机带路了。
+欢迎加入交流群：微信群（AndroidRunner ）、QQ群（314896948）
+欢迎关注微信公众号：AndroidRunner
+
+作者：Leo618
+链接：https://www.jianshu.com/p/2899e5ef512c
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</string>
 </resources>

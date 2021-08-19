@@ -7,15 +7,9 @@
     android:orientation="vertical"
     tools:context=".CommonViewEnterActivity">
 
-    <Button
-        android:id="@+id/btn_edit_text"
+    <EditText
+        android:id="@+id/nameEdit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="EditText"/>
-    <Button
-        android:id="@+id/btn_align_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="AlignTextView"/>
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

@@ -10,6 +10,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".edittext.EditTextActivity">
+        </activity>
+        <activity
+            android:name=".textview.AlignTextViewActivity">
+        </activity>
     </application>
 
 </manifest>

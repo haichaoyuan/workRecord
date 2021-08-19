@@ -11,7 +11,15 @@
         android:theme="@style/Theme.MyApplication">
         <activity
             android:name=".CommonViewEnterActivity"
-            android:exported="true">
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".edittext.EditTextActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".textview.AlignTextViewActivity"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
