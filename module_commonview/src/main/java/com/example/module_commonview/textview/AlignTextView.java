@@ -39,7 +39,8 @@ public class AlignTextView extends androidx.appcompat.widget.AppCompatTextView {
 
     // 尾行对齐方式
     public enum Align {
-        ALIGN_LEFT, ALIGN_CENTER, ALIGN_RIGHT  // 居中，居左，居右,针对段落最后一行
+        ALIGN_LEFT, ALIGN_CENTER, ALIGN_RIGHT,  // 居中，居左，居右,针对段落最后一行
+        ALIGN_LEFT_RIGHT_CENTER // 左右居中
     }
 
     public AlignTextView(Context context) {
@@ -67,6 +68,9 @@ public class AlignTextView extends androidx.appcompat.widget.AppCompatTextView {
                 break;
             case 2:
                 align = Align.ALIGN_RIGHT;
+                break;
+            case 3:
+                align = Align.ALIGN_LEFT_RIGHT_CENTER;
                 break;
             default:
                 align = Align.ALIGN_LEFT;
@@ -143,19 +147,29 @@ public class AlignTextView extends androidx.appcompat.widget.AppCompatTextView {
             String line = lines.get(i);
             // 绘画起始x坐标
             float drawSpacingX = paddingLeft;
-            float gap = (width - paint.measureText(line));
-            float interval = gap / (line.length() - 1);
+            float gap = (width - paint.measureText(line)); //宽度 - 字宽 = 剩余空间
+            float interval = gap / (line.length() - 1); // 字的间隔空间
 
-            // 绘制最后一行
-            if (tailLines.contains(i)) {
-                interval = 0;
-                if (align == Align.ALIGN_CENTER) {
+            // 绘制最后一行的对齐状态
+            if (align == Align.ALIGN_CENTER) { // 最后一行居中
+                if (tailLines.contains(i)) {
+                    interval = 0;
                     drawSpacingX += gap / 2;
-                } else if (align == Align.ALIGN_RIGHT) {
+                }
+            } else if (align == Align.ALIGN_RIGHT) {// 最后一行右对齐
+                if (tailLines.contains(i)) {
+                    interval = 0;
                     drawSpacingX += gap;
                 }
+            } else if(align == Align.ALIGN_LEFT){// 最后一行左对齐
+                if (tailLines.contains(i)) {
+                    interval = 0;
+                }
+            }else if(align == Align.ALIGN_LEFT_RIGHT_CENTER){// 最后一行两边对齐
+
             }
 
+            // 绘制
             for (int j = 0; j < line.length(); j++) {
                 float drawX = paint.measureText(line.substring(0, j)) + interval * j;
                 canvas.drawText(line.substring(j, j + 1), drawX + drawSpacingX, drawY +

@@ -1,21 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".CommonViewEnterActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/align_text_demo2"/>
+        android:orientation="vertical"
+        tools:context=".CommonViewEnterActivity">
 
-    <com.example.module_commonview.textview.AlignTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/align_text_demo2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/align_text_demo2" />
 
-</LinearLayout>
+        <com.example.module_commonview.textview.AlignTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/align_text_demo2"
+            app:align="left" />
+
+        <com.example.module_commonview.textview.AlignTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/align_text_demo2"
+            app:align="right" />
+
+        <com.example.module_commonview.textview.AlignTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/align_text_demo2"
+            app:align="center" />
+
+        <com.example.module_commonview.textview.AlignTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/align_text_demo2"
+            app:align="left_right_center" />
+
+        <com.example.module_commonview.textview.AlignTextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="本机号码登陆"
+            app:align="left_right_center" />
+
+    </LinearLayout>
+</ScrollView>
