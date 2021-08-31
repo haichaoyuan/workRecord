@@ -17,6 +17,12 @@
         <activity
             android:name=".textview.AlignTextViewActivity">
         </activity>
+        <activity
+            android:name=".edittext.VerificationCodeEditTextActivity">
+        </activity>
+        <activity
+            android:name=".edittext.VerificationCodeWithCursorActivity">
+        </activity>
     </application>
 
 </manifest>

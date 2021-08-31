@@ -5,17 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
     tools:context=".CommonViewEnterActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EditTextView demo"/>
     <Button
         android:id="@+id/btn_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="EditText"/>
+        android:text="EditText 的限制输入（字数+字符）"/>
+
+    <Button
+        android:id="@+id/btn_verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="verification_code 验证码（不带光标）"/>
+    <Button
+        android:id="@+id/btn_verification_code2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="verification_code2 验证码（带光标）"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView demo"/>
+
     <Button
         android:id="@+id/btn_align_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="AlignTextView"/>
+        android:text="AlignTextView 左右对齐"/>
 
 </LinearLayout>

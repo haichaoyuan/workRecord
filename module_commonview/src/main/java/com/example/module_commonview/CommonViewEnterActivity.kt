@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.module_commonview.edittext.EditTextActivity
+import com.example.module_commonview.edittext.VerificationCodeEditTextActivity
+import com.example.module_commonview.edittext.VerificationCodeWithCursorActivity
 import com.example.module_commonview.textview.AlignTextViewActivity
 import kotlinx.android.synthetic.main.activity_common_view_enter.*
 
@@ -18,6 +20,12 @@ class CommonViewEnterActivity : AppCompatActivity() {
         }
         btn_align_text.setOnClickListener {
             startActivity(Intent(this, AlignTextViewActivity::class.java))
+        }
+        btn_verification_code.setOnClickListener {
+            startActivity(Intent(this, VerificationCodeEditTextActivity::class.java))
+        }
+        btn_verification_code2.setOnClickListener {
+            startActivity(Intent(this, VerificationCodeWithCursorActivity::class.java))
         }
     }
 

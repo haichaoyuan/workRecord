@@ -9,7 +9,7 @@ import android.widget.EditText
  * 姓名编辑框限制帮助类
  */
 object NameEditLimitHelper {
-    private val MAX_LENGTH = 120
+    const val MAX_LENGTH = 12
     private val TAG = NameEditLimitHelper::class.java.simpleName
 
 

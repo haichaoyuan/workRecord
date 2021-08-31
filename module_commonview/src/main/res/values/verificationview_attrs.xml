@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义验证码输入框-->
+    <declare-styleable name="VerificationView">
+        <!-- 文本大小 -->
+        <attr name="vTextSize" format="dimension"/>
+        <attr name="vTextCount" format="integer"/>
+        <attr name="vTextColor" format="color"/>
+        <!-- 输入框背景图 -->
+        <attr name="vBackgroundResource" format="reference"/>
+        <!-- 游标图 -->
+        <attr name="vCursorDrawable" format="reference"/>
+        <!-- 输入框背景色 -->
+        <attr name="vBackgroundColor" format="color"/>
+        <attr name="vAutoShowInputBoard" format="boolean"/>
+        <!-- 宽度 -->
+        <attr name="vWidth" format="dimension"/>
+        <attr name="vWidthPercent" format="float"/>
+        <!-- 底部线颜色 -->
+        <attr name="vLineColor" format="color"/>
+        <!-- 底部线高度 -->
+        <attr name="vLineHeight" format="dimension"/>
+    </declare-styleable>
+</resources>
