@@ -21,7 +21,7 @@ object NameEditLimitHelper {
         if (!TextUtils.isEmpty(s) && s.length > MAX_LENGTH) {
             //删除指定长度之后的数据
             s.delete(
-                MAX_LENGTH, nameEdit.getSelectionEnd()
+                MAX_LENGTH, s.length
             )
         }
     }

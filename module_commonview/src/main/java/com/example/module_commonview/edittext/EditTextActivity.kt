@@ -25,7 +25,9 @@ class EditTextActivity : FragmentActivity() {
     private fun configNameEdit() {
         nameEdit.setFilters(arrayOf<InputFilter>(InputFilter.LengthFilter(NameEditLimitHelper.MAX_LENGTH))) //最大输入长度
         nameEdit.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
+
+            }
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 // 限制二：特殊字符限制
                 NameEditLimitHelper.limitSpecialChar(nameEdit, s)
