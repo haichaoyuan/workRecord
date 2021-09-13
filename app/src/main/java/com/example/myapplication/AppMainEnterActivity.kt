@@ -1,38 +1,34 @@
-package com.example.module_homepage2
+package com.example.myapplication
 
-import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.util.DisplayMetrics
 import android.util.Log
+import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSmoothScroller
 import androidx.recyclerview.widget.RecyclerView
-import com.example.module_homepage2.adapter.AllServiceAdapter
-import com.example.module_homepage2.adapter.HomeMenu2Adapter
-import com.example.module_homepage2.base.AppMenuRes
-import com.example.module_homepage2.listener.HomeMenuItemClickListener
-import com.example.module_homepage2.viewmodel.AllServicesViewModel
+import com.example.lib_util.utils.jump.ActivityJumpHelper
+import com.example.lib_util.utils.jump.ModuleMenu
+import com.example.module_homepage2.AllServiceActivity
+import com.example.module_homepage2.viewmodel.AppMainEnterViewModel
 import com.example.module_homepage2.xtablayout.XTabLayout
+import com.example.myapplication.adapter.AllServiceAdapter
 import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.activity_all_service.*
-import kotlinx.android.synthetic.main.activity_all_service.tab_layout
+import kotlinx.android.synthetic.main.activity_app_main_enter.*
 
-class AllServiceActivity : FragmentActivity() {
-    companion object {
-        const val TAG = "AllServiceActivity"
-    }
-    private lateinit var menuAdapter: HomeMenu2Adapter
+class AppMainEnterActivity : FragmentActivity() {
     private var mSmoothScroller: RecyclerView.SmoothScroller? = null
     private var mLinearLayoutManager: LinearLayoutManager? = null
 
-    private val model: AllServicesViewModel by viewModels()
+    private val model: AppMainEnterViewModel by viewModels()
 
     private var isFirstTabSelect = false
     private var isFirstTabSelect2 = false
@@ -45,44 +41,14 @@ class AllServiceActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
-        setWindowStatusBarColor()
-        setContentView(R.layout.activity_all_service)
-
-        btn_left.setOnClickListener {
-            finish()
-        }
-        tv_title.text = "全部服务"
+        setContentView(R.layout.activity_app_main_enter)
 
         model.init(this)
-        // 1.九宫格
-        initNineCell()
-
         // 2. tab 列表
         initTabList()
 
         // 3. 底部网格
         initBottomGrid()
-
-    }
-
-    /**
-     * 九宫格
-     */
-    private fun initNineCell() {
-        menuAdapter = HomeMenu2Adapter(this, model.hotMenus)
-        all_service_gridview!!.numColumns = 5
-        all_service_gridview!!.adapter = menuAdapter
-        menuAdapter.setHomeMenuItemClickListener(object : HomeMenuItemClickListener {
-            override fun onItemClick(appMenuRes: AppMenuRes) {
-                when (appMenuRes.targetUrl) {
-                    AppMenuRes.TARGET_MORE.toString() -> startActivity(
-                        Intent(
-                            this@AllServiceActivity, AllServiceActivity::class.java
-                        )
-                    )
-                }
-            }
-        })
     }
 
     /**
@@ -95,19 +61,19 @@ class AllServiceActivity : FragmentActivity() {
             )
         }
         tab_layout!!.tabMode = TabLayout.MODE_SCROLLABLE
-        tab_layout.setSelectedTabIndicatorColor(ContextCompat.getColor(this, R.color.color_3B4B87))
-        tab_layout.setTabTextColors(Color.BLACK, ContextCompat.getColor(this, R.color.color_3B4B87))
+        tab_layout.setSelectedTabIndicatorColor(ContextCompat.getColor(this, com.example.module_homepage2.R.color.color_3B4B87))
+        tab_layout.setTabTextColors(Color.BLACK, ContextCompat.getColor(this, com.example.module_homepage2.R.color.color_3B4B87))
         tab_layout.addOnTabSelectedListener(object : XTabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: XTabLayout.Tab) {
                 //点击tab的时候，RecyclerView自动滑到该tab对应的item位置
                 val position = tab.position
 
                 if (!isScroll) {
-                    Log.e(TAG, "mSmoothScroller,$position")
+                    Log.e(AllServiceActivity.TAG, "mSmoothScroller,$position")
                     isStartSmoothScroll = true
                     mSmoothScroller?.targetPosition = position
                     mLinearLayoutManager?.startSmoothScroll(mSmoothScroller)
-                    Log.e(TAG, "mSmoothScroller,$position end")
+                    Log.e(AllServiceActivity.TAG, "mSmoothScroller,$position end")
 
                     if(!isFirstTabSelect){ //剔除第一次
                         isFirstTabSelect = !isFirstTabSelect
@@ -150,7 +116,7 @@ class AllServiceActivity : FragmentActivity() {
         recycler.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
                 super.onScrollStateChanged(recyclerView, newState)
-                Log.e(TAG, "newState:$newState")
+                Log.e(AllServiceActivity.TAG, "newState:$newState")
                 if (newState == RecyclerView.SCROLL_STATE_DRAGGING) {//开始拖动
                     isStartSmoothScroll = false
                     isScroll = true
@@ -167,7 +133,7 @@ class AllServiceActivity : FragmentActivity() {
                     isFirstTabSelect2 = !isFirstTabSelect2
                     return
                 }
-                Log.e(TAG, "dy:$dy")
+                Log.e(AllServiceActivity.TAG, "dy:$dy")
                 if (isStartSmoothScroll) {
                     return
                 }
@@ -177,23 +143,26 @@ class AllServiceActivity : FragmentActivity() {
                 if (tabAt != null && !tabAt.isSelected) {
                     tabAt.select()
                 }
-                Log.e(TAG, "dy getTabAt")
+                Log.e(AllServiceActivity.TAG, "dy getTabAt")
             }
         })
-        recycler.adapter = AllServiceAdapter(model.allServicesEntity!!.result, recycler)
+        var allServiceAdapter = AllServiceAdapter(model.allServicesEntity!!.result, recycler)
+        allServiceAdapter.onItemClickListener = View.OnClickListener {
+            if (it.tag != null && it.tag is ModuleMenu) {
+                val menuRes = it.tag as ModuleMenu
+                ActivityJumpHelper.menuClick(this, menuRes)
+            }
+        }
+        recycler.adapter = allServiceAdapter
     }
 
-
-    // =========================================================================================
-    // =================================== super
-    // =========================================================================================
     private fun setWindowStatusBarColor() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             val window = window
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION)
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-            window.statusBarColor = ContextCompat.getColor(this, R.color.titlebar_bg_color)
+            window.statusBarColor = ContextCompat.getColor(this, com.example.module_homepage2.R.color.titlebar_bg_color)
         }
     }
 }

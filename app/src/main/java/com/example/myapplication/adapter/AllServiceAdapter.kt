@@ -1,4 +1,4 @@
-package com.example.module_homepage2.adapter
+package com.example.myapplication.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,9 +7,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.module_homepage2.R
-import com.example.module_homepage2.entity.ServiceDetailEntity
+import com.example.module_homepage2.entity.ActivityDetailEntity
 
-class AllServiceAdapter(val mData: List<ServiceDetailEntity>, val mRecyclerView: RecyclerView) :
+class AllServiceAdapter(val mData: List<ActivityDetailEntity>, val mRecyclerView: RecyclerView) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     companion object {
         const val VIEW_TYPE_ITEM = 1
@@ -63,7 +63,7 @@ class AllServiceAdapter(val mData: List<ServiceDetailEntity>, val mRecyclerView:
                     itemHeight = itemViewHolder.itemView.height
                 }
             }
-            val adapter = AllServiceDetail2Adapter(mData[position].values)
+            val adapter = AllServiceDetail2Adapter(mData[position].values, 4)
             adapter.onItemClickListener = onItemClickListener
             recyclerView.adapter = adapter
             // 隐藏第一个 文本

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!-- 内容-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            android:orientation="vertical">
+            <!-- 搜索框-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                app:layout_scrollFlags="scroll">
+
+                <!-- 热门推荐-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_h17"
+                    android:textColor="@color/color_333"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:text="整体入口"/>
+
+            </LinearLayout>
+
+            <com.example.module_homepage2.xtablayout.XTabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:xTabDividerWidthWidthText="true"
+                app:xTabIndicatorHeight="4dp"
+                app:xTabIndicatorRoundX="2dp"
+                app:xTabIndicatorRoundY="2dp"
+                app:xTabTextColor="#000"
+                app:xTabTextSize="16sp"
+                app:xTabDisplayNum="4"
+                app:xTabSelectedTextSize="18sp"
+                app:tabTextAppearance="@style/TabLayoutTextStyle" />
+            <View style="@style/HLineStyle" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

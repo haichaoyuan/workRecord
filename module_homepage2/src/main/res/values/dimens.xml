@@ -331,7 +331,7 @@
 
     <!--高端-->
     <dimen name="header_width_max">130dp</dimen>
-    <dimen name="text_size_h14">14sp</dimen>
+    <dimen name="text_size_h14">14dp</dimen>
     <dimen name="text_size_h17">17dp</dimen>
     <dimen name="text_size_h18">18dp</dimen>
     <dimen name="text_size_h27">27dp</dimen>

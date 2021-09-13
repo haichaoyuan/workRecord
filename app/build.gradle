@@ -14,8 +14,7 @@ android {
         if (!isModule.toBoolean()) {
             applicationId "com.example.myapplication"
         }
-
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -62,5 +61,6 @@ dependencies {
         implementation project(':module_autotextview')
         implementation project(':module_videorecord')
         implementation project(':module_homepage2')
+        implementation project(':module_commonview')
     }
 }

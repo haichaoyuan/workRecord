@@ -6,8 +6,6 @@
         <activity android:name=".StickHeaderListViewActivity">
         </activity>
 
-        <activity android:name=".ModuleAMainActivity"/>
-
     </application>
 
 </manifest>

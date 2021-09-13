@@ -1,0 +1,59 @@
+{
+  "result": [
+    {
+      "name": "大场面",
+      "values": [
+        {
+          "ids": 1,
+          "menuName": "首页2.0",
+          "menuDesc": "新首页，包括appbar 置顶、九宫格、轮播图"
+        },
+        {
+          "ids": 2,
+          "menuName": "全部服务",
+          "menuDesc": "大量菜单的解决方案，分类+快速跳转"
+        },
+        {
+          "ids": 3,
+          "menuName": "VideoRecord",
+          "menuDesc": "视频录制demo"
+        },
+        {
+          "ids": 4,
+          "menuName": "仿美团餐厅界面",
+          "menuDesc": "切换tab, 滚动置顶"
+        },
+        {
+          "ids": 5,
+          "menuName": "仿贝壳",
+          "menuDesc": "贝壳搜房页面"
+        }
+      ]
+    },
+    {
+      "name": "百宝箱",
+      "values": [
+        {
+          "ids": 100,
+          "menuName": "commonview",
+          "menuDesc": "常见视图"
+        }
+      ]
+    },
+    {
+      "name": "小功能",
+      "values": [
+        {
+          "ids": 200,
+          "menuName": "Appbar",
+          "menuDesc": "appbar 使用的一些效果"
+        },
+        {
+          "ids": 201,
+          "menuName": "autotextview",
+          "menuDesc": "固定宽度区域，自动缩放文本大小"
+        }
+      ]
+    }
+  ]
+}

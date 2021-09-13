@@ -7,16 +7,22 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.module_a.StickHeaderListViewActivity
 import com.example.module_appbarlayout.AppbarLayoutEnterActivity
 import com.example.module_autotextview.AutoTextViewActivity
 import com.example.module_homepage2.HomePage2Activity
+import com.example.module_homepage2.adapter.HomeMenu2Adapter
+import com.example.module_homepage2.viewmodel.AppMainEnterViewModel
 import com.example.module_stickheaderscrollview.StickHeadScrollViewActivity
 import com.example.module_videorecord.VideoRecordEnterActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var menuAdapter: HomeMenu2Adapter
+    private val model: AppMainEnterViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
