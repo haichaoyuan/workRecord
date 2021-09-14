@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- =======================键盘颜色============================ -->
+    <color name="global_gray_col">#ffDADEE5</color>
+    <color name="keyboard_gray">#ffE6E8EC</color>
+    <color name="global_blue_color">#ff007aff</color>
+    <color name="popup_bg_color">#ffCED3D6</color>
+    <color name="global_white_col">#ffffffff</color>
+    <color name="global_divider_line">#ffe9e9e9</color>
+    <color name="global_white">#ffffff</color>
+    <color name="global_gray">#ff666666</color>
 </resources>

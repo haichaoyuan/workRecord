@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/digital"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/global_gray_col"></View>
+    <LinearLayout
+        android:id="@+id/huaxin_safe_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/global_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="huaxib_keyboard"
+            android:textColor="@color/global_gray"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/global_gray_col"></View>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TableRow android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/digital_num_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_keyboard_white_gray_frame"
+                    android:text="1"
+                    style="@style/keyboard_number_text" />
+
+                <Button
+                    android:id="@+id/digital_num_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_keyboard_white_gray_frame"
+                    android:text="4"
+                    style="@style/keyboard_number_text" />
+
+                <Button
+                    android:id="@+id/digital_num_7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_keyboard_white_gray_frame"
+                    android:text="7"
+                    style="@style/keyboard_number_text"/>
+
+                <Button
+                    android:id="@+id/digital_num_point"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_keyboard_white_gray_frame"
+                    android:gravity="center"
+                    android:text="."
+                    style="@style/keyboard_number_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/digital_num_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_keyboard_white_gray_frame"
+                    android:text="2"
+                    style="@style/keyboard_number_text" />
+
+                <Button
+                    android:id="@+id/digital_num_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_keyboard_white_gray_frame"
+                    android:text="5"
+                    style="@style/keyboard_number_text" />
+
+                <Button
+                    android:id="@+id/digital_num_8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_keyboard_white_gray_frame"
+                    android:text="8"
+                    style="@style/keyboard_number_text" />
+
+                <Button
+                    android:id="@+id/digital_num_0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_keyboard_white_gray_frame"
+                    android:gravity="center"
+                    android:text="0"
+                    style="@style/keyboard_number_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/digital_num_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_keyboard_white_gray_frame"
+                    android:text="3"
+                    style="@style/keyboard_number_text" />
+
+                <Button
+                    android:id="@+id/digital_num_6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_keyboard_white_gray_frame"
+                    android:text="6"
+                    style="@style/keyboard_number_text" />
+
+                <Button
+                    android:id="@+id/digital_num_9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_keyboard_white_gray_frame"
+                    android:text="9"
+                    style="@style/keyboard_number_text" />
+
+
+                <Button
+                    android:id="@+id/digital_num_hide"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_keyboard_hide_no_corn_num_nor"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="fill_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/digital_num_del"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/selector_btn_keyboard_back_delete_nocorn"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:scaleType="centerInside" />-->
+<!--                &lt;!&ndash;<View&ndash;&gt;-->
+<!--                    &lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+<!--                    &lt;!&ndash;android:layout_height="@dimen/margin_0.2"&ndash;&gt;-->
+<!--                    &lt;!&ndash;android:background="@color/_dadee5"></View>&ndash;&gt;-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/digital_num_enter"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/bg_keyboard_gray_bule_nocorn"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@string/public_btn_ok"-->
+<!--                    android:textColor="@color/keyboard_confirm_color"-->
+<!--                    android:textSize="@dimen/margin_16" />-->
+
+
+<!--            </LinearLayout>-->
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

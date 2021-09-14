@@ -27,6 +27,10 @@
         <activity
             android:name=".edittext.VerificationCodeWithCursorActivity">
         </activity>
+
+        <activity
+            android:name=".keyboard.BangbangKeyboardActivity">
+        </activity>
     </application>
 
 </manifest>

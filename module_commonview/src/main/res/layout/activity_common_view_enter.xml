@@ -41,4 +41,21 @@
         android:layout_height="wrap_content"
         android:text="AlignTextView 左右对齐"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keyboard demo"/>
+
+    <Button
+        android:id="@+id/btn_bangban_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bangbang安全键盘"/>
+
+    <Button
+        android:id="@+id/btn_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义安全键盘"/>
+
 </LinearLayout>
