@@ -245,15 +245,28 @@ class KeyboardActivity : FragmentActivity() {
             buttonDirectInput!![8] = view.findViewById(R.id.digital_num_8)
             buttonDirectInput!![9] = view.findViewById(R.id.digital_num_9)
             buttonDirectInput!![10] = view.findViewById(R.id.digital_num_point)
-            var hideView = view?.findViewById<View>(R.id.digital_num_hide)
+
+            buttonDirectInput?.forEach {
+                it?.setOnClickListener(btnInputListener)
+            }
+
+            // hide
+            var hideView = view.findViewById<View>(R.id.digital_num_hide)
             hideView?.setOnClickListener {
+                dismissMySofKeyBoard()
+            }
+
+            // del
+            var delView = view.findViewById<View>(R.id.digital_num_del)
+            delView?.setOnClickListener(delClickListener)
+
+            var enterView = view.findViewById<View>(R.id.digital_num_enter)
+            enterView?.setOnClickListener {
                 dismissMySofKeyBoard()
             }
         }
 
-        buttonDirectInput?.forEach {
-            it?.setOnClickListener(btnInputListener)
-        }
+
     }
 
     private val btnInputListener = View.OnClickListener { v: View ->
@@ -320,6 +333,57 @@ class KeyboardActivity : FragmentActivity() {
             } catch (e: Exception) {
                 e.printStackTrace()
             }
+        }
+    }
+
+
+    // 删除事件
+    var delClickListener = View.OnClickListener {
+        var focusView: View? = this.getCurrentFocus()
+//        if (isStockSearch) {
+//            focusView = stockEdit
+//        }
+        if (focusView != null && focusView is EditText) {
+            val et = focusView
+                val str = et.text.toString()
+                var result = ""
+                val strSbuffer = StringBuffer(str)
+                var index = 0
+                var mSpaceCount = 0
+                while (index < strSbuffer.length) {
+                    if (strSbuffer[index] == ' ') {
+                        mSpaceCount++
+                        index++
+                    } else {
+                        index++
+                    }
+                }
+
+                // 因为是选择的起始位置，可能start>end
+                var start = et.selectionStart
+                val indexBefore = et.selectionEnd - 2
+                var end = if (indexBefore > 0 && mSpaceCount != 0 && strSbuffer[indexBefore] == ' ') {
+                    et.selectionEnd - 2
+                } else {
+                    et.selectionEnd
+                }
+                if (start == end && start != 0) {
+                    result = str.substring(0, start - 1) + str.substring(end)
+                    et.setText(result)
+                    // 重新设置光标
+                    et.setSelection(start - 1)
+                    return@OnClickListener
+                }
+                if (start > end) {
+                    val temp = start
+                    start = end
+                    end = temp
+                }
+                // 如果编辑框中有文字选中，则删除选择的文字
+                result = str.substring(0, start) + str.substring(end)
+                et.setText(result)
+                // 重新设置光标
+                et.setSelection(start)
         }
     }
 }
