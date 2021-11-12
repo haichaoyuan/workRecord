@@ -58,4 +58,20 @@
         android:layout_height="wrap_content"
         android:text="自定义安全键盘"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="wheelview demo"/>
+
+    <Button
+        android:id="@+id/btn_yuri_wheelview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="yuri_wheelview"/>
+    <Button
+        android:id="@+id/btn_florent_wheelview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="florent_wheelview"/>
+
 </LinearLayout>

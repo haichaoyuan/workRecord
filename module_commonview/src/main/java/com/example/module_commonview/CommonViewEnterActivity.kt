@@ -10,6 +10,8 @@ import com.example.module_commonview.edittext.VerificationCodeWithCursorActivity
 import com.example.module_commonview.keyboard.BangbangKeyboardActivity
 import com.example.module_commonview.keyboard.KeyboardActivity
 import com.example.module_commonview.textview.AlignTextViewActivity
+import com.example.module_commonview.wheelview.florent.FlorentWheelViewActivity
+import com.example.module_commonview.wheelview.yuri.YuriWheelViewActivity
 import kotlinx.android.synthetic.main.activity_common_view_enter.*
 
 class CommonViewEnterActivity : AppCompatActivity() {
@@ -38,6 +40,14 @@ class CommonViewEnterActivity : AppCompatActivity() {
         }
         btn_keyboard.setOnClickListener {
             startActivity(Intent(this, KeyboardActivity::class.java))
+        }
+
+        // btn_wheelview
+        btn_yuri_wheelview.setOnClickListener {
+            startActivity(Intent(this, YuriWheelViewActivity::class.java))
+        }
+        btn_florent_wheelview.setOnClickListener {
+            startActivity(Intent(this, FlorentWheelViewActivity::class.java))
         }
     }
 

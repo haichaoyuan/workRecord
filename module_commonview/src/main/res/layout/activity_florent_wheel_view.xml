@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CommonViewEnterActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出弹窗"
+        android:layout_gravity="center"
+        android:onClick="onFlorentClick"/>
+
+    <com.example.module_commonview.wheelview.florent.wheelview.widget.NumberWheelView
+        android:id="@+id/number_wheelview"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:wheel_indicatorColor="#ffe5e5e5"
+        app:wheel_indicatorSize="1dp"
+        app:wheel_itemSpace="60dp"
+        app:wheel_itemTextBoldSelected="true"
+        app:wheel_itemTextColor="#999"
+        app:wheel_itemTextColorSelected="#EA5504"
+        app:wheel_visibleItemCount="5"
+        style="@style/WheelDefault"
+        />
+</FrameLayout>
