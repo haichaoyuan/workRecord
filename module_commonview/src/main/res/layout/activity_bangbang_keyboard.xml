@@ -54,7 +54,6 @@
         android:layout_height="wrap_content"/>
 
     <com.bangcle.safekb.api.PwdEditText
-
         android:id="@+id/txtPwd1"
         android:layout_width="fill_parent"
         android:layout_height="40dp"

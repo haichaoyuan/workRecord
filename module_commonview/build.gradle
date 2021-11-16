@@ -71,6 +71,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation project(':lib_util')
-//    implementation files("libs/SafeKBSDK.aar")
-    implementation(name:'SafeKBSDK',ext:'aar')
+    implementation files("libs/SafeKBSDK.aar")
+//    implementation(name:'SafeKBSDK',ext:'aar')
 }
