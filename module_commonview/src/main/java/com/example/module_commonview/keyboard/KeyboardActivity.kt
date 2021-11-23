@@ -26,6 +26,9 @@ class KeyboardActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_keyboard)
+        btn.setOnClickListener {
+            edit_phone.requestFocus()
+        }
         yxSafeSoftKeyboard = YxSafeSoftKeyboard(this)
         yxSafeSoftKeyboard.addEditViewListener(edit_phone)
         phoneAddSpace(edit_phone, null)
@@ -122,10 +125,5 @@ class KeyboardActivity : FragmentActivity() {
                 textWatcher?.afterTextChanged(s)
             }
         })
-    }
-
-    override fun onPause() {
-        super.onPause()
-        yxSafeSoftKeyboard.dismissMySofKeyBoard()
     }
 }

@@ -6,7 +6,6 @@ import android.os.Build
 import android.text.InputType
 import android.text.method.TransformationMethod
 import android.view.*
-import android.view.View.OnLongClickListener
 import android.widget.Button
 import android.widget.EditText
 import com.example.module_commonview.R
@@ -23,7 +22,7 @@ class YxSafeSoftKeyboard(val activity: Activity) {
     }
 
     private var layout: View? = null
-    private var curEditView: EditText? = null
+    private var curEditView: View? = null
     private var numberView: View? = null
     private var englishView: View? = null
     private var digitalView: View? = null
@@ -43,6 +42,16 @@ class YxSafeSoftKeyboard(val activity: Activity) {
                 return configKeyboard(v, event, keyboardType)
             }
         })
+        editView.setOnFocusChangeListener(object : View.OnFocusChangeListener {
+            override fun onFocusChange(v: View?, hasFocus: Boolean) {
+                if (hasFocus == true) {
+                    //焦点存在
+                    if (curEditView != v) {
+                        curEditView = v
+                    }
+                }
+            }
+        })
     }
 
 
@@ -52,31 +61,31 @@ class YxSafeSoftKeyboard(val activity: Activity) {
     private fun configKeyboard(v: View, event: MotionEvent, keyboardType: Int): Boolean {
         val et = v as EditText
         if (event.getAction() == MotionEvent.ACTION_UP) {
-            val inType: Int = et.getInputType()
-            val method: TransformationMethod? = et.getTransformationMethod()
-            et.setTransformationMethod(null)
             // 屏蔽软键盘
             hideSoftInputMethod(et)
-
-            et.onTouchEvent(event)
-            et.setInputType(inType)
-            et.setTransformationMethod(method)
-            et.setCursorVisible(true)
 
             if (layout == null || curEditView == null || curEditView != et) {
                 // 不存在，或者非同一个 EditView
                 displayMySofKeyBoard(keyboardType)
                 curEditView = et
+
+                val locations = IntArray(2)
+                et.getLocationOnScreen(locations)
+                et.requestFocus()
+                val text: String = et.getText().toString()
+                if (text != null && text.length > 0) et.setSelection(text.length)
             } else {
                 dismissMySofKeyBoard()
+                et.clearFocus()
             }
 
-            val locations = IntArray(2)
-            et.getLocationOnScreen(locations)
-
-            v.requestFocus()
-            val text: String = et.getText().toString()
-            if (text != null && text.length > 0) et.setSelection(text.length)
+            val inType: Int = et.getInputType()
+            val method: TransformationMethod? = et.getTransformationMethod()
+            et.setTransformationMethod(null)
+            et.onTouchEvent(event)
+            et.setInputType(inType)
+            et.setTransformationMethod(method)
+            et.setCursorVisible(true)
             return true
         }
         return false
@@ -132,7 +141,7 @@ class YxSafeSoftKeyboard(val activity: Activity) {
         changeKeyboard(keyboardType)
     }
 
-    private fun changeKeyboard(keyboardType: Int){
+    private fun changeKeyboard(keyboardType: Int) {
         if (keyboardType == TYPE_DIG) {
             numberView?.setVisibility(View.GONE)
             englishView?.setVisibility(View.GONE)
@@ -450,7 +459,7 @@ class YxSafeSoftKeyboard(val activity: Activity) {
     /**
      * 长按删除键事件,长按删除按钮则清空编辑框
      */
-    var longPressDelListener = OnLongClickListener {
+    var longPressDelListener = View.OnLongClickListener {
         var focusView: View? = activity.getCurrentFocus()
         if (focusView != null && focusView is EditText) {
             focusView.setText("")
@@ -479,7 +488,7 @@ class YxSafeSoftKeyboard(val activity: Activity) {
                 val tmpView = btnEngArray!!.get(i)
                 tmpView?.setPadding(0, 0, 0, 0)
                 val s: String = tmpView?.getText().toString()
-                tmpView?.setText(s.uppercase(Locale.getDefault()))
+                tmpView?.setText(s.toUpperCase(Locale.getDefault()))
             }
             capLockView?.setTag("大")
             capLockView?.setSelected(true)
@@ -488,7 +497,7 @@ class YxSafeSoftKeyboard(val activity: Activity) {
                 val tmpView = btnEngArray!!.get(i)
                 tmpView?.setPadding(0, 0, 0, 12)
                 val s: String = tmpView?.getText().toString()
-                tmpView?.setText(s.lowercase(Locale.getDefault()))
+                tmpView?.setText(s.toLowerCase(Locale.getDefault()))
             }
             capLockView?.setTag("小")
             capLockView?.setSelected(false)
