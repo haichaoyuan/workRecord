@@ -1,0 +1,154 @@
+<resources>
+
+    <!-- 默认 -->
+    <dimen name="padding_none">0dp</dimen>
+    <dimen name="padding_tiny">2dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_page">15dp</dimen>
+    <dimen name="padding_page_large">18dp</dimen>
+
+    <!--============================公共==========================-->
+    <dimen name="font_title">17dp</dimen>
+    <dimen name="titlebar_height">44dp</dimen>
+    <dimen name="tabbar_height">49dp</dimen>
+    <dimen name="btn_height">44dp</dimen>
+    <dimen name="titlebar_btn_margin">15dp</dimen>
+    <dimen name="statusBar_height">25dp</dimen>
+    <dimen name="titlebar_statusBar_height">69dp</dimen>
+    <dimen name="titlebar_statusBar_height2">88dp</dimen>
+    <dimen name="dialog_title">17dp</dimen>
+    <dimen name="settings_height">60dp</dimen>
+
+
+    <!-- 选中的哪个下划线高度 -->
+    <dimen name="title_height">35dp</dimen>
+    <dimen name="bottom_line_height">1.5dp</dimen>
+    <dimen name="bottom_line_width">50dp</dimen>
+
+    <!--===========================字体大小=========================-->
+    <dimen name="font_super_xxlarge">42dp</dimen>
+    <dimen name="font_super_xlarge">33dp</dimen>
+    <dimen name="font_xxlarge">21dp</dimen>
+    <dimen name="font_xlarge">20dp</dimen>
+    <dimen name="font_large">18dp</dimen>
+    <dimen name="font_slarge">17dp</dimen>
+    <dimen name="font_normal">16dp</dimen>
+    <dimen name="font_middle">15dp</dimen>
+    <dimen name="font_small">14dp</dimen>
+    <dimen name="font_smaller">13dp</dimen>
+    <dimen name="font_tiny">12dp</dimen>
+    <dimen name="font_tiny_more">11dp</dimen>
+    <dimen name="font_stiny">10dp</dimen>
+
+    <!--圆角-->
+    <dimen name="radius_small">2dp</dimen>
+    <dimen name="radius_medium">3dp</dimen>
+    <dimen name="radius_normal">4dp</dimen>
+    <dimen name="radius_large">13dp</dimen>
+
+    <!--===========================底部按钮高度=========================-->
+    <dimen name="page_bottom_btn_height">44dp</dimen>
+
+    <!--===========================公共线的高度=========================-->
+    <dimen name="line_height">1px</dimen>
+    <dimen name="twodpwide_line_height">4px</dimen>
+
+    <!--定义diloag-->
+    <dimen name="dialog_bg_stroke">1px</dimen>
+
+    <!--===========================普通列表=========================-->
+    <dimen name="lv_divider_height">1px</dimen>
+
+    <!--===========================模块间距=========================-->
+    <dimen name="space_between">7dp</dimen>
+
+    <!-- ===================ToggleButton===================== -->
+    <dimen name="width_tb">50dp</dimen>
+    <dimen name="height_tb">31dp</dimen>
+
+    <!-- ===================自定义alertDialog===================== -->
+    <dimen name="list_prefered_height">49dp</dimen>
+    <dimen name="alert_panel_height">45dp</dimen>
+    <dimen name="alert_msg_minheight">90dp</dimen>
+    <dimen name="button_small_prefered_height">30dp</dimen>
+    <dimen name="customAlert_paddingLeft">12dp</dimen>
+    <dimen name="customAlert_paddingRight">7dp</dimen>
+    <dimen name="minHeight_btn">49dp</dimen>
+
+    <!-- ===================按数字定义常用数值===================== -->
+    <dimen name="margin_0.2">0.2dp</dimen>
+    <dimen name="margin_0.5">0.5dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_13">13dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_17">17dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_19">19dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_21">21dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_23">23dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_27">27dp</dimen>
+    <dimen name="margin_28">28dp</dimen>
+    <dimen name="margin_29">29dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_33">33dp</dimen>
+    <dimen name="margin_34">34dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_38">38dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_42">42dp</dimen>
+    <dimen name="margin_44">44dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+    <dimen name="margin_46">46dp</dimen>
+    <dimen name="margin_47">47dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+    <dimen name="margin_49">49dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_58">58dp</dimen>
+    <dimen name="margin_59">59dp</dimen>
+    <dimen name="margin_55">55dp</dimen>
+    <dimen name="margin_57">57dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_65">65dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_72">72dp</dimen>
+    <dimen name="margin_75">75dp</dimen>
+    <dimen name="margin_93">93dp</dimen>
+    <dimen name="margin_170">170dp</dimen>
+    <dimen name="margin_181">181dp</dimen>
+
+    <!-- ===================甬兴键盘===================== -->
+    <dimen name="keyboard_eng_btn_xpadding">1dip</dimen>
+    <dimen name="keyboard_num_btn_xpadding">1dip</dimen>
+    <!--  数字键盘按钮水平两个按钮间距  -->
+    <dimen name="keyboard_num_btn_ypadding">2dip</dimen>
+    <!--  数字键盘按钮垂直两个按钮间距  -->
+    <dimen name="keyboard_padding_screen">3dip</dimen>
+    <!--  键盘按钮跟屏幕两侧的间距  -->
+
+    <dimen name="keyboard_line">0.2dip</dimen>
+    <dimen name="msg_verify_edit_height">50dp</dimen>
+
+    <dimen name="toast_hover">64dp</dimen>
+    <dimen name="popupwindow_width">270dp</dimen>
+
+</resources>

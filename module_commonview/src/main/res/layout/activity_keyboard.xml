@@ -65,4 +65,50 @@
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:text="登陆" />
+
+    <EditText
+        android:id="@+id/edit_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:hint="测试 edit_num"
+        />
+    <EditText
+        android:id="@+id/edit_num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:hint="测试 edit_num"
+        />
+
+    <EditText
+        android:id="@+id/edit_dig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:hint="测试 edit_dig"
+        />
+
+    <EditText
+        android:id="@+id/edit_dig2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:hint="测试 edit_dig"
+        />
+    <EditText
+        android:id="@+id/edit_eng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:hint="测试 edit_eng"
+        />
+
+    <EditText
+        android:id="@+id/edit_eng2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:hint="测试 edit_eng"
+        />
 </LinearLayout>

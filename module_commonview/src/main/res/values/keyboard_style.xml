@@ -4,4 +4,28 @@
         <item name="android:textColor">#333333</item>
         <item name="android:textSize">16dp</item>
     </style>
+
+    <style name="keyboard_english">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/global_lightblack</item>
+        <item name="android:background">@drawable/selector_btn_keyboard_white_gray</item>
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/margin_22</item>
+        <item name="android:layout_marginLeft">@dimen/margin_2</item>
+        <item name="android:layout_marginRight">@dimen/margin_2</item>
+    </style>
+
+    <style name="keyboard_english_row_margin">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">8dip</item>
+    </style>
+
+    <style name="keyboard_stock_number_text">
+        <item name="android:textColor">@color/global_lightblack</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
 </resources>

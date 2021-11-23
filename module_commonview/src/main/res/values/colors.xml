@@ -17,4 +17,6 @@
     <color name="global_divider_line">#ffe9e9e9</color>
     <color name="global_white">#ffffff</color>
     <color name="global_gray">#ff666666</color>
+
+    <color name="global_lightblack">#333333</color>
 </resources>

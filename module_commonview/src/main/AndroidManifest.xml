@@ -32,6 +32,9 @@
             android:name=".keyboard.BangbangKeyboardActivity">
         </activity>
         <activity
+            android:name=".keyboard.KeyboardActivity">
+        </activity>
+        <activity
             android:name=".wheelview.yuri.YuriWheelViewActivity">
         </activity>
         <activity
