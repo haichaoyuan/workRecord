@@ -17,6 +17,7 @@
         <item name="android:textSize">@dimen/margin_22</item>
         <item name="android:layout_marginLeft">@dimen/margin_2</item>
         <item name="android:layout_marginRight">@dimen/margin_2</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="keyboard_english_row_margin">

@@ -6,6 +6,7 @@ import android.os.Build
 import android.text.InputType
 import android.text.method.TransformationMethod
 import android.view.*
+import android.view.View.OnLongClickListener
 import android.widget.Button
 import android.widget.EditText
 import com.example.module_commonview.R
@@ -16,22 +17,27 @@ import java.util.*
 
 class YxSafeSoftKeyboard(val activity: Activity) {
     private var windowManager: WindowManager
+
     init {
         windowManager = activity.windowManager
     }
 
     private var layout: View? = null
     private var curEditView: EditText? = null
+    private var numberView: View? = null
+    private var englishView: View? = null
+    private var digitalView: View? = null
+
     // 直接输入的按钮
     private var btnNumArray: Array<Button?>? = null // 数字按钮列表
     private var btnDigArray: Array<Button?>? = null // 英文按钮列表
     private var btnEngArray: Array<Button?>? = null // 纯数字按钮列表
 
 
-    private var curKeyboardType:Int = -1 // 键盘类型
+    private var curKeyboardType: Int = -1 // 键盘类型
 
     @JvmOverloads
-    fun addEditViewListener(editView: EditText, keyboardType:Int = TYPE_DIG) {
+    fun addEditViewListener(editView: EditText, keyboardType: Int = TYPE_DIG) {
         editView.setOnTouchListener(object : View.OnTouchListener {
             override fun onTouch(v: View, event: MotionEvent): Boolean {
                 return configKeyboard(v, event, keyboardType)
@@ -81,14 +87,13 @@ class YxSafeSoftKeyboard(val activity: Activity) {
      * 显示键盘
      */
     private fun displayMySofKeyBoard(keyboardType: Int) {
-        if(layout != null && curKeyboardType == keyboardType){
+        if (layout != null && curKeyboardType == keyboardType) {
             // 已经显示相同的键盘，略过
             return
         }
-        if(layout != null){
+        if (layout != null) {
             dismissMySofKeyBoard()
         }
-//        view = LayoutInflater.from(activity).inflate(R.layout.keyboard_digital, null)
         layout = LayoutInflater.from(activity).inflate(R.layout.keyboard_normal_layout, null)
         curKeyboardType = keyboardType
         showSubKeyboard(layout, keyboardType)
@@ -118,24 +123,28 @@ class YxSafeSoftKeyboard(val activity: Activity) {
      * 根据不同的键盘类型，显示不同的键盘视图
      */
     private fun showSubKeyboard(view: View?, keyboardType: Int) {
-        if(view == null){
+        if (view == null) {
             return
         }
-        val vnumber = view.findViewById<View>(R.id.number)
-        val venglish = view.findViewById<View>(R.id.english)
-        val digital = view.findViewById<View>(R.id.digital)
+        numberView = view.findViewById<View>(R.id.number)
+        englishView = view.findViewById<View>(R.id.english)
+        digitalView = view.findViewById<View>(R.id.digital)
+        changeKeyboard(keyboardType)
+    }
+
+    private fun changeKeyboard(keyboardType: Int){
         if (keyboardType == TYPE_DIG) {
-            vnumber.setVisibility(View.GONE)
-            venglish.setVisibility(View.GONE)
-            digital.setVisibility(View.VISIBLE)
+            numberView?.setVisibility(View.GONE)
+            englishView?.setVisibility(View.GONE)
+            digitalView?.setVisibility(View.VISIBLE)
         } else if (keyboardType == TYPE_ENG) {
-            vnumber.setVisibility(View.GONE)
-            venglish.setVisibility(View.VISIBLE)
-            digital.setVisibility(View.GONE)
+            numberView?.setVisibility(View.GONE)
+            englishView?.setVisibility(View.VISIBLE)
+            digitalView?.setVisibility(View.GONE)
         } else if (keyboardType == TYPE_NUM) {
-            vnumber.setVisibility(View.VISIBLE)
-            venglish.setVisibility(View.GONE)
-            digital.setVisibility(View.GONE)
+            numberView?.setVisibility(View.VISIBLE)
+            englishView?.setVisibility(View.GONE)
+            digitalView?.setVisibility(View.GONE)
         }
     }
 
@@ -192,7 +201,7 @@ class YxSafeSoftKeyboard(val activity: Activity) {
 
 
     private fun findViews(view: View) {
-        when(curKeyboardType){
+        when (curKeyboardType) {
             TYPE_DIG -> {
                 findDigView(view)
             }
@@ -247,25 +256,13 @@ class YxSafeSoftKeyboard(val activity: Activity) {
 
             var delView = view.findViewById<View>(R.id.num_del)
             delView?.setOnClickListener(delClickListener)
+            delView?.setOnLongClickListener(longPressDelListener)
 
             var enterView = view.findViewById<View>(R.id.num_enter)
             enterView?.setOnClickListener {
                 dismissMySofKeyBoard()
             }
         }
-    }
-
-    /**
-     * 数字、英文键盘切换
-     */
-    private fun changeNumOrEng(view: View) {
-        var type = TYPE_DIG
-        if (view.getId() == R.id.eng_123) {
-            type = TYPE_ENG
-        } else if (view.getId() == R.id.num_abc) {
-            type = TYPE_NUM
-        }
-//        showHxKeyBoard(v, type)
     }
 
     private fun findEngView(view: View) {
@@ -306,6 +303,7 @@ class YxSafeSoftKeyboard(val activity: Activity) {
             //eng_del
             val delView = view.findViewById<View>(R.id.eng_del)
             delView?.setOnClickListener(delClickListener)
+            delView?.setOnLongClickListener(longPressDelListener)
 
             // 空格
             val spaceView = view.findViewById<View>(R.id.eng_blank_space)
@@ -316,8 +314,8 @@ class YxSafeSoftKeyboard(val activity: Activity) {
                 changeNumOrEng(it)
             }
             // 大小写
-//            btnEngArray!![IndexCapLock] = view.findViewById(R.id.eng_changecase)
-//            btnEngArray!![IndexCapLock]?.setOnClickListener(daxiaoxieListener)
+            btnEngArray!![IndexCapLock] = view.findViewById(R.id.eng_changecase)
+            btnEngArray!![IndexCapLock]?.setOnClickListener(daxiaoxieListener)
 
             val enterView = view.findViewById<View>(R.id.eng_enter)
             enterView?.setOnClickListener {
@@ -361,11 +359,32 @@ class YxSafeSoftKeyboard(val activity: Activity) {
             // del
             var delView = view.findViewById<View>(R.id.digital_num_del)
             delView?.setOnClickListener(delClickListener)
+            delView?.setOnClickListener(delClickListener)
 
             var enterView = view.findViewById<View>(R.id.digital_num_enter)
             enterView?.setOnClickListener {
                 dismissMySofKeyBoard()
             }
+        }
+    }
+
+
+    /**
+     * 数字、英文键盘切换
+     */
+    private fun changeNumOrEng(view: View) {
+        if (view.getId() == R.id.eng_123) {
+            // 数字 -> 英文
+            curKeyboardType = TYPE_NUM
+        } else if (view.getId() == R.id.num_abc) {
+            curKeyboardType = TYPE_ENG
+        }
+        // 改变布局
+        changeKeyboard(curKeyboardType)
+        // 视图赋值
+        layout?.run {
+            setOnTouchListener { v, event -> true }
+            findViews(this)
         }
     }
 
@@ -429,16 +448,28 @@ class YxSafeSoftKeyboard(val activity: Activity) {
     }
 
     /**
+     * 长按删除键事件,长按删除按钮则清空编辑框
+     */
+    var longPressDelListener = OnLongClickListener {
+        var focusView: View? = activity.getCurrentFocus()
+        if (focusView != null && focusView is EditText) {
+            focusView.setText("")
+        }
+        true
+    }
+
+    /**
      * 空格输入
      */
     private val blankSpaceInputListener = View.OnClickListener { directInput(" ") }
 
     private val IndexCapLock = 26
+
     /**
      * 大小写
      */
     private val daxiaoxieListener = View.OnClickListener {
-        if(btnEngArray == null){
+        if (btnEngArray == null) {
             return@OnClickListener
         }
         var capLockView = btnEngArray!!.get(IndexCapLock)
