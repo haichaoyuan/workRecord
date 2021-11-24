@@ -377,7 +377,7 @@ class YxSafeSoftKeyboard(val activity: Activity) {
             // del
             var delView = view.findViewById<View>(R.id.digital_num_del)
             delView?.setOnClickListener(delClickListener)
-            delView?.setOnClickListener(delClickListener)
+            delView?.setOnLongClickListener(longPressDelListener)
 
             var enterView = view.findViewById<View>(R.id.digital_num_enter)
             enterView?.setOnClickListener {
