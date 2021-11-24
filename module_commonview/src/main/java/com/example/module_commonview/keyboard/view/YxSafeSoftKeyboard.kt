@@ -1,11 +1,13 @@
 package com.example.module_commonview.keyboard.view
 
 import android.app.Activity
+import android.content.Context.INPUT_METHOD_SERVICE
 import android.graphics.PixelFormat
 import android.os.Build
 import android.text.InputType
 import android.text.method.TransformationMethod
 import android.view.*
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import com.example.module_commonview.R
@@ -52,6 +54,10 @@ class YxSafeSoftKeyboard(val activity: Activity) {
                 }
             }
         })
+        if (keyboardType == TYPE_DIG) {
+            // 甬兴安全键盘，去除长按
+            editView.setOnLongClickListener({ v: View? -> true })
+        }
     }
 
 
@@ -135,9 +141,9 @@ class YxSafeSoftKeyboard(val activity: Activity) {
         if (view == null) {
             return
         }
-        numberView = view.findViewById<View>(R.id.number)
-        englishView = view.findViewById<View>(R.id.english)
-        digitalView = view.findViewById<View>(R.id.digital)
+        numberView = view.findViewById(R.id.number)
+        englishView = view.findViewById(R.id.english)
+        digitalView = view.findViewById(R.id.digital)
         changeKeyboard(keyboardType)
     }
 
@@ -174,8 +180,11 @@ class YxSafeSoftKeyboard(val activity: Activity) {
     /**
      * 隐藏系统键盘
      */
-    fun hideSoftInputMethod(ed: EditText) {
-//        (Activity)mContext.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+    private fun hideSoftInputMethod(ed: EditText) {
+        val imm: InputMethodManager? =
+            activity.getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager?
+        imm?.hideSoftInputFromWindow(ed.getWindowToken(), 0)
+
         val currentVersion = Build.VERSION.SDK_INT
         var methodName: String? = null
         if (currentVersion >= 16) {
