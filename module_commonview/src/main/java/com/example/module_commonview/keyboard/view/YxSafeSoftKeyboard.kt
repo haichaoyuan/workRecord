@@ -5,6 +5,7 @@ import android.content.Context.INPUT_METHOD_SERVICE
 import android.graphics.PixelFormat
 import android.os.Build
 import android.text.InputType
+import android.text.TextUtils
 import android.text.method.TransformationMethod
 import android.view.*
 import android.view.inputmethod.InputMethodManager
@@ -70,16 +71,13 @@ class YxSafeSoftKeyboard(val activity: Activity) {
             // 屏蔽软键盘
             hideSoftInputMethod(et)
 
-            if (layout == null || curEditView == null || curEditView != et) {
+            var isShowKeyboard = layout == null || curEditView == null || curEditView != et
+            if (isShowKeyboard) {
                 // 不存在，或者非同一个 EditView
                 displayMySofKeyBoard(keyboardType)
                 curEditView = et
 
-                val locations = IntArray(2)
-                et.getLocationOnScreen(locations)
                 et.requestFocus()
-                val text: String = et.getText().toString()
-                if (text != null && text.length > 0) et.setSelection(text.length)
             } else {
                 dismissMySofKeyBoard()
                 et.clearFocus()
@@ -92,6 +90,11 @@ class YxSafeSoftKeyboard(val activity: Activity) {
             et.setInputType(inType)
             et.setTransformationMethod(method)
             et.setCursorVisible(true)
+
+            if(isShowKeyboard){
+                val text: String = et.text.toString()
+                if (!TextUtils.isEmpty(text)) et.setSelection(text.length)
+            }
             return true
         }
         return false
