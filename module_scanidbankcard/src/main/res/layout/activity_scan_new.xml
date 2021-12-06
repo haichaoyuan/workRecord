@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="version"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <RelativeLayout
+            android:id="@+id/idcard_front_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="9dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/front_bg_iv"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ico_idcard_front" />
+
+            <ImageView
+                android:id="@+id/idcard_front_iv"
+                android:layout_width="97.5dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25.5dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/idcard_front_retry_tv"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@id/front_bg_iv"
+                android:background="@color/global_yx_orange"
+                android:gravity="center"
+                android:text="拍摄人像面"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/idcard_back_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/back_bg_iv"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ico_idcard_back" />
+
+            <ImageView
+                android:id="@+id/idcard_back_iv"
+                android:layout_width="97.5dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="25.5dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/idcard_back_retry_tv"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@id/back_bg_iv"
+                android:background="@color/global_yx_orange"
+                android:gravity="center"
+                android:text="拍摄国徽面"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
