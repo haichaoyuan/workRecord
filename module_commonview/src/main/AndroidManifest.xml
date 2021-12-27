@@ -40,6 +40,9 @@
         <activity
             android:name=".wheelview.florent.FlorentWheelViewActivity">
         </activity>
+        <activity
+            android:name=".applink.AppLinkActivity">
+        </activity>
     </application>
 
 </manifest>

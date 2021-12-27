@@ -2,39 +2,39 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.module_commonview">
 
-    <application
-        android:theme="@style/Theme.MyApplication">
-        <activity  android:name=".CommonViewEnterActivity">
+    <application android:theme="@style/Theme.MyApplication">
+        <activity android:name=".CommonViewEnterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".edittext.EditTextActivity">
-        </activity>
-        <activity
-            android:name=".textview.AlignTextViewActivity">
-        </activity>
-        <activity
-            android:name=".edittext.VerificationCodeEditTextActivity">
-        </activity>
-        <activity
-            android:name=".edittext.VerificationCodeWithCursorActivity">
-        </activity>
+        <activity android:name=".edittext.EditTextActivity">
 
-        <activity
-            android:name=".keyboard.BangbangKeyboardActivity">
         </activity>
-        <activity
-            android:name=".keyboard.KeyboardActivity">
+        <activity android:name=".textview.AlignTextViewActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.tiancai.com" />
+            </intent-filter>
         </activity>
-        <activity
-            android:name=".wheelview.yuri.YuriWheelViewActivity">
-        </activity>
-        <activity
-            android:name=".wheelview.florent.FlorentWheelViewActivity">
+        <activity android:name=".edittext.VerificationCodeEditTextActivity"></activity>
+        <activity android:name=".edittext.VerificationCodeWithCursorActivity"></activity>
+
+        <activity android:name=".keyboard.BangbangKeyboardActivity"></activity>
+        <activity android:name=".keyboard.KeyboardActivity"></activity>
+        <activity android:name=".wheelview.yuri.YuriWheelViewActivity"></activity>
+        <activity android:name=".wheelview.florent.FlorentWheelViewActivity"></activity>
+
+        <activity android:name=".applink.AppLinkActivity">
+
         </activity>
     </application>
 

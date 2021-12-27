@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import com.example.module_commonview.applink.AppLinkActivity
 import com.example.module_commonview.edittext.EditTextActivity
 import com.example.module_commonview.edittext.VerificationCodeEditTextActivity
 import com.example.module_commonview.edittext.VerificationCodeWithCursorActivity
@@ -48,6 +49,11 @@ class CommonViewEnterActivity : AppCompatActivity() {
         }
         btn_florent_wheelview.setOnClickListener {
             startActivity(Intent(this, FlorentWheelViewActivity::class.java))
+        }
+
+        // btn_applink
+        btn_applink.setOnClickListener {
+            startActivity(Intent(this, AppLinkActivity::class.java))
         }
     }
 
