@@ -36,6 +36,8 @@ class IdCardScanActivity:AppCompatActivity(), DataCallBack {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_old_scan)
         EngineManager.getInstance().initEngine(this)
+        var sdkVersion = EngineManager.getInstance().sdkVersion
+        Toast.makeText(this, "sdkVersion:"+ sdkVersion, Toast.LENGTH_SHORT).show()
         initView()
     }
 
