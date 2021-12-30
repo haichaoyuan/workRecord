@@ -15,7 +15,7 @@
         </activity>
 
         <activity
-            android:name=".IdCardScanActivity">
+            android:name=".IdCardScan2Activity">
         </activity>
     </application>
 

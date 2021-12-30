@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         return version > 5 && getCPUAbi() == "arm64-v8a"
     }
 
-    fun getCPUAbi(): String? {
+    fun getCPUAbi(): String {
         val CPUAbi: String
         CPUAbi = try {
             val os_cpuabi = BufferedReader(
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initView() {
         btn_scan.setOnClickListener {
-            startActivityForResult(Intent(this, IdCardScanActivity::class.java), 2)
+            startActivityForResult(Intent(this, IdCardScan2Activity::class.java), 2)
         }
         btn_scan_new.setOnClickListener {
             startActivityForResult(Intent(this, IdCardScanNewActivity::class.java), 2)
