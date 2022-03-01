@@ -8,9 +8,11 @@
 package com.example.module_commonview.nestwebview;
 
 import android.content.Context;
+import android.net.http.SslError;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.webkit.JsResult;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.AbsoluteLayout;

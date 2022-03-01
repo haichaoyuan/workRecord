@@ -5,8 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.shhxzq.stock.ui.common.view.NestedScrollWebView2
+    <com.example.module_commonview.nestwebview.ProgressWebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+<!--    <com.shhxzq.stock.ui.common.view.NestedScrollWebView2-->
+<!--        android:id="@+id/webview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
 </FrameLayout>
