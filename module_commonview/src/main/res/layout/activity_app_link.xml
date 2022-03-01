@@ -17,6 +17,12 @@
             android:layout_height="wrap_content"
             android:text="跳转涨停宝开户" />
 
+        <Button
+            android:id="@+id/txt_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test" />
+
 
     </LinearLayout>
 </ScrollView>
