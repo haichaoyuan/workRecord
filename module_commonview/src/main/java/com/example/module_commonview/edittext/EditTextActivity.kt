@@ -5,7 +5,6 @@ import android.text.Editable
 import android.text.InputFilter
 import android.text.TextWatcher
 import androidx.fragment.app.FragmentActivity
-import com.example.module_commonview.NameEditLimitHelper
 import com.example.module_commonview.R
 import kotlinx.android.synthetic.main.activity_edit_text.*
 

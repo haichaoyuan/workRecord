@@ -136,4 +136,9 @@ public class AdvertiseAdapter extends PagerAdapter {
     public boolean isViewFromObject(View arg0, Object arg1) {
         return arg0 == arg1;
     }
+
+    @Override
+    public float getPageWidth(int position) {
+        return 0.8f;
+    }
 }

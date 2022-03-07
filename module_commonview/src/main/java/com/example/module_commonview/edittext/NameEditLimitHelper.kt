@@ -1,4 +1,4 @@
-package com.example.module_commonview
+package com.example.module_commonview.edittext
 
 import android.text.Editable
 import android.text.TextUtils

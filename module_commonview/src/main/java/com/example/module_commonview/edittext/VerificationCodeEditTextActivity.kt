@@ -1,16 +1,12 @@
 package com.example.module_commonview.edittext
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
 import androidx.fragment.app.FragmentActivity
-import com.example.module_commonview.NameEditLimitHelper
 import com.example.module_commonview.R
 import com.example.module_commonview.edittext.vericationCode.VerificationCodeView
-import kotlinx.android.synthetic.main.activity_edit_text.*
 
 /**
  * 验证码 EditText
