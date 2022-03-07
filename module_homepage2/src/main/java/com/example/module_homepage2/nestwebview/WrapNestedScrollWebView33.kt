@@ -1,4 +1,4 @@
-package com.shhxzq.stock.ui.common.view
+package com.example.module_homepage2.nestwebview
 
 import android.content.Context
 import android.util.AttributeSet
@@ -13,7 +13,6 @@ import androidx.core.view.NestedScrollingChild3
 import androidx.core.view.NestedScrollingChildHelper
 import androidx.core.view.ViewCompat
 import androidx.core.view.ViewCompat.TYPE_TOUCH
-import com.example.module_commonview.nestwebview.ProgressWebView
 
 
 /**
@@ -21,7 +20,8 @@ import com.example.module_commonview.nestwebview.ProgressWebView
  * sangxiaonian/EasyRefrush
  *
  */
-open class WrapNestedScrollWebView33 : ProgressWebView, NestedScrollingChild2, NestedScrollingChild3 {
+open class WrapNestedScrollWebView33 : ProgressWebView, NestedScrollingChild2,
+    NestedScrollingChild3 {
     private var TAG = "WrapNestedScrollWebView"
     private val mScrollingChildHelper = NestedScrollingChildHelper(this)
     private var mMinFlingVelocity = 0
@@ -47,8 +47,6 @@ open class WrapNestedScrollWebView33 : ProgressWebView, NestedScrollingChild2, N
         mMaxFlingVelocity = vc.scaledMaximumFlingVelocity
         mScroller = Scroller(context)
     }
-
-
 
 
     private var mVelocityTracker: VelocityTracker? = null
@@ -128,12 +126,20 @@ open class WrapNestedScrollWebView33 : ProgressWebView, NestedScrollingChild2, N
                 //子控件的滑动事件处理完成之后，剩余的再次传递给父控件，让父控件进行消耗
                 //因为没有滑动事件，因此次数自己滑动距离为0，剩余的再次全部还给父控件
 //                if(dispatchNestedScroll(consumedX, consumedY, dx - consumedX, dy - consumedY, null, TYPE_TOUCH)){
-                if(dispatchNestedScroll(consumedX, newScrollY - dy, dx - consumedX, dy, offset, TYPE_TOUCH)){
+                if (dispatchNestedScroll(
+                        consumedX,
+                        newScrollY - dy,
+                        dx - consumedX,
+                        dy,
+                        offset,
+                        TYPE_TOUCH
+                    )
+                ) {
                     lastY -= offset[1];
                     trackedEvent.offsetLocation(0F, offset[1].toFloat());
                     mNestedYOffset += offset[1];
                 }
-                if(consumed[1] == 0 && offset[1] == 0) {
+                if (consumed[1] == 0 && offset[1] == 0) {
                     if (mChange) {
                         mChange = false;
                         trackedEvent.setAction(MotionEvent.ACTION_DOWN);
@@ -146,7 +152,16 @@ open class WrapNestedScrollWebView33 : ProgressWebView, NestedScrollingChild2, N
                     if (Math.abs(lastY - currentY) >= 10) {
                         if (!mChange) {
                             mChange = true;
-                            super.onTouchEvent(MotionEvent.obtain(0, 0, MotionEvent.ACTION_CANCEL, 0F, 0F, 0));
+                            super.onTouchEvent(
+                                MotionEvent.obtain(
+                                    0,
+                                    0,
+                                    MotionEvent.ACTION_CANCEL,
+                                    0F,
+                                    0F,
+                                    0
+                                )
+                            );
                         }
                     }
                 }
@@ -211,7 +226,16 @@ open class WrapNestedScrollWebView33 : ProgressWebView, NestedScrollingChild2, N
      */
     private fun doFling(velocityX: Int, velocityY: Int) {
         fling = true
-        mScroller!!.fling(0, 0, velocityX, velocityY, Int.MIN_VALUE, Int.MAX_VALUE, Int.MIN_VALUE, Int.MAX_VALUE)
+        mScroller!!.fling(
+            0,
+            0,
+            velocityX,
+            velocityY,
+            Int.MIN_VALUE,
+            Int.MAX_VALUE,
+            Int.MIN_VALUE,
+            Int.MAX_VALUE
+        )
         postInvalidate()
     }
 
@@ -245,7 +269,14 @@ open class WrapNestedScrollWebView33 : ProgressWebView, NestedScrollingChild2, N
                 vResult = dy - leaveDy
             }
             //将最后剩余的部分，再次还给父控件
-            dispatchNestedScroll(leaveDx, leaveDy, hResult, vResult, null, ViewCompat.TYPE_NON_TOUCH)
+            dispatchNestedScroll(
+                leaveDx,
+                leaveDy,
+                hResult,
+                vResult,
+                null,
+                ViewCompat.TYPE_NON_TOUCH
+            )
             postInvalidate()
         } else {
             stopNestedScroll(ViewCompat.TYPE_NON_TOUCH)
@@ -339,7 +370,13 @@ open class WrapNestedScrollWebView33 : ProgressWebView, NestedScrollingChild2, N
      * @param type           滑动类型，ViewCompat.TYPE_NON_TOUCH fling效果,ViewCompat.TYPE_TOUCH 手势滑动
      * @return true    表示父控件进行了滑动消耗，需要处理 consumed 的值，false表示父控件不对滑动距离进行消耗，可以不考虑consumed数据的处理，此时consumed中两个数据都应该为0
      */
-    override fun dispatchNestedPreScroll(dx: Int, dy: Int, @Nullable consumed: IntArray?, @Nullable offsetInWindow: IntArray?, type: Int): Boolean {
+    override fun dispatchNestedPreScroll(
+        dx: Int,
+        dy: Int,
+        @Nullable consumed: IntArray?,
+        @Nullable offsetInWindow: IntArray?,
+        type: Int
+    ): Boolean {
         return mScrollingChildHelper.dispatchNestedPreScroll(dx, dy, consumed, offsetInWindow, type)
     }
 
@@ -359,8 +396,22 @@ open class WrapNestedScrollWebView33 : ProgressWebView, NestedScrollingChild2, N
      * @param offsetInWindow 子控件在当前window的偏移量
      * @return 如果返回true, 表示父控件又继续消耗了
      */
-    override fun dispatchNestedScroll(dxConsumed: Int, dyConsumed: Int, dxUnconsumed: Int, dyUnconsumed: Int, @Nullable offsetInWindow: IntArray?, type: Int): Boolean {
-        return mScrollingChildHelper.dispatchNestedScroll(dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed, offsetInWindow, type)
+    override fun dispatchNestedScroll(
+        dxConsumed: Int,
+        dyConsumed: Int,
+        dxUnconsumed: Int,
+        dyUnconsumed: Int,
+        @Nullable offsetInWindow: IntArray?,
+        type: Int
+    ): Boolean {
+        return mScrollingChildHelper.dispatchNestedScroll(
+            dxConsumed,
+            dyConsumed,
+            dxUnconsumed,
+            dyUnconsumed,
+            offsetInWindow,
+            type
+        )
     }
 
     /**
@@ -396,7 +447,23 @@ open class WrapNestedScrollWebView33 : ProgressWebView, NestedScrollingChild2, N
         return mScrollingChildHelper.hasNestedScrollingParent(type)
     }
 
-    override fun dispatchNestedScroll(dxConsumed: Int, dyConsumed: Int, dxUnconsumed: Int, dyUnconsumed: Int, offsetInWindow: IntArray?, type: Int, consumed: IntArray) {
-        mScrollingChildHelper.dispatchNestedScroll(dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed, offsetInWindow, type, consumed)
+    override fun dispatchNestedScroll(
+        dxConsumed: Int,
+        dyConsumed: Int,
+        dxUnconsumed: Int,
+        dyUnconsumed: Int,
+        offsetInWindow: IntArray?,
+        type: Int,
+        consumed: IntArray
+    ) {
+        mScrollingChildHelper.dispatchNestedScroll(
+            dxConsumed,
+            dyConsumed,
+            dxUnconsumed,
+            dyUnconsumed,
+            offsetInWindow,
+            type,
+            consumed
+        )
     }
 }

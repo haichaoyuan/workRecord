@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 网络安全相关配置 -->
+    <!-- https://developer.android.com/training/articles/security-config -->
+    <!-- https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted -->
+
+    <!-- 设置为可以访问 http 的链接 -->
+    <base-config cleartextTrafficPermitted="true" />
+
+    <!-- 如果注释上面的，打开了下面的就表示只有 domain 中配置的 http 域名可以访问，其它没配置的 http 域名是不能访问的 ，现在还没有全套 https 暂时先用上面的方案 -->
+    <!--<domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">www.demo.com</domain>
+    </domain-config>-->
+
+</network-security-config>

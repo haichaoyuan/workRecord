@@ -49,9 +49,6 @@
         <activity
             android:name=".applink.AppLinkActivity">
         </activity>
-        <activity
-            android:name=".nestwebview.NestWebViewActivity">
-        </activity>
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@
     <color name="app_bg">#fff3f3f4</color>
 
     <!-- =======================公共============================ -->
+    <color name="global_yx_orange">#ffea5504</color>
     <color name="global_white">#ffffffff</color>
     <color name="global_pressed_white">#ffd9d9d9</color>
     <!--    <color name="titlebar_bg_color">#ffff5838</color>-->

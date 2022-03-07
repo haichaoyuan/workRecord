@@ -1,4 +1,4 @@
-package com.shhxzq.stock.ui.common.view
+package com.example.module_homepage2.nestwebview
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,18 +6,17 @@ import android.util.Log
 import android.view.MotionEvent
 import android.view.VelocityTracker
 import android.view.ViewConfiguration
-import android.widget.LinearLayout
 import android.widget.Scroller
 import androidx.core.view.NestedScrollingChild2
 import androidx.core.view.NestedScrollingChild3
 import androidx.core.view.NestedScrollingChildHelper
 import androidx.core.view.ViewCompat
-import com.example.module_commonview.nestwebview.ProgressWebView
+import com.example.module_homepage2.nestwebview.ProgressWebView
 
 /**
  * 从 NestedScrollWebView2 抽离出复杂的 NestScroll 逻辑
  */
-open class WrapNestedScrollWebView : ProgressWebView, NestedScrollingChild2, NestedScrollingChild3 {
+open class WrapNestedScrollWebView4 : ProgressWebView, NestedScrollingChild2, NestedScrollingChild3 {
     private var TAG = "WrapNestedScrollWebView"
 
     private var mChildHelper: NestedScrollingChildHelper

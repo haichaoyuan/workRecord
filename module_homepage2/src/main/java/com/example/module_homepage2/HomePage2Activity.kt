@@ -3,8 +3,8 @@ package com.example.module_homepage2
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
-import android.os.Message
 import android.util.Log
+import android.util.SparseArray
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
@@ -15,6 +15,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.module_homepage2.base.UIUtils
+import com.example.module_homepage2.nestwebview.NestedScrollWebViewFragment
 import com.example.module_homepage2.xtablayout.XTabLayout
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabLayout
@@ -27,7 +28,7 @@ import kotlinx.android.synthetic.main.activity_home_page2.*
 
 class HomePage2Activity : AppCompatActivity() {
     private val CHANNELS = arrayOf("要闻", "快讯", "自选", "服务")
-    private val fragmentList: ArrayList<Fragment> = ArrayList()
+    private val fragmentList: SparseArray<Fragment> = SparseArray()
     var oldverticalOffset = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -122,24 +123,42 @@ class HomePage2Activity : AppCompatActivity() {
     }
 
     val handler = HomeHandler { msg, handler ->
-        val position = msg?.arg1?:0
+        val position = msg?.arg1 ?: 0
         viewPager.currentItem = position
         true
     }
 
+    /**
+     * HomeFragmentViewPageAdapter 的 createFragment
+     */
+    private fun createFragment(position: Int): Fragment {
+        var fragment: Fragment? = fragmentList[position]
+        if (fragment == null) {
+            fragment = when (position) {
+                //要闻
+                0 -> getFragment("https://ia.yongxingsec.com/ytg/khd/app/index?type=fund")
+                //快讯
+                1 -> getFragment(" https://h5-ztb-uat.yongxingsec.com:10443/h5/news/v2/headlines/headlines.html?deviceId=AcBsespatA26IDRyMx4CVR1663605301&v=6.0.0&snsAccount=SNS20211105257695182520599114&time=2022030709&deviceType=2&hasActive=1")
+                2 -> getFragment("https://h5-ztb-uat.yongxingsec.com:10443/h5/news/v2/flash/flash.html?deviceId=AcBsespatA26IDRyMx4CVR1663605301&v=6.0.0&snsAccount=SNS20211105257695182520599114&time=2022030707&deviceType=2&hasActive=1")
+                else -> HomeMsgListFragment(1)
+            }
+            fragmentList.put(position, fragment)
+        }
+        return fragment
+    }
+
+    private fun getFragment(detailUrl: String): Fragment {
+        val homeFragment = NestedScrollWebViewFragment()
+        val mBundle = Bundle()
+        mBundle.putString(NestedScrollWebViewFragment.PARAMS_URL, detailUrl)
+        homeFragment.arguments = mBundle
+        return homeFragment
+    }
 
     private fun initViewPager() {
-        //主页
-        val homeMsgListFragment = HomeMsgListFragment(1)
-        val homeMsgListFragment2 = HomeMsgListFragment(2)
-        val homeMsgListFragment3 = HomeMsgListFragment(3)
-        val homeMsgListFragment4 = HomeMsgListFragment(4)
-        fragmentList.add(homeMsgListFragment)
-        fragmentList.add(homeMsgListFragment2)
-        fragmentList.add(homeMsgListFragment3)
-        fragmentList.add(homeMsgListFragment4)
+        fragmentList.clear()
         val fragmentPageAdapter = HomeFragmentViewPageAdapter(
-            supportFragmentManager, fragmentList
+            this.supportFragmentManager, CHANNELS.size, this::createFragment
         )
         viewPager.adapter = fragmentPageAdapter
         viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {

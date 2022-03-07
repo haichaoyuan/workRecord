@@ -41,7 +41,6 @@
         <activity android:name=".wheelview.florent.FlorentWheelViewActivity"/>
 
         <activity android:name=".applink.AppLinkActivity"/>
-        <activity android:name=".nestwebview.NestWebViewActivity" />
     </application>
 
 </manifest>

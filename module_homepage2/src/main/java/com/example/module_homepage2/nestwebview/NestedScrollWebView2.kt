@@ -1,4 +1,4 @@
-package com.shhxzq.stock.ui.common.view
+package com.example.module_homepage2.nestwebview
 
 import android.content.Context
 import android.util.AttributeSet

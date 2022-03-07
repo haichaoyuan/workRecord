@@ -5,15 +5,11 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 
 
-class HomeFragmentViewPageAdapter(fm: FragmentManager, val fragmentList: List<Fragment>) :
+class HomeFragmentViewPageAdapter(fm: FragmentManager, val size: Int, val createFragment:(position: Int) -> Fragment) :
     FragmentStatePagerAdapter(fm, BEHAVIOR_SET_USER_VISIBLE_HINT) {
 
     fun getItemCount(): Int {
-        return if (fragmentList == null) 0 else fragmentList.size
-    }
-
-    fun createFragment(position: Int): Fragment {
-        return fragmentList[position]
+        return size
     }
 
     override fun getCount(): Int {

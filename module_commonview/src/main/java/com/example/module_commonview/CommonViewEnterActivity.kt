@@ -10,7 +10,6 @@ import com.example.module_commonview.edittext.VerificationCodeEditTextActivity
 import com.example.module_commonview.edittext.VerificationCodeWithCursorActivity
 import com.example.module_commonview.keyboard.BangbangKeyboardActivity
 import com.example.module_commonview.keyboard.KeyboardActivity
-import com.example.module_commonview.nestwebview.NestWebViewActivity
 import com.example.module_commonview.textview.AlignTextViewActivity
 import com.example.module_commonview.wheelview.florent.FlorentWheelViewActivity
 import com.example.module_commonview.wheelview.yuri.YuriWheelViewActivity
@@ -59,7 +58,7 @@ class CommonViewEnterActivity : AppCompatActivity() {
 
         // btn_nest_webview
         btn_nest_webview.setOnClickListener {
-            startActivity(Intent(this, NestWebViewActivity::class.java))
+//            startActivity(Intent(this, NestWebViewActivity::class.java))
         }
     }
 

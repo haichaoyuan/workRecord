@@ -1,4 +1,4 @@
-package com.shhxzq.stock.ui.common.view
+package com.example.module_homepage2.nestwebview
 
 import android.content.Context
 import android.util.AttributeSet
@@ -13,7 +13,7 @@ import androidx.core.view.NestedScrollingChild3
 import androidx.core.view.NestedScrollingChildHelper
 import androidx.core.view.ViewCompat
 import com.example.lib_util.utils.UIUtil
-import com.example.module_commonview.nestwebview.ProgressWebView
+import com.example.module_homepage2.nestwebview.ProgressWebView
 
 /**
  * 从 NestedScrollWebView2 抽离出复杂的 NestScroll 逻辑
