@@ -17,7 +17,7 @@ import androidx.viewpager.widget.ViewPager
  * 带嵌套滚动的 webview
  * 添加动态拦截高度功能
  */
-class NestedScrollWebView2 : WrapNestedScrollWebView {
+class NestedScrollWebView2 : WrapFlingWebView2 {
     private var TAG = "NestedScrollWebView"
 
 

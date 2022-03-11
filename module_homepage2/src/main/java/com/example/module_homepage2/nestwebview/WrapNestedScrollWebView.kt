@@ -28,7 +28,7 @@ open class WrapNestedScrollWebView : ProgressWebView, NestedScrollingChild2, Nes
     protected var mScrollConsumed: IntArray = IntArray(2)
     protected var mScrollOffset = IntArray(2)
 
-    protected var mLastMotionY = 0F
+    protected var mLastMotionY = 0 // onDown 记录，onMove 计算滑动的值
 
 
     var mNestedYOffset = 0
@@ -45,74 +45,86 @@ open class WrapNestedScrollWebView : ProgressWebView, NestedScrollingChild2, Nes
     }
 
     // =================================== 重写 onTouchEvent
-    override fun onTouchEvent(event: MotionEvent): Boolean {
-        Log.e(TAG, "onTouchEvent scrollX=" + event.getY() + ";rawY=" + event.rawY)
-        val eventY = event.getY()
-        var result = false;
-        val trackedEvent = MotionEvent.obtain(event);
-        val action = event.action
-        if (action == MotionEvent.ACTION_DOWN) {
-            mNestedYOffset = 0;
-        }
-
-        event.offsetLocation(0F, mNestedYOffset.toFloat());
-
-        when (action) {
-            MotionEvent.ACTION_DOWN -> {
-                mLastMotionY = eventY
-
-                startNestedScroll(ViewCompat.SCROLL_AXIS_VERTICAL);
-                mChange = false;
-                result = super.onTouchEvent(event);
-            }
-            MotionEvent.ACTION_MOVE -> {
-                var deltaY = mLastMotionY - eventY;
-
-                if (dispatchNestedPreScroll(0, deltaY.toInt(), mScrollConsumed, mScrollOffset)) {
-                    deltaY -= mScrollConsumed[1];
-                    trackedEvent.offsetLocation(0F, mScrollOffset[1].toFloat());
-                    mNestedYOffset += mScrollOffset[1];
-                }
-
-                var oldY = getScrollY();
-                mLastMotionY = eventY - mScrollOffset[1];
-                var newScrollY = Math.max(0, oldY + deltaY.toInt());
-                deltaY -= newScrollY - oldY;
-                if (dispatchNestedScroll(
-                        0, (newScrollY - deltaY).toInt(), 0,
-                        deltaY.toInt(), mScrollOffset
-                    )
-                ) {
-                    mLastMotionY -= mScrollOffset[1];
-                    trackedEvent.offsetLocation(0F, mScrollOffset[1].toFloat());
-                    mNestedYOffset += mScrollOffset[1];
-                }
-                if (mScrollConsumed[1] == 0 && mScrollOffset[1] == 0) {
-                    if (mChange) {
-                        mChange = false;
-                        trackedEvent.setAction(MotionEvent.ACTION_DOWN);
-                        super.onTouchEvent(trackedEvent);
-                    } else {
-                        result = super.onTouchEvent(trackedEvent);
-                    }
-                    trackedEvent.recycle();
-                } else {
-                    if (Math.abs(mLastMotionY - eventY) >= 10) {
-                        if (!mChange) {
-                            mChange = true;
-                            super.onTouchEvent(MotionEvent.obtain(0, 0, MotionEvent.ACTION_CANCEL, 0F, 0F, 0));
-                        }
-                    }
-
-                }
-            }
-            MotionEvent.ACTION_POINTER_DOWN, MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
-                stopNestedScroll();
-                result = super.onTouchEvent(event);
-            }
-        }
-        return result
-    }
+//    override fun onTouchEvent(event: MotionEvent): Boolean {
+//        Log.e(TAG, "onTouchEvent Y=" + event.getY() + ";rawY=" + event.rawY)
+//        val eventY = event.getY().toInt()
+//        var result = false;
+//        val trackedEvent = MotionEvent.obtain(event);
+//        val action = event.action
+//        if (action == MotionEvent.ACTION_DOWN) {
+//            mNestedYOffset = 0;
+//        }
+//
+//        event.offsetLocation(0F, mNestedYOffset.toFloat());
+//
+//        when (action) {
+//            MotionEvent.ACTION_DOWN -> {
+//                mLastMotionY = eventY
+//                Log.i(TAG, "ACTION_DOWN mLastMotionY:$mLastMotionY")
+//                startNestedScroll(ViewCompat.SCROLL_AXIS_VERTICAL)
+//
+//                mChange = false
+//                result = super.onTouchEvent(event);
+//            }
+//            MotionEvent.ACTION_MOVE -> {
+//                var deltaY = mLastMotionY - eventY
+//                Log.i(TAG, "ACTION_MOVE deltaY:$deltaY")
+//
+//                // 联合滑动，为 true, 自身滑动为false
+//                if (dispatchNestedPreScroll(0, deltaY, mScrollConsumed, mScrollOffset)) {
+//                    Log.i(TAG, "ACTION_MOVE mScrollConsumed:${mScrollConsumed[1]}, ${mScrollOffset[1]}")
+//                    deltaY -= mScrollConsumed[1];
+//                    trackedEvent.offsetLocation(0F, mScrollOffset[1].toFloat());
+//                    mNestedYOffset += mScrollOffset[1];
+//                }
+//                // mScrollConsumed 消费的值，mScrollOffset 滑动偏移值，带正负号, 往下为 负数： 11, -11
+//                Log.i(TAG, "ACTION_MOVE mScrollConsumed:${mScrollConsumed[1]}, ${mScrollOffset[1]}")
+//
+//                var oldY = getScrollY();
+//                mLastMotionY = eventY - mScrollOffset[1];
+//                // 解决，去除负数，否则会滑不下来
+//                var newScrollY = Math.max(0, oldY + deltaY);
+//                deltaY -= newScrollY - oldY;
+//                Log.i(TAG, "ACTION_MOVE (newScrollY - deltaY):${newScrollY - deltaY}, ${deltaY}")
+//                if (dispatchNestedScroll(0, (newScrollY - deltaY), 0, deltaY, mScrollOffset)) {
+//                    Log.i(TAG, "ACTION_MOVE mScrollOffset:${mScrollOffset[1]}")
+//                    mLastMotionY -= mScrollOffset[1];
+//                    trackedEvent.offsetLocation(0F, mScrollOffset[1].toFloat());
+//                    mNestedYOffset += mScrollOffset[1];
+//                }
+//                Log.i(TAG, "ACTION_MOVE mScrollOffset:${mScrollOffset[1]}")
+//
+//                // 网页的内部滑动,
+//                if (mScrollConsumed[1] == 0 && mScrollOffset[1] == 0) {
+//                    // 网页的内部滑动,
+//                    Log.i(TAG, "ACTION_MOVE mChange")
+//                    if (mChange) {
+//                        mChange = false;
+//                        trackedEvent.setAction(MotionEvent.ACTION_DOWN);
+//                        super.onTouchEvent(trackedEvent);
+//                    } else {
+//                        result = super.onTouchEvent(trackedEvent);
+//                    }
+//
+//                } else {
+//                    Log.i(TAG, "mLastMotionY - eventY:${mLastMotionY - eventY}")
+//                    if (Math.abs(mLastMotionY - eventY) >= 10) {
+//                        if (!mChange) {
+//                            mChange = true;
+//                            super.onTouchEvent(MotionEvent.obtain(0, 0, MotionEvent.ACTION_CANCEL, 0F, 0F, 0));
+//                        }
+//                    }
+//
+//                }
+//            }
+//            MotionEvent.ACTION_POINTER_DOWN, MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+//                stopNestedScroll();
+//                result = super.onTouchEvent(event);
+//            }
+//        }
+//        trackedEvent.recycle();
+//        return result
+//    }
 
     // =================================== NestedScrolling
 
