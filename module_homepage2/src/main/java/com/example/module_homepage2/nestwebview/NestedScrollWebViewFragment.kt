@@ -30,6 +30,8 @@ class NestedScrollWebViewFragment : Fragment() {
         return view
     }
 
+
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         initWebView(this.webView)

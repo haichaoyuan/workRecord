@@ -5,9 +5,13 @@
     android:background="@color/app_bg_color"
     android:orientation="vertical">
 
-    <com.example.module_homepage2.nestwebview.NestedScrollWebView2
-        android:id="@+id/webview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-         />
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+        <com.example.module_homepage2.nestwebview.NestedScrollWebView2
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+<!--    </androidx.core.widget.NestedScrollView>-->
 </RelativeLayout>

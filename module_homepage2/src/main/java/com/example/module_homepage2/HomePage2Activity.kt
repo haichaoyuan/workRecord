@@ -136,20 +136,19 @@ class HomePage2Activity : AppCompatActivity() {
         if (fragment == null) {
             fragment = when (position) {
                 //要闻
-                0 -> getFragment("https://ia.yongxingsec.com/ytg/khd/app/index?type=fund")
+                0 -> getFragment("https://b2b-api.10jqka.com.cn/b2bgw/resource/h5/private/YXZQ/latest/UpLimitSTD/UpLimitSTD/index.html#/ZhangTing?ckey=620CBE220016")
                 //快讯
-                1 -> getFragment(" https://h5-ztb-uat.yongxingsec.com:10443/h5/news/v2/headlines/headlines.html?deviceId=AcBsespatA26IDRyMx4CVR1663605301&v=6.0.0&snsAccount=SNS20211105257695182520599114&time=2022030709&deviceType=2&hasActive=1")
+                1 -> getFragment("https://h5-ztb-uat.yongxingsec.com:10443/h5/news/v2/headlines/headlines.html?deviceId=AcBsespatA26IDRyMx4CVR1663605301&v=6.0.0&snsAccount=SNS20211105257695182520599114&time=2022030709&deviceType=2&hasActive=1")
                 2 -> getFragment("https://h5-ztb-uat.yongxingsec.com:10443/h5/news/v2/flash/flash.html?deviceId=AcBsespatA26IDRyMx4CVR1663605301&v=6.0.0&snsAccount=SNS20211105257695182520599114&time=2022030707&deviceType=2&hasActive=1")
                 else -> HomeMsgListFragment(1)
             }
-            fragmentList.put(position, fragment)
         }
         return fragment
     }
 
     private fun getFragment(detailUrl: String): Fragment {
-        val homeFragment = NestedScrollWebViewFragment()
         val mBundle = Bundle()
+        val homeFragment = NestedScrollWebViewFragment()
         mBundle.putString(NestedScrollWebViewFragment.PARAMS_URL, detailUrl)
         homeFragment.arguments = mBundle
         return homeFragment

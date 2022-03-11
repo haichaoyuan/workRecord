@@ -25,14 +25,14 @@ open class WrapNestedScrollWebView : ProgressWebView, NestedScrollingChild2, Nes
     /**
      * 消费的滚动
      */
-    private var mScrollConsumed: IntArray = IntArray(2)
-    private var mScrollOffset = IntArray(2)
+    protected var mScrollConsumed: IntArray = IntArray(2)
+    protected var mScrollOffset = IntArray(2)
 
-    private var mLastMotionY = 0F
+    protected var mLastMotionY = 0F
 
 
-    private var mNestedYOffset = 0
-    private var mChange = false
+    var mNestedYOffset = 0
+    protected var mChange = false
 
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
