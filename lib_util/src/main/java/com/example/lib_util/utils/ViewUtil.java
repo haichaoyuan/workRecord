@@ -1,5 +1,6 @@
 package com.example.lib_util.utils;
 
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
@@ -62,5 +63,24 @@ public class ViewUtil {
 
     public static boolean isScrolledToTop(ScrollView scrollView) {
         return scrollView.getScrollY() == 0;
+    }
+
+    /**
+     * 点击的位置是否在view中
+     *
+     * @param view
+     * @param ev
+     * @return
+     */
+    public static boolean inRangeOfView(View view, MotionEvent ev) {
+        int[] location = new int[2];
+        view.getLocationOnScreen(location);
+        int x = location[0];
+        int y = location[1];
+        if (ev.getX() < x || ev.getRawX() > (x + view.getWidth()) || ev.getRawY() < y
+                || ev.getRawY() > (y + view.getHeight())) {
+            return false;
+        }
+        return true;
     }
 }

@@ -117,17 +117,20 @@ open class WrapFlingWebView2 : WrapNestedScrollWebView {
                 mVelocityTracker?.addMovement(trackedEvent)
                 mVelocityTracker?.computeCurrentVelocity(1000, mMaximumVelocity.toFloat())
                 val initialVelocity = mVelocityTracker!!.getYVelocity()
-
+                Log.i(TAG, "ACTION_UP initialVelocity:$initialVelocity")
                 if (Math.abs(initialVelocity) >= mMinimumVelocity) {
+
                     if (!dispatchNestedPreFling(0f, -initialVelocity)) {
                         dispatchNestedFling(0f, -initialVelocity, true)
+                        Log.i(TAG, "ACTION_UP fling:${(-initialVelocity).toInt()}")
                         fling((-initialVelocity).toInt())
                     }
                 }
-//                else if (mScroller!!.springBack(scrollX, scrollY, 0, 0, 0,
-//                        getScrollRange())) {
-//                    ViewCompat.postInvalidateOnAnimation(this)
-//                }
+                else if (mScroller!!.springBack(scrollX, scrollY, 0, 0, 0,
+                        height)) {
+                    Log.i(TAG, "ACTION_UP springBack:$initialVelocity")
+                    ViewCompat.postInvalidateOnAnimation(this)
+                }
 
                 stopNestedScroll();
                 result = super.onTouchEvent(event);

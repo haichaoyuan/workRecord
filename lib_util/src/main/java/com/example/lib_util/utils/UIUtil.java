@@ -3,8 +3,6 @@ package com.example.lib_util.utils;
 import android.content.Context;
 import android.os.Build;
 import android.util.DisplayMetrics;
-import android.view.MotionEvent;
-import android.view.View;
 import android.view.WindowManager;
 
 /**
@@ -38,24 +36,6 @@ public class UIUtil {
         return result;
     }
 
-    /**
-     * 点击的位置是否在view中
-     *
-     * @param view
-     * @param ev
-     * @return
-     */
-    public static boolean inRangeOfView(View view, MotionEvent ev) {
-        int[] location = new int[2];
-        view.getLocationOnScreen(location);
-        int x = location[0];
-        int y = location[1];
-        if (ev.getX() < x || ev.getRawX() > (x + view.getWidth()) || ev.getRawY() < y
-                || ev.getRawY() > (y + view.getHeight())) {
-            return false;
-        }
-        return true;
-    }
 
     public static int dip2px(Context context, float dipValue) {
         final float scale = context.getResources().getDisplayMetrics().density;

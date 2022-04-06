@@ -74,10 +74,6 @@ class HomePage2Activity : AppCompatActivity() {
                     alpha = 1f
                 }
                 alpha = 1 - alpha
-                Log.e(
-                    "home2Fragment",
-                    "height:$height,verticalOffset:$verticalOffset, alpha: $alpha "
-                )
                 home_top_bg.alpha = alpha
 
                 val delta = -(oldverticalOffset - verticalOffset)
